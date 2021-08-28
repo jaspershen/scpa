@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Peng Gao
+title: 高鹏
 
 # Is this the primary user of the site?
 superuser: true

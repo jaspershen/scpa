@@ -1,11 +1,11 @@
 ---
 # Display name
-title: Xiang Zhao
+title: 赵祥 Co chair
 
 # Is this the primary user of the site?
 superuser: true
 user_groups:
-- Co chair 2019-2020
+- Member 2019-2020
 
 # Role/position/tagline
 role: Postdoc

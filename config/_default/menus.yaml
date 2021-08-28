@@ -4,13 +4,13 @@
 #   The weight parameter defines the order that the links will appear in.
 
 main:
-  - name: About
+  - name: 关于我们
     url: '#hero'
     weight: 10
-  - name: Member
+  - name: 成员
     url: '#member'
     weight: 20
-  - name: News & Events
+  - name: 新闻&活动
     url: '#news'
     weight: 30
   # - name: Events
@@ -28,6 +28,6 @@ main:
   # - name: Courses
   #   url: courses/
   #   weight: 60
-  - name: Contact
+  - name: 联系我们
     url: '#contact'
     weight: 80

@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Chuchu Wang
+title: 王楚楚
 
 # Is this the primary user of the site?
 superuser: true

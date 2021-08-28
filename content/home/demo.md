@@ -4,7 +4,7 @@
 widget: blank
 
 # Activate this widget? true/false
-active: false
+active: true
 
 # This file represents a page section.
 headless: true
@@ -12,8 +12,8 @@ headless: true
 # Order that this section appears on the page.
 weight: 15
 
-title: Hugo Academic Theme Demo
-subtitle:
+title: 关于我们
+subtitle: 斯坦福中国博士后协会(SCPA)
 
 design:
   columns: "1"
@@ -28,17 +28,7 @@ design:
     padding: ["20px", "0", "20px", "0"]
 ---
 
-Welcome to the demo of the **academic resumé template** for Wowchemy, the Website Builder for Hugo.
+斯坦福中国博士后协会(SCPA)是.......The Stanford Chinese Postdoc Association is a vibrant community of the Black postdocs, across all disciplines, at Stanford University. Our mission is to create and hold a space of recognition for the diverse members of the Stanford postdoc community, provide infrastructure for professional networking, and promote increased diversity and inclusion in all academic and industrial postdoctoral activities.
 
-[Explore similar templates](https://wowchemy.com/templates/)
 
-**Over 500,000 [Amazing Websites](https://wowchemy.com/) have Already Been Built with Wowchemy**
-
-**[Join](https://wowchemy.com/templates/) the Most Empowered Hugo Community**
-
-{{% callout note %}}
-This homepage section is an example of adding [elements](https://wowchemy.com/docs/content/writing-markdown-latex/) to the [*Blank* widget](https://wowchemy.com/docs/getting-started/page-builder/).
-
-Backgrounds can be applied to any section. Here, the *background* option is set give an *image parallax* effect.
-{{% /callout %}}
  

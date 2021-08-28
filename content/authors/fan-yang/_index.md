@@ -1,11 +1,11 @@
 ---
 # Display name
-title: Fan Yang
+title: 杨帆 Co chair
 
 # Is this the primary user of the site?
 superuser: true
 user_groups:
-- Co chair 2020-2021
+- Member 2020-2021
 
 # Role/position/tagline
 role: Postdoc

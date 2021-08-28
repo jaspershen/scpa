@@ -22,6 +22,10 @@ twitter: ''
 
 email: shenxt1990@outlook.com
 contact_links:
+  - icon: weixin
+    icon_pack: fab
+    name: 微信公众号
+    link: https://www.shenxt.info/files/wechat_QR.jpg
 
 # Site header
 

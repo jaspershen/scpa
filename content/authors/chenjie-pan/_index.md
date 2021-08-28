@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Chenjie Pan
+title: 潘辰杰
 
 # Is this the primary user of the site?
 superuser: true

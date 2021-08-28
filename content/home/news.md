@@ -9,7 +9,7 @@ headless: true
 # Order that this section appears on the page.
 weight: 30
 
-title: News
+title: 新闻&活动
 subtitle:
 
 content:

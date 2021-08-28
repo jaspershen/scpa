@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Xiaotao Shen
+title: 申小涛
 
 # Is this the primary user of the site?
 superuser: true
