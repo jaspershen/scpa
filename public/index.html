@@ -308,6 +308,45 @@
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143314205-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-143314205-1', { 'anonymize_ip': true });
+  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
   
@@ -396,6 +435,36 @@
   
 
   
+  
+  
+  
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js" integrity="sha256-5VhCqFam2Cn+yjw61zbBNrbHVJ6SRydPeKopYlngbiQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" integrity="sha256-zQ0LblD/Af8vOppw18+2anxsuaz3pWYyVWi+bTvTH8Q=" crossorigin="anonymous">
+  
+  <script>
+  window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#1565c0",
+          "text": "rgb(255, 255, 255)"
+        },
+        "button": {
+          "background": "rgb(255, 255, 255)",
+          "text": "#1565c0"
+        }
+      },
+      "theme": "classic",
+      "content": {
+        "message": "This website uses cookies to ensure you get the best experience on our website.",
+        "dismiss": "Got it!",
+        "link": "Learn more",
+        "href": "https://www.cookiesandyou.com"
+      }
+    })});
+  </script>
+
 
   
 
@@ -500,7 +569,7 @@
 
     
     
-    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+    <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
 
       
       <ul class="navbar-nav d-md-inline-flex">
@@ -847,7 +916,7 @@
 
   
   <section id="hero" class="home-section wg-hero dark "  >
-   <div class="home-section-bg " style="background-image: linear-gradient(90deg, #004ba0, #1976d2);"></div>
+   <div class="home-section-bg " style="background-image: linear-gradient(60deg, #8C1515, white);"></div>
     <div class="container">
 
     
@@ -862,7 +931,7 @@
 
 
     
-      <h1 class="hero-title">Stanford Chinese Postdoctoral Association</h1>
+      <h1 class="hero-title">Stanford Chinese Postdoctoral Association<br>斯坦福中国博士后协会</h1>
     
 
     
@@ -902,7 +971,7 @@
         
         
 
-        <img src="/media/scpa_logo_huc410adf2aadda30f0e17f7786b99bb29_30380_400x0_resize_lanczos_3.png" srcset="/media/scpa_logo_huc410adf2aadda30f0e17f7786b99bb29_30380_1200x0_resize_lanczos_3.png 1200w,/media/scpa_logo_huc410adf2aadda30f0e17f7786b99bb29_30380_800x0_resize_lanczos_3.png 800w,/media/scpa_logo_huc410adf2aadda30f0e17f7786b99bb29_30380_400x0_resize_lanczos_3.png 400w" width="1328" height="514" alt="Stanford Chinese Postdoctoral Association">
+        <img src="/media/scpa_logo_huc410adf2aadda30f0e17f7786b99bb29_30380_400x0_resize_lanczos_3.png" srcset="/media/scpa_logo_huc410adf2aadda30f0e17f7786b99bb29_30380_1200x0_resize_lanczos_3.png 1200w,/media/scpa_logo_huc410adf2aadda30f0e17f7786b99bb29_30380_800x0_resize_lanczos_3.png 800w,/media/scpa_logo_huc410adf2aadda30f0e17f7786b99bb29_30380_400x0_resize_lanczos_3.png 400w" width="1328" height="514" alt="Stanford Chinese Postdoctoral Association&lt;br&gt;斯坦福中国博士后协会">
       
     
   </div>
@@ -979,8 +1048,8 @@
   
 
   
-  <section id="demo" class="home-section wg-blank light " style="padding: 20px 0 20px 0;" >
-   <div class="home-section-bg  bg-image parallax" style="background-image: url(&#39;https://scpa.netlify.app/media/open-book.jpg&#39;);background-size: cover;background-position: center;filter: brightness(1);"></div>
+  <section id="demo" class="home-section wg-blank dark " style="padding: 20px 0 20px 0;" >
+   <div class="home-section-bg  bg-image parallax" style="background-image: url(&#39;https://scpa.netlify.app/media/stanford.jpeg&#39;);background-size: cover;background-position: center;filter: brightness(0.7);"></div>
     <div class="container">
 
     
@@ -3501,7 +3570,7 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
     
     <li>
       <i class="fa-li fab fa-weixin fa-2x" aria-hidden="true"></i>
-      <a href="https://www.shenxt.info/files/wechat_QR.jpg" target="_blank" rel="noopener">微信公众号</a>
+      <a href="https://www.shenxt.info/files/scpa_wechat.jpeg" target="_blank" rel="noopener">微信公众号</a>
     </li>
     
 

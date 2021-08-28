@@ -18,12 +18,12 @@ subtitle: 斯坦福中国博士后协会(SCPA)
 design:
   columns: "1"
   background:
-    image: open-book.jpg
-    image_darken: 1.0
+    image: stanford.jpeg
+    image_darken: 0.7
     image_parallax: true
     image_position: center
     image_size: cover
-    text_color_light: false
+    text_color_light: true
   spacing:
     padding: ["20px", "0", "20px", "0"]
 ---

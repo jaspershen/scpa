@@ -25,13 +25,13 @@ contact_links:
   - icon: weixin
     icon_pack: fab
     name: 微信公众号
-    link: https://www.shenxt.info/files/wechat_QR.jpg
+    link: https://www.shenxt.info/files/scpa_wechat.jpeg
 
 # Site header
 
 main_menu:
   enable: true
-  align: l
+  align: r
   show_logo: true
   show_language: false
   show_day_night: true
@@ -53,10 +53,10 @@ highlight_languages:
   - latex
 math: false
 diagram: false
-privacy_pack: false
+privacy_pack: true
 edit_page:
-  repo_url: ''
-  content_dir: ''
+  repo_url: 'https://github.com/jaspershen/scpa/issues'
+  content_dir: 'https://github.com/jaspershen/scpa'
   repo_branch: main
   editable:
     page: false
@@ -103,7 +103,7 @@ comments:
     publication: true
     event: true
   disqus:
-    shortname: ''
+    shortname: 'blog-at8qrhng8b'
     show_count: true
   commento:
     url: ''
@@ -119,7 +119,7 @@ map:
   api_key: ''
   zoom: 15
 marketing:
-  google_analytics: ''
+  google_analytics: 'UA-143314205-1'
   google_tag_manager: ''
   google_site_verification: ''
   baidu_site_verification: ''
