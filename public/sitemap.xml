@@ -15,7 +15,7 @@
     <lastmod>2021-08-27T16:49:03-07:00</lastmod>
   </url><url>
     <loc>https://scpa.netlify.app/</loc>
-    <lastmod>2021-08-28T11:50:32-07:00</lastmod>
+    <lastmod>2021-08-28T12:07:34-07:00</lastmod>
   </url><url>
     <loc>https://scpa.netlify.app/courses/example/</loc>
     <lastmod>2021-08-27T16:49:03-07:00</lastmod>
@@ -24,7 +24,7 @@
     <lastmod>2021-08-27T16:49:03-07:00</lastmod>
   </url><url>
     <loc>https://scpa.netlify.app/authors/</loc>
-    <lastmod>2021-08-28T11:36:32-07:00</lastmod>
+    <lastmod>2021-08-28T12:07:34-07:00</lastmod>
   </url><url>
     <loc>https://scpa.netlify.app/categories/</loc>
     <lastmod>2021-08-27T16:49:03-07:00</lastmod>
@@ -122,22 +122,20 @@
     <loc>https://scpa.netlify.app/author/</loc>
     <lastmod>2021-08-28T11:36:32-07:00</lastmod>
   </url><url>
-    <loc>https://scpa.netlify.app/author/</loc>
+    <loc>https://scpa.netlify.app/author/chenjie-pan/</loc>
+    <lastmod>2021-08-28T12:07:34-07:00</lastmod>
   </url><url>
-    <loc>https://scpa.netlify.app/author/</loc>
-  </url><url>
-    <loc>https://scpa.netlify.app/author/</loc>
-  </url><url>
-    <loc>https://scpa.netlify.app/author/</loc>
-  </url><url>
-    <loc>https://scpa.netlify.app/author/</loc>
-  </url><url>
-    <loc>https://scpa.netlify.app/author/</loc>
-  </url><url>
-    <loc>https://scpa.netlify.app/author/</loc>
+    <loc>https://scpa.netlify.app/author/chuchu-wang/</loc>
+    <lastmod>2021-08-28T12:07:34-07:00</lastmod>
   </url><url>
     <loc>https://scpa.netlify.app/courses/</loc>
     <lastmod>2021-08-27T16:49:03-07:00</lastmod>
+  </url><url>
+    <loc>https://scpa.netlify.app/author/fan-yang/</loc>
+    <lastmod>2021-08-28T12:07:34-07:00</lastmod>
+  </url><url>
+    <loc>https://scpa.netlify.app/author/peng-gao/</loc>
+    <lastmod>2021-08-28T12:07:34-07:00</lastmod>
   </url><url>
     <loc>https://scpa.netlify.app/alumni/</loc>
     <lastmod>2021-08-28T11:50:32-07:00</lastmod>
@@ -150,5 +148,14 @@
   </url><url>
     <loc>https://scpa.netlify.app/event/</loc>
     <lastmod>2021-08-27T16:49:03-07:00</lastmod>
+  </url><url>
+    <loc>https://scpa.netlify.app/author/wenchao-lu/</loc>
+    <lastmod>2021-08-28T12:07:34-07:00</lastmod>
+  </url><url>
+    <loc>https://scpa.netlify.app/author/xiang-zhao/</loc>
+    <lastmod>2021-08-28T12:07:34-07:00</lastmod>
+  </url><url>
+    <loc>https://scpa.netlify.app/author/xiaotao-shen/</loc>
+    <lastmod>2021-08-28T12:07:34-07:00</lastmod>
   </url>
 </urlset>

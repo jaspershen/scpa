@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Xiaotao Shen | SCPA</title>
+    <link>https://scpa.netlify.app/author/xiaotao-shen/</link>
+      <atom:link href="https://scpa.netlify.app/author/xiaotao-shen/index.xml" rel="self" type="application/rss+xml" />
+    <description>Xiaotao Shen</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SCPA 2021</copyright>
+    <image>
+      <url>https://scpa.netlify.app/author/xiaotao-shen/avatar_hu1e2e5ea831a1ccb0887a87d1899b0c15_179284_270x270_fill_q75_lanczos_center.jpg</url>
+      <title>Xiaotao Shen</title>
+      <link>https://scpa.netlify.app/author/xiaotao-shen/</link>
+    </image>
+    
+  </channel>
+</rss>
