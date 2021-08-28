@@ -1,18 +1,17 @@
 ---
 widget: hero
 headless: true
-weight: 10
-title: Hugo Academic Starter
-hero_media: hero-academic.png
+weight: 1
+active: true
+title: Stanford Chinese Postdoctoral Association
+hero_media: scpa_logo.png
 cta:
-  label: '**Get Started**'
-  url: https://wowchemy.com/templates/
+  # label: '**Get Started**'
+  # url: https://wowchemy.com/templates/
 cta_alt:
   label: Ask a question
   url: https://discord.gg/z8wNYzb
 cta_note:
-  label: >-
-    <a class="js-github-release" href="https://wowchemy.com/updates/" data-repo="gcushen/hugo-academic">Latest release<!-- V --></a><div style="text-shadow: none;"><a class="github-button" href="https://github.com/wowchemy/wowchemy-hugo-modules" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star">Star Wowchemy site builder for Hugo</a></div><div style="text-shadow: none;"><a class="github-button" href="https://github.com/wowchemy/starter-academic" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star">Star the Academic template</a></div>
 design:
   background:
     gradient_end: '#1976d2'
@@ -22,6 +21,5 @@ advanced:
   css_class: fullscreen
 ---
 
-**The FREE, Hugo-based open source website builder and template trusted by 500,000+ sites.**
+斯坦福中国博士后协会(SCPA)是.......The Stanford Black Postdoc Association is a vibrant community of the Black postdocs, across all disciplines, at Stanford University. Our mission is to create and hold a space of recognition for the diverse members of the Stanford postdoc community, provide infrastructure for professional networking, and promote increased diversity and inclusion in all academic and industrial postdoctoral activities.
 
-**Build anything with widgets** - from landing pages, knowledge bases, and courses to academic resumés, conferences, and tech blogs.
