@@ -1,6 +1,6 @@
 ---
 authors:
-- chenjie_pan
+- fan-yang
 bio: xxxx
 education:
   courses:

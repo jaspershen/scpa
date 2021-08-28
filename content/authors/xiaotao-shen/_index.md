@@ -1,21 +1,21 @@
 ---
 authors:
-- xiaotao_shen
-bio: 代谢组学, Multi-omics, 生物信息, Healthcare.
-education:
-  courses:
-  - course: PhD
-    institution: 中国科学院生物与化学交叉研究中心
-    year: 2013-2018
-  - course: BSc
-    institution: 内蒙古大学
-    year: 2009-2013
+- xiaotao-shen
+# bio: 代谢组学, Multi-omics, 生物信息, Healthcare.
+# education:
+#   courses:
+#   - course: PhD
+#     institution: 中国科学院生物与化学交叉研究中心
+#     year: 2013-2018
+#   - course: BSc
+#     institution: 内蒙古大学
+#     year: 2009-2013
 email: "shenxt@stanford.edu"
-interests:
-- 生物信息
-- 代谢组学
-- Systems Biology
-- Biomarker
+# interests:
+# - 生物信息
+# - 代谢组学
+# - Systems Biology
+# - Biomarker
 name: 申小涛 博士
 organizations:
 - name: Stanford University

@@ -1,6 +1,6 @@
 ---
 authors:
-- chenjie_pan
+- peng-gao
 bio: xxxx
 education:
   courses:
@@ -36,7 +36,7 @@ social:
   link: https://shenxt.info
 superuser: fasle
 user_groups:
-- Co chair
+- Member
 ---
 
 xxxx

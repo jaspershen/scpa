@@ -1,6 +1,6 @@
 ---
 authors:
-- chenjie_pan
+- wenchao-lu
 bio: xxxx
 education:
   courses:

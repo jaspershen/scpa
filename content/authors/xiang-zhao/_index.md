@@ -1,6 +1,6 @@
 ---
 authors:
-- chenjie_pan
+- xiang-zhao
 bio: xxxx
 education:
   courses:
@@ -36,7 +36,7 @@ social:
   link: https://shenxt.info
 superuser: fasle
 user_groups:
-- Member
+- Co chair (2019-2020)
 ---
 
 xxxx
