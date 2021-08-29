@@ -1,14 +1,14 @@
 ---
 # Display name
-title: 申小涛
+title: 申小涛/Xiaotao Shen
 
 # Is this the primary user of the site?
 superuser: true
 user_groups:
-- Co chair
+- 联合主席/Co-chair
 
 # Role/position/tagline
-role: Postdoc
+role: 博士后/Postdoc
 
 # Organizations/Affiliations to show in About widget
 organizations:

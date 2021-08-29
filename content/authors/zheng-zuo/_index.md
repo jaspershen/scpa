@@ -1,14 +1,14 @@
 ---
 # Display name
-title: 左政 Co chair
+title: 左政/Zheng Zuo Co chair
 
 # Is this the primary user of the site?
 superuser: true
 user_groups:
-- Member 2020-2021
+- 成员/Member 2020-2021
 
 # Role/position/tagline
-role: Professor
+role: 教授/Professor
 
 # Organizations/Affiliations to show in About widget
 organizations:

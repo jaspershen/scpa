@@ -7,13 +7,13 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 70  # Order that this section will appear.
 
-title = "Alumni"
+title = "往届成员/Alumni"
 subtitle = ""
 
 [content]
   # Choose which groups/teams of users to display.
   #   Edit `user_groups` in each user's profile to add them to one or more of these groups.
-  user_groups = ["Member 2020-2021", "Member 2019-2020", "Member 2018-2019"]
+  user_groups = ["成员/Member 2020-2021", "成员/Member 2019-2020", "成员/Member 2018-2019"]
 
 [design]
   # Show user's social networking links? (true/false)

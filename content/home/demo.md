@@ -12,7 +12,7 @@ headless: true
 # Order that this section appears on the page.
 weight: 15
 
-title: 关于我们
+title: 关于我们/About
 subtitle: 斯坦福中国博士后协会(SCPA)
 
 design:

@@ -1,14 +1,14 @@
 ---
 # Display name
-title: 徐一诺 Co chair
+title: 徐一诺/Yinuo Xu Co chair
 
 # Is this the primary user of the site?
 superuser: true
 user_groups:
-- Member 2019-2020
+- 成员/Member 2019-2020
 
 # Role/position/tagline
-role: PhD candidate
+role: 博士生/PhD candidate
 
 # Organizations/Affiliations to show in About widget
 organizations:

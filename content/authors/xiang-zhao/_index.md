@@ -1,14 +1,14 @@
 ---
 # Display name
-title: 赵祥 Co chair
+title: 赵祥/Xiang Zhao Co chair
 
 # Is this the primary user of the site?
 superuser: true
 user_groups:
-- Member 2019-2020
+- 成员/Member 2019-2020
 
 # Role/position/tagline
-role: Postdoc
+role: 博士后/Postdoc
 
 # Organizations/Affiliations to show in About widget
 organizations:

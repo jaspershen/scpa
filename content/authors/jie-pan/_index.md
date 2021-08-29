@@ -1,14 +1,14 @@
 ---
 # Display name
-title: 潘杰
+title: 潘杰/Jie Pan
 
 # Is this the primary user of the site?
 superuser: true
 user_groups:
-- Member
+- 成员/Member
 
 # Role/position/tagline
-role: Postdoc
+role: 博士后/Postdoc
 
 # Organizations/Affiliations to show in About widget
 organizations:
