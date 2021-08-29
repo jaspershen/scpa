@@ -1,11 +1,11 @@
 ---
 # Display name
-title: 徐一诺/Yinuo Xu Co-chair
+title: 徐一诺/Yinuo Xu, Co-chair
 
 # Is this the primary user of the site?
 superuser: true
 user_groups:
-- 成员/Member 2019-2020
+- 2019-2020
 
 # Role/position/tagline
 role: 博士生/PhD candidate

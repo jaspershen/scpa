@@ -1,11 +1,11 @@
 ---
 # Display name
-title: 封志平/Zhiping Feng Co-chair
+title: 封志平/Zhiping Feng, Co-chair
 
 # Is this the primary user of the site?
 superuser: true
 user_groups:
-- 成员/Member 2018-2019
+- 2018-2019
 
 # Role/position/tagline
 role: 博士后/Postdoc

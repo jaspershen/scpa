@@ -1,11 +1,11 @@
 ---
 # Display name
-title: 赵祥/Xiang Zhao Co-chair
+title: 赵祥/Xiang Zhao, Co-chair
 
 # Is this the primary user of the site?
 superuser: true
 user_groups:
-- 成员/Member 2019-2020
+- 2019-2020
 
 # Role/position/tagline
 role: 博士后/Postdoc

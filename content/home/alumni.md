@@ -13,7 +13,7 @@ subtitle = ""
 [content]
   # Choose which groups/teams of users to display.
   #   Edit `user_groups` in each user's profile to add them to one or more of these groups.
-  user_groups = ["成员/Member 2020-2021", "成员/Member 2019-2020", "成员/Member 2018-2019"]
+  user_groups = ["2020-2021", "2019-2020", "2018-2019"]
 
 [design]
   # Show user's social networking links? (true/false)

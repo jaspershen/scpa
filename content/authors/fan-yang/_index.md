@@ -1,11 +1,11 @@
 ---
 # Display name
-title: 杨帆/Fan Yang Co-chair
+title: 杨帆/Fan Yang, Co-chair
 
 # Is this the primary user of the site?
 superuser: true
 user_groups:
-- 成员/Member 2020-2021
+- 2020-2021
 
 # Role/position/tagline
 role: 博士后/Postdoc

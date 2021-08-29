@@ -1,11 +1,11 @@
 ---
 # Display name
-title: 王莹/Ying Wang Co-chair
+title: 王莹/Ying Wang, Co-chair
 
 # Is this the primary user of the site?
 superuser: true
 user_groups:
-- 成员/Member 2018-2019
+- 2018-2019
 
 # Role/position/tagline
 role: 助理教授/Assistant Professor
