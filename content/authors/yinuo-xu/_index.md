@@ -1,6 +1,6 @@
 ---
 # Display name
-title: 徐一诺/Yinuo Xu Co chair
+title: 徐一诺/Yinuo Xu Co-chair
 
 # Is this the primary user of the site?
 superuser: true

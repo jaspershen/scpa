@@ -1,6 +1,6 @@
 ---
 # Display name
-title: 赵祥/Xiang Zhao Co chair
+title: 赵祥/Xiang Zhao Co-chair
 
 # Is this the primary user of the site?
 superuser: true

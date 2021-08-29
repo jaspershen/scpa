@@ -1,6 +1,6 @@
 ---
 # Display name
-title: 王莹/Ying Wang Co chair
+title: 王莹/Ying Wang Co-chair
 
 # Is this the primary user of the site?
 superuser: true

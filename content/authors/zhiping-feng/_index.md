@@ -1,6 +1,6 @@
 ---
 # Display name
-title: 封志平/Zhiping Feng Co chair
+title: 封志平/Zhiping Feng Co-chair
 
 # Is this the primary user of the site?
 superuser: true

@@ -1,6 +1,6 @@
 ---
 # Display name
-title: 左政/Zheng Zuo Co chair
+title: 左政/Zheng Zuo Co-chair
 
 # Is this the primary user of the site?
 superuser: true
