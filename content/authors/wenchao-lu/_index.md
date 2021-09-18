@@ -1,6 +1,6 @@
 ---
 # Display name
-title: 卢文超/Wenchao Lu
+title: 陆文超/Wenchao Lu
 
 # Is this the primary user of the site?
 superuser: true
