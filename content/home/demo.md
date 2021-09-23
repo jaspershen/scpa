@@ -38,11 +38,12 @@ design:
 <i class="fab fa-weixin"></i>
 Please follow us in [Wechat offical account](https://www.shenxt.info/files/scpa_wechat.jpeg),
 
-<i class="fas fa-bell"></i>
-or join in our Stanford [email list](https://www.shenxt.info/files/scpa_wechat.jpeg),
-
 <i class="fas fa-envelope"></i>
-or send email to us: [shenxt1990@outlook.com](shenxt1990@outlook.com).
+or join our [Stanford email list](https://mailman.stanford.edu/mailman/listinfo/chinesepostdocs),
+
+<i class="fas fa-users"></i>
+or join our [Wechat group](https://www.shenxt.info/files/wechat_QR.jpg).
+
 {{% /callout %}}
 
 
