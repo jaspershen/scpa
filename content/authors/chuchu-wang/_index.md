@@ -1,6 +1,6 @@
 ---
 # Display name
-title: 王楚楚/Chuchu Wang
+title: Chuchu Wang
 
 # Is this the primary user of the site?
 superuser: true
@@ -8,7 +8,7 @@ user_groups:
 - 成员/Member
 
 # Role/position/tagline
-role: 博士后/Postdoc
+role: Postdoc
 
 # Organizations/Affiliations to show in About widget
 organizations:
