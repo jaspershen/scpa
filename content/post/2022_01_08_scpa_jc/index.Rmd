@@ -1,16 +1,10 @@
 ---
-title: Stanford Chinese Postdoc Journal Club and Oral Presentation Improvement
+title: "Stanford Chinese Postdoc Journal Club and Oral Presentation Improvement"
 author: xiaotao-shen
 date: '2022-01-08'
 slug: event
-categories:
-  - event
-tags:
-  - Blog
-  - English
-image:
-  caption: ''
-  focal_point: ''
+categories: ["Event", "English"]
+tags: ["Event", "English"]
 output:
   blogdown::html_page:
     toc: true
