@@ -9488,7 +9488,7 @@ div.chart {
   overflow-x: auto; }
 
 .article-container {
-  max-width: 850px;
+  max-width: 80%;
   padding: 0 20px 0 20px;
   margin: 0 auto 0 auto;
   font-size: 20px; }
