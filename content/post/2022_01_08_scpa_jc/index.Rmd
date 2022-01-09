@@ -1,6 +1,6 @@
 ---
 title: Stanford Chinese Postdoc Journal Club and Oral Presentation Improvement
-author: Xiaotao Shen
+author: xiaotao-shen
 date: '2022-01-08'
 slug: event
 categories:
@@ -21,9 +21,9 @@ output:
 
 ---
 
-## **Purpose of the course**
+## **Purpose of the Course**
 
-This course aims to help bring cutting-edge interdisciplinary research topics related to biomedical sciences. We not only discuss the most recent advances in research publications but also help to improve the presentation skills of Non-native English-speaker. This presentation platform is also intended to promote collaborations between participants. The majority of the course participants are postdoctoral fellows from Stanford Medicine, with several external affiliated members.
+This course aims to help bring cutting-edge interdisciplinary research topics related to biomedical sciences. We not only discuss the most recent advances in research publications but also help to improve the presentation skills of Non-native English-speaker. This presentation platform is also intended to promote collaborations between participants. The majority of the course participants are postdoctoral fellows from Stanford Schools of Medicine, with several external affiliated members.
 
 ## **Leadership**
 
