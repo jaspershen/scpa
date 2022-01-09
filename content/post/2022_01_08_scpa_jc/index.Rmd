@@ -47,7 +47,8 @@ library(knitr)
 library(kableExtra)
 data %>%
   kbl() %>%
-  kable_material(c("striped", "hover", "condensed", "responsive"))
+  kable_material(c("striped", "hover", "condensed", "responsive")) %>% 
+  column_spec(1, bold = TRUE)
 ```
 
 # **Acknowledgement**
