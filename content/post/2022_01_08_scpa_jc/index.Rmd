@@ -44,7 +44,10 @@ This course aims to help bring cutting-edge interdisciplinary research topics re
 ```{r, echo=FALSE, eval=TRUE, message=FALSE, warning=FALSE, message=FALSE}
 data = readxl::read_xlsx("Schedule.xlsx")
 library(knitr)
-kable(data, format = "markdown")
+library(kableExtra)
+data %>%
+  kbl() %>%
+  kable_material(c("striped", "hover"))
 ```
 
 # **Acknowledgement**
