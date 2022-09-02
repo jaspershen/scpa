@@ -13,7 +13,7 @@ title: 图集/Gallery
 subtitle:
 
 design:
-  columns: '2'
+  columns: '3'
 ---
 
 {{< gallery album="gallery" >}}

@@ -1,11 +1,12 @@
 ---
 # Display name
-title: 潘辰杰/Chenjie Pan
+title: 潘辰杰/Chenjie Pan, Co-chair
 
 # Is this the primary user of the site?
 superuser: true
 user_groups:
-- 联合主席/Co-chair
+- 2021-2022
+- 成员/Member
 
 # Role/position/tagline
 role: 博士后/Postdoc
