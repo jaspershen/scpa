@@ -7,7 +7,7 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 70  # Order that this section will appear.
 
-title = "往届成员/Alumni"
+title = "往届主席/Alumni"
 subtitle = ""
 
 [content]

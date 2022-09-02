@@ -1,6 +1,6 @@
 ---
 # Display name
-title: 杨帆/Fan Yang, Co-chair
+title: 杨帆/Fan Yang
 
 # Is this the primary user of the site?
 superuser: true

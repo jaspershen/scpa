@@ -1,6 +1,6 @@
 ---
 # Display name
-title: 赵祥/Xiang Zhao, Co-chair
+title: 赵祥/Xiang Zhao
 
 # Is this the primary user of the site?
 superuser: true
@@ -42,18 +42,18 @@ organizations:
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "/#contact" for contact widget.
 social:
-- icon: envelope
-  icon_pack: fas
-  link: '#contact'
+# - icon: envelope
+#   icon_pack: fas
+#   link: '#contact'
 - icon: linkedin
   icon_pack: fab
   link: https://www.linkedin.com/in/shenxt/
-- icon: github
-  icon_pack: fab
-  link: https://github.com/jaspershen
-- icon: home
-  icon_pack: fas
-  link: https://shenxt.info
+# - icon: github
+#   icon_pack: fab
+#   link: https://github.com/jaspershen
+# - icon: home
+#   icon_pack: fas
+#   link: https://shenxt.info
 
 # Link to a PDF of your resume/CV.
 # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.toml`, 

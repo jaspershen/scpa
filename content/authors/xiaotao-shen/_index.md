@@ -1,6 +1,6 @@
 ---
 # Display name
-title: 申小涛/Xiaotao Shen, Co-chair
+title: 申小涛/Xiaotao Shen
 
 # Is this the primary user of the site?
 superuser: true
