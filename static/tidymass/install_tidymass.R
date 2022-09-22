@@ -123,9 +123,12 @@ install_tidymass <-
           }
         )
         
-        install.packages(file.path(temp_path, file$file_name.y[file$package == x]),
-                         repos = NULL,
-                         type = "source")
+        remotes::install_deps(pkgdir = file.path(temp_path, file$file_name.y[file$package == x]), 
+                              dependencies = TRUE, upgrade = "never")
+        
+        # install.packages(file.path(temp_path, file$file_name.y[file$package == x]),
+        #                  repos = NULL,
+        #                  type = "source")
         
         unlink(file.path(temp_path, file$file_name.y[file$package == x]))
       })
