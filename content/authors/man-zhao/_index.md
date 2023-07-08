@@ -1,11 +1,11 @@
 ---
 # Display name
-title: 江珊/Shan Jiang
+title: 赵曼/Mao Zhao
 
 # Is this the primary user of the site?
 superuser: true
 user_groups:
-- none
+- 联合主席/Co-chair
 
 # Role/position/tagline
 role: 博士后/Postdoc

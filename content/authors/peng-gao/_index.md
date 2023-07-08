@@ -8,12 +8,12 @@ user_groups:
 - none
 
 # Role/position/tagline
-role: 博士后/Postdoc
+role: 助理教授/Assistant Professor
 
 # Organizations/Affiliations to show in About widget
 organizations:
-- name: Stanford University
-  url: https://www.stanford.edu/
+- name: University of Pittsburgh
+  url: https://www.pitt.edu/
 
 # Short bio (displayed in user profile at end of posts)
 # bio: My research interests include distributed robotics, mobile computing and programmable matter.

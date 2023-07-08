@@ -5,7 +5,7 @@ title: 谭明典/Mingdian Tan
 # Is this the primary user of the site?
 superuser: true
 user_groups:
-- 联合主席/Co-chair
+- 2022-2023
 
 # Role/position/tagline
 role: 博士后/Postdoc
