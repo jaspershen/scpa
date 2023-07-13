@@ -1,6 +1,6 @@
 ---
 # Display name
-title: 赵曼/Mao Zhao
+title: 赵曼/Man Zhao
 
 # Is this the primary user of the site?
 superuser: true
