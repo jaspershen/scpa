@@ -42,7 +42,7 @@ Please follow us in [Wechat offical account](https://www.shenxt.info/files/scpa_
 or join our [Stanford email list](https://mailman.stanford.edu/mailman/listinfo/chinesepostdocs),
 
 <i class="fas fa-users"></i>
-or join our [Wechat group](https://www.shenxt.info/files/wechat_QR.jpg).
+or join our [Wechat group](https://scpa.netlify.app/files/shaoyuan-zhu.jpg).
 
 {{% /callout %}}
 
