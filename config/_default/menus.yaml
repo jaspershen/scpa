@@ -16,6 +16,9 @@ main:
   - name: 往届成员/Alumni
     url: '#alumni'
     weight: 70
+  - name: 往届成员/Alumni
+    url: '#alumni'
+    weight: 70
   - name: 联系我们/Contact
     url: '#contact'
-    weight: 80
+    weight: 90
