@@ -55,8 +55,8 @@ math: false
 diagram: false
 privacy_pack: true
 edit_page:
-  repo_url: 'https://github.com/jaspershen/scpa'
-  content_dir: 'https://github.com/jaspershen/scpa'
+  repo_url: 'https:/github.com/jaspershen/scpa'
+  content_dir: 'content'
   repo_branch: main
   editable:
     page: false
