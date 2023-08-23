@@ -7,6 +7,7 @@ categories:
 date: "2023-07-28T00:00:00Z"
 draft: false
 featured: false
+commentable: true
 image:
   caption: ''
   focal_point: ""
