@@ -47,7 +47,7 @@ social:
 #   link: '#contact'
 - icon: linkedin
   icon_pack: fab
-  link: https://www.linkedin.com/in/chuchu-wang-71331190/
+  link: https://www.linkedin.com/in/xu-haiqing-7713ba13a/
 # - icon: github
 #   icon_pack: fab
 #   link: https://github.com/jaspershen
