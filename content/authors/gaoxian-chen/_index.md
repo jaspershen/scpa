@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Gaoxian Chen/陈高贤
+title: 陈高贤/Gaoxian Chen
 
 # Is this the primary user of the site?
 superuser: true

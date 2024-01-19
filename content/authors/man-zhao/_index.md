@@ -51,9 +51,9 @@ social:
 # - icon: github
 #   icon_pack: fab
 #   link: https://github.com/jaspershen
-# - icon: home
-#   icon_pack: fas
-#   link: https://shenxt.info
+- icon: home
+  icon_pack: fas
+  link: https://profiles.stanford.edu/man-zhao
 
 # Link to a PDF of your resume/CV.
 # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.toml`, 
@@ -69,7 +69,7 @@ email: "shenxt@stanford.edu"
 highlight_name: true
 ---
 
-xxx
+
 
 
 

@@ -11,14 +11,16 @@
     <loc>https://scpa.netlify.app/courses/example/stats/</loc>
     <lastmod>2021-08-27T16:49:03-07:00</lastmod>
   </url><url>
+    <loc>https://scpa.netlify.app/contact/</loc>
+  </url><url>
     <loc>https://scpa.netlify.app/talk/example-talk/</loc>
     <lastmod>2021-08-27T16:49:03-07:00</lastmod>
   </url><url>
     <loc>https://scpa.netlify.app/</loc>
-    <lastmod>2023-08-23T15:09:21-07:00</lastmod>
+    <lastmod>2024-01-18T11:08:58-08:00</lastmod>
   </url><url>
     <loc>https://scpa.netlify.app/authors/</loc>
-    <lastmod>2023-08-23T15:09:21-07:00</lastmod>
+    <lastmod>2024-01-18T11:08:58-08:00</lastmod>
   </url><url>
     <loc>https://scpa.netlify.app/categories/</loc>
     <lastmod>2023-08-23T15:09:21-07:00</lastmod>
@@ -37,6 +39,9 @@
   </url><url>
     <loc>https://scpa.netlify.app/post/2023-7-7-scpa-election/</loc>
     <lastmod>2023-08-23T14:04:33-07:00</lastmod>
+  </url><url>
+    <loc>https://scpa.netlify.app/alumni/</loc>
+    <lastmod>2021-08-28T14:56:02-07:00</lastmod>
   </url><url>
     <loc>https://scpa.netlify.app/tag/english/</loc>
     <lastmod>2022-01-08T19:57:11-08:00</lastmod>
@@ -143,9 +148,6 @@
     <loc>https://scpa.netlify.app/courses/</loc>
     <lastmod>2021-08-27T16:49:03-07:00</lastmod>
   </url><url>
-    <loc>https://scpa.netlify.app/author/gaoxian-chen/%E9%99%88%E9%AB%98%E8%B4%A4/</loc>
-    <lastmod>2023-07-12T22:43:59-07:00</lastmod>
-  </url><url>
     <loc>https://scpa.netlify.app/post/</loc>
     <lastmod>2021-08-27T16:49:03-07:00</lastmod>
   </url><url>
@@ -159,7 +161,7 @@
     <lastmod>2022-09-02T15:34:24-07:00</lastmod>
   </url><url>
     <loc>https://scpa.netlify.app/author/%E5%88%98%E7%92%90/lu-liu/</loc>
-    <lastmod>2023-07-12T22:43:59-07:00</lastmod>
+    <lastmod>2024-01-18T11:08:58-08:00</lastmod>
   </url><url>
     <loc>https://scpa.netlify.app/author/%E5%91%A8%E5%98%89%E7%82%9C/jiawei-zhou/</loc>
     <lastmod>2022-09-02T15:34:24-07:00</lastmod>
@@ -171,7 +173,7 @@
     <lastmod>2022-09-02T15:49:54-07:00</lastmod>
   </url><url>
     <loc>https://scpa.netlify.app/author/%E5%BA%84%E5%86%8D%E4%B9%90/zaile-zhuang/</loc>
-    <lastmod>2023-07-12T22:43:59-07:00</lastmod>
+    <lastmod>2024-01-18T11:08:58-08:00</lastmod>
   </url><url>
     <loc>https://scpa.netlify.app/author/%E5%BC%A0%E6%AD%A6%E5%85%B5/wubing-zhang/</loc>
     <lastmod>2022-09-02T15:49:54-07:00</lastmod>
@@ -183,13 +185,13 @@
     <lastmod>2022-09-02T15:49:54-07:00</lastmod>
   </url><url>
     <loc>https://scpa.netlify.app/author/%E5%BE%90%E6%B5%B7%E9%9D%92/haiqing-xu/</loc>
-    <lastmod>2023-07-12T22:43:59-07:00</lastmod>
+    <lastmod>2024-01-18T11:08:58-08:00</lastmod>
   </url><url>
     <loc>https://scpa.netlify.app/author/%E6%9C%B1%E5%B0%91%E5%8E%9F/shaoyuan-zhu/</loc>
     <lastmod>2023-07-07T18:56:39-07:00</lastmod>
   </url><url>
     <loc>https://scpa.netlify.app/author/%E6%9D%A8%E5%B8%86/fan-yang/</loc>
-    <lastmod>2022-09-02T15:49:54-07:00</lastmod>
+    <lastmod>2024-01-18T11:08:58-08:00</lastmod>
   </url><url>
     <loc>https://scpa.netlify.app/author/%E6%BD%98%E6%9D%B0/jie-pan/</loc>
     <lastmod>2023-07-07T18:56:39-07:00</lastmod>
@@ -207,10 +209,10 @@
     <lastmod>2022-09-02T15:49:54-07:00</lastmod>
   </url><url>
     <loc>https://scpa.netlify.app/author/%E7%94%B3%E5%B0%8F%E6%B6%9B/xiaotao-shen/</loc>
-    <lastmod>2023-07-07T18:56:39-07:00</lastmod>
+    <lastmod>2024-01-18T11:08:58-08:00</lastmod>
   </url><url>
     <loc>https://scpa.netlify.app/author/%E8%82%96%E8%88%92%E5%85%8B/shuke-xiao/</loc>
-    <lastmod>2023-07-12T22:43:59-07:00</lastmod>
+    <lastmod>2024-01-18T11:08:58-08:00</lastmod>
   </url><url>
     <loc>https://scpa.netlify.app/author/%E8%B0%AD%E6%98%8E%E5%85%B8/mingdian-tan/</loc>
     <lastmod>2023-07-07T18:56:39-07:00</lastmod>
@@ -219,7 +221,7 @@
     <lastmod>2022-09-02T15:34:24-07:00</lastmod>
   </url><url>
     <loc>https://scpa.netlify.app/author/%E8%B5%B5%E6%9B%BC/man-zhao/</loc>
-    <lastmod>2023-07-12T22:43:59-07:00</lastmod>
+    <lastmod>2024-01-18T11:08:58-08:00</lastmod>
   </url><url>
     <loc>https://scpa.netlify.app/author/%E8%B5%B5%E7%A5%A5/xiang-zhao/</loc>
     <lastmod>2022-09-02T15:49:54-07:00</lastmod>
@@ -228,10 +230,13 @@
     <lastmod>2022-09-02T15:34:24-07:00</lastmod>
   </url><url>
     <loc>https://scpa.netlify.app/author/%E9%99%88%E6%97%AD%E6%A0%8B/xudong-chen/</loc>
-    <lastmod>2023-07-12T23:00:24-07:00</lastmod>
+    <lastmod>2024-01-18T11:08:58-08:00</lastmod>
+  </url><url>
+    <loc>https://scpa.netlify.app/author/%E9%99%88%E9%AB%98%E8%B4%A4/gaoxian-chen/</loc>
+    <lastmod>2024-01-18T11:08:58-08:00</lastmod>
   </url><url>
     <loc>https://scpa.netlify.app/author/%E9%A2%9C%E6%98%8A/hao-yan/</loc>
-    <lastmod>2023-07-12T22:43:59-07:00</lastmod>
+    <lastmod>2024-01-18T11:08:58-08:00</lastmod>
   </url><url>
     <loc>https://scpa.netlify.app/author/%E9%AB%98%E9%B9%8F/peng-gao/</loc>
     <lastmod>2023-07-07T18:56:39-07:00</lastmod>
