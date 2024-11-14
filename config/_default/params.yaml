@@ -20,7 +20,7 @@ twitter: ''
 
 # Contact (edit or remove options as required)
 
-email: shenxt1990@outlook.com
+email: zhus@stanford.edu
 contact_links:
   - icon: weixin
     icon_pack: fab
@@ -55,12 +55,12 @@ math: false
 diagram: false
 privacy_pack: true
 edit_page:
-  repo_url: 'https://github.com/jaspershen/scpa/issues'
-  content_dir: 'https://github.com/jaspershen/scpa'
+  repo_url: 'https:/github.com/jaspershen/scpa'
+  content_dir: 'content'
   repo_branch: main
   editable:
     page: false
-    post: false
+    post: true
     book: false
 show_related:
   book: true
@@ -95,7 +95,7 @@ breadcrumb:
   page_types:
     book: true
 comments:
-  provider: ''
+  provider: 'disqus'
   commentable:
     post: true
     book: true

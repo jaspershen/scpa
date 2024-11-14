@@ -8,12 +8,12 @@ user_groups:
 - 2019-2020
 
 # Role/position/tagline
-role: 博士后/Postdoc
+role: 助理教授/Assistant Professor
 
 # Organizations/Affiliations to show in About widget
 organizations:
-- name: Stanford University
-  url: https://www.stanford.edu/
+- name: 中国科学院/Chinese Academy of Sciences
+  url: https://cemcs.cas.cn/sourcedb_cemcs_cas/zw/pi/202303/t20230313_6696744.html
 
 # Short bio (displayed in user profile at end of posts)
 # bio: My research interests include distributed robotics, mobile computing and programmable matter.

@@ -6,7 +6,6 @@ title: 潘辰杰/Chenjie Pan
 superuser: true
 user_groups:
 - 2021-2022
-- 成员/Member
 
 # Role/position/tagline
 role: 博士后/Postdoc

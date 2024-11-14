@@ -16,6 +16,13 @@ main:
   - name: 往届成员/Alumni
     url: '#alumni'
     weight: 70
+  - name: 资源/Resource
+    identifier: resource
+    weight: 80
+  - name: 微信群/WeChat
+    parent: resource
+    url: resource/wechat/
+    weight: 10
   - name: 联系我们/Contact
     url: '#contact'
-    weight: 80
+    weight: 90

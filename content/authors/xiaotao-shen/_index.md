@@ -69,7 +69,3 @@ email: "xiaotao.shen@outlook.com"
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
-
-
-
-

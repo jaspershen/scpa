@@ -1,9 +1,7 @@
 ---
 authors:
 - xiaotao-shen
-categories:
-- meeting
-date: "2021-09-26T00:00:00Z"
+date: "2021-09-17T00:00:00Z"
 draft: false
 featured: false
 image:
@@ -11,30 +9,44 @@ image:
   focal_point: ""
   placement: 2
   preview_only: false
-lastmod: "2021-09-26T00:00:00Z"
+lastmod: "2021-09-17T00:00:00Z"
 projects: []
 subtitle: ""
-summary: "2021年9月份NPAW BBQ"
-tags:
-- meeting
-title: 2021年9月份NPAW BBQ
+title: 资源/Resources
 ---
 
-NPAW周四(2021年9月23号)是斯坦福所有博后的BBQ.最后参加的人非常多,大概有1000人左右.
+# 微信群/WeChat Groups
 
-![](135bcf71-ed91-4bad-9219-b992be65dbf0.jpeg)
+## 总群
 
-我们SCPA也在活动现场摆上了我们的桌子,很多新来的中国博后都在这里寻找到了组织.
+1. 斯坦福中国博士后访问学者群 (群主微信):
 
-![](79d502bb-c202-4298-8315-c50b5af6a71b.jpeg)
+<img src="shaoyuan-zhu-wechat.png" width="30%" height="30%" alt="ALT_TEXT">
 
-![](d4859868-fb4a-48e7-a8f6-88af27caf84f.jpeg)
+2. 斯坦福中国博士后访问学者群2 (群主微信):
 
-感谢高鹏,王楚楚博士帮我们布置现场!
+<img src="man-zhao-wechat.jpeg" width="30%" height="30%" alt="ALT_TEXT">
 
-最后还是欢迎所有斯坦福博后们(或者曾经的)与我们联系!我们后面会有monthly的happly hour,希望到时看到大家.
 
----
+## 老乡群
+
+1. 斯坦福河南群 (群主微信):
+
+<img src="xiaotao-shen-wechat.jpg" width="30%" height="30%" alt="ALT_TEXT">
+
+
+## 专业群
+
+1. 斯坦福-生物信息 (群主微信):
+
+<img src="xiaotao-shen-wechat.jpg" width="30%" height="30%" alt="ALT_TEXT">
+
+## 校友群
+
+1. Stanford上中国科大群 (群主微信):
+
+<img src="xiaotao-shen-wechat.jpg" width="30%" height="30%" alt="ALT_TEXT">
+
 
 ---
 

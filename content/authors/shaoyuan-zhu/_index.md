@@ -5,7 +5,7 @@ title: 朱少原/Shaoyuan Zhu
 # Is this the primary user of the site?
 superuser: true
 user_groups:
-- 成员/Member
+- 联合主席/Co-chair
 
 # Role/position/tagline
 role: 博士后/Postdoc
@@ -69,7 +69,7 @@ email: "shenxt@stanford.edu"
 highlight_name: true
 ---
 
-xxx
+
 
 
 
