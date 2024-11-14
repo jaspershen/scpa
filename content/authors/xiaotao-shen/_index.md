@@ -9,12 +9,12 @@ user_groups:
 - 成员/Member
 
 # Role/position/tagline
-role: 博士后/Postdoc
+role: 助理教授/Assistant Professor
 
 # Organizations/Affiliations to show in About widget
 organizations:
-- name: Stanford University
-  url: https://www.stanford.edu/
+- name: Nanyang Technological University Singapore
+  url: https://jaspershen.github.io/
 
 # Short bio (displayed in user profile at end of posts)
 # bio: My research interests include distributed robotics, mobile computing and programmable matter.
@@ -54,7 +54,7 @@ social:
   link: https://github.com/jaspershen
 - icon: home
   icon_pack: fas
-  link: https://shenxt.info
+  link: https://jaspershen.github.io/
 
 # Link to a PDF of your resume/CV.
 # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.toml`, 
@@ -64,13 +64,12 @@ social:
 #   link: uploads/resume.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: "shenxt@stanford.edu"
+email: "xiaotao.shen@outlook.com"
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
 
-我现在在美国斯坦福大学医学院做博士后.感兴趣的研究方向为代谢组学数据分析,多组学数据分析(multi-omics data analysis),生物统计,系统生物学以及生物信息学.当然,这些都是工具,最终还是希望能够利用这些工具用于人类健康的发展.
 
 
 
