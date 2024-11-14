@@ -5,7 +5,7 @@ title: 肖舒克/Shuke Xiao
 # Is this the primary user of the site?
 superuser: true
 user_groups:
-- 成员/Member
+- 成员/old_Member
 
 # Role/position/tagline
 role: Postdoc
