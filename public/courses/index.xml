@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Courses | SCPA</title>
+    <link>https://scpa.netlify.app/courses/</link>
+      <atom:link href="https://scpa.netlify.app/courses/index.xml" rel="self" type="application/rss+xml" />
+    <description>Courses</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SCPA 2025</copyright>
+    <image>
+      <url>https://scpa.netlify.app/media/icon_huf0477110ecc29f3b484ffe5bd4e591a1_104289_512x512_fill_lanczos_center_3.png</url>
+      <title>Courses</title>
+      <link>https://scpa.netlify.app/courses/</link>
+    </image>
+    
+  </channel>
+</rss>
