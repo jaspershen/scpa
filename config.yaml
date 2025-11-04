@@ -7,6 +7,7 @@ theme: "starter-hugo-academic"
 title: SCPA # Website name
 baseurl: 'https://scpa.netlify.app/' # Website URL
 copyright: "&copy; SCPA {year}"
+googleAnalytics: ""
 
 ############################
 ## LANGUAGE
@@ -68,3 +69,15 @@ related:
       weight: 100
     - name: categories
       weight: 70
+
+# Allow Wowchemy to read WC_* env vars during build (fix dev server).
+security:
+  enableInlineShortcodes: false
+  funcs:
+    getenv:
+      - '^HUGO_'
+      - '^CI$'
+      - '^WC_'
+  http:
+    methods: ['(?i)GET|POST']
+    urls: ['.*']
