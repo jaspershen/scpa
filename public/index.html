@@ -1,3731 +1,1134 @@
-<!DOCTYPE html><html lang="en-us" >
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  
-  
-  
-    <meta name="generator" content="Wowchemy 5.3.0 for Hugo" />
-  
-
-  
-
-  
-  
-  
-  
-  
-    
-    
-    
-  
-  
-
-  
-
-  
-  
-  
-    
-  
-  <meta name="description" content="Stanford Chinese Postdoctoral Association" />
-
-  
-  <link rel="alternate" hreflang="en-us" href="https://scpa.netlify.app/" />
-
-  
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-  
-  
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  
-
-  
-  
-  
-    <meta name="theme-color" content="#1565c0" />
-  
-
-  
-  
-
-  
-  
-  
-  
-    
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous" media="print" onload="this.media='all'">
-
-    
-    
-    
-    
-      
-      
-      
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-          
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous" media="print" onload="this.media='all'">
-    
-
-    
-    
-    
-      
-    
-    
-      
-      
-        
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
-        
-      
-    
-
-    
-    
-    
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous" media="print" onload="this.media='all'">
-    
-
-    
-
-    
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-        
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-  
-
-  
-  
-  
-    
-      
-      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
-    
-  
-
-  
-  
-  
-  
-  
-  <link rel="stylesheet" href="/css/wowchemy.8720575322b2d2d3f7866a72374d23ce.css" />
-
-  
-
-
-
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143314205-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-      dataLayer.push(arguments);
-  }
-
-  function trackOutboundLink(url, target) {
-    gtag('event', 'click', {
-         'event_category': 'outbound',
-         'event_label': url,
-         'transport_type': 'beacon',
-         'event_callback': function () {
-           if (target !== '_blank') {
-             document.location = url;
-           }
-         }
-    });
-    console.debug("Outbound link clicked: " + url);
-  }
-
-  function onClickCallback(event) {
-    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
-      return;
-    }
-    trackOutboundLink(event.target, event.target.getAttribute('target'));  
-  }
-
-  gtag('js', new Date());
-  gtag('config', 'UA-143314205-1', { 'anonymize_ip': true });
-  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
-
-  
-  document.addEventListener('click', onClickCallback, false);
-</script>
-
-
-  
-
-  
-
-  
-
-
-
-
-  
-  
-  
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  
-
-  
-    <link rel="alternate" href="/index.xml" type="application/rss+xml" title="SCPA" />
-  
-
-  
-    <link rel="manifest" href="/manifest.webmanifest" />
-  
-
-  <link rel="icon" type="image/png" href="/media/icon_huf0477110ecc29f3b484ffe5bd4e591a1_104289_32x32_fill_lanczos_center_3.png" />
-  <link rel="apple-touch-icon" type="image/png" href="/media/icon_huf0477110ecc29f3b484ffe5bd4e591a1_104289_180x180_fill_lanczos_center_3.png" />
-
-  <link rel="canonical" href="https://scpa.netlify.app/" />
-
-  
-  
-  
-  
-  
-  
-  
-  
-    
-    
-  
-  
-  <meta property="twitter:card" content="summary" />
-  
-  <meta property="og:site_name" content="SCPA" />
-  <meta property="og:url" content="https://scpa.netlify.app/" />
-  <meta property="og:title" content="SCPA" />
-  <meta property="og:description" content="Stanford Chinese Postdoctoral Association" /><meta property="og:image" content="https://scpa.netlify.app/media/icon_huf0477110ecc29f3b484ffe5bd4e591a1_104289_512x512_fill_lanczos_center_3.png" />
-    <meta property="twitter:image" content="https://scpa.netlify.app/media/icon_huf0477110ecc29f3b484ffe5bd4e591a1_104289_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
-  
-    
-      <meta property="og:updated_time" content="2030-06-01T13:00:00&#43;00:00" />
-    
-  
-
-  
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://scpa.netlify.app/?q={search_term_string}",
-    "query-input": "required name=search_term_string"
-  },
-  "url": "https://scpa.netlify.app/"
-}
-</script>
-
-
-  
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Stanford Chinese Postdoctoral Association",
-  "@id": "https://scpa.netlify.app/",
-  "name": "SCPA",
-  "logo": "https://scpa.netlify.app/media/icon_huf0477110ecc29f3b484ffe5bd4e591a1_104289_192x192_fill_lanczos_center_3.png",
-  
-  
-  
-  
-  "url": "https://scpa.netlify.app/"
-}
-</script>
-
-  
-
-  
-  
-  
-  
-  
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js" integrity="sha256-5VhCqFam2Cn+yjw61zbBNrbHVJ6SRydPeKopYlngbiQ=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" integrity="sha256-zQ0LblD/Af8vOppw18+2anxsuaz3pWYyVWi+bTvTH8Q=" crossorigin="anonymous">
-  
-  <script>
-  window.addEventListener("load", function(){
-    window.cookieconsent.initialise({
-      "palette": {
-        "popup": {
-          "background": "#1565c0",
-          "text": "rgb(255, 255, 255)"
-        },
-        "button": {
-          "background": "rgb(255, 255, 255)",
-          "text": "#1565c0"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCPA - Stanford Chinese Postdoc Association</title>
+    <meta name="description" content="Stanford Chinese Postdoc Association (SCPA) - Connecting Scholars at Stanford">
+    <meta name="theme-color" content="#8C1515">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'stanford-red': '#8C1515',
+                        'stanford-dark': '#5E0F0F',
+                        'stanford-black': '#2E2D29',
+                        'cool-grey': '#4D4F53',
+                        'warm-grey': '#B6B1A9',
+                        'fog': '#DAD7CB',
+                        'ivory': '#FAFAF8',
+                        'paper': '#F9F8F4',
+                    },
+                    fontFamily: {
+                        sans: ['"Noto Sans SC"', 'sans-serif'],
+                        serif: ['"Noto Serif SC"', 'serif'],
+                    },
+                    letterSpacing: {
+                        'widest-xl': '0.2em',
+                    },
+                    boxShadow: {
+                        'halo': '0 0 60px -15px rgba(140, 21, 21, 0.15)',
+                        'emboss': 'inset 1px 1px 2px rgba(255,255,255,0.8), 0 4px 6px -1px rgba(0,0,0,0.05)',
+                        'glass-strong': '0 8px 32px rgba(0, 0, 0, 0.08)',
+                    },
+                    animation: {
+                        'fade-in-slow': 'fadeIn 3s ease-out forwards',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        }
+                    }
+                }
+            }
         }
-      },
-      "theme": "classic",
-      "content": {
-        "message": "This website uses cookies to ensure you get the best experience on our website.",
-        "dismiss": "Got it!",
-        "link": "Learn more",
-        "href": "https://www.cookiesandyou.com"
-      }
-    })});
-  </script>
-
-
-  
-
-
-
-
-
-  <title>SCPA</title>
+    </script>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-
-<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper   "  >
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <script src="/js/wowchemy-init.min.8988fb2a4bba758785868cfcb5244555.js"></script>
-
-  
-
-
-<aside class="search-modal" id="search">
-  <div class="container">
-    <section class="search-header">
-
-      <div class="row no-gutters justify-content-between mb-3">
-        <div class="col-6">
-          <h1>Search</h1>
-        </div>
-        <div class="col-6 col-search-close">
-          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
-        </div>
-      </div>
-
-      <div id="search-box">
-        
-        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
-        aria-label="Search...">
-        
-      </div>
-
-      
-      
-
-      
-
-    </section>
-    <section class="section-search-results">
-
-      <div id="search-hits">
-        
-      </div>
-
-    </section>
-  </div>
-</aside>
-
-
-
-  <div class="page-header">
-    
-
-
-
-
-
-
-
-
-
-
-
-
-<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
-  <div class="container-xl">
-
-    
-    <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/">SCPA</a>
-    </div>
-    
-
-    
-    <button type="button" class="navbar-toggler" data-toggle="collapse"
-            data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
-    <span><i class="fas fa-bars"></i></span>
-    </button>
-    
-
-    
-    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/">SCPA</a>
-    </div>
-    
-
-    
-    
-    <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
-
-      
-      <ul class="navbar-nav d-md-inline-flex">
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#hero" data-target="#hero"><span>关于我们/About</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#member" data-target="#member"><span>成员/Member</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#news" data-target="#news"><span>新闻&活动/News&Events</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#alumni" data-target="#alumni"><span>往届成员/Alumni</span></a>
-        </li>
-
-        
-        
-
-        
-        <li class="nav-item dropdown">
-          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>资源/Resource</span><span class="caret"></span>
-          </a>
-          <div class="dropdown-menu">
-            
-              <a class="dropdown-item" href="/resource/wechat/" data-target="resource/wechat/"><span>微信群/WeChat</span></a>
-            
-          </div>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#contact" data-target="#contact"><span>联系我们/Contact</span></a>
-        </li>
-
-        
-        
-
-      
-
-        
-      </ul>
-    </div>
-
-    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
-
-      
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-
-      
-      
-      <li class="nav-item">
-        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
-      </li>
-      
-
-      
-      
-      <li class="nav-item dropdown theme-dropdown">
-        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
-          <i class="fas fa-moon" aria-hidden="true"></i>
-        </a>
-        <div class="dropdown-menu">
-          <a href="#" class="dropdown-item js-set-theme-light">
-            <span>Light</span>
-          </a>
-          <a href="#" class="dropdown-item js-set-theme-dark">
-            <span>Dark</span>
-          </a>
-          <a href="#" class="dropdown-item js-set-theme-auto">
-            <span>Automatic</span>
-          </a>
-        </div>
-      </li>
-      
-
-      
-      
-
-    </ul>
-
-  </div>
-</nav>
-
-
-  </div>
-
-  <div class="page-body">
-    
-
-
-
-
-
-
-
-
-
-  
-<span class="js-widget-page d-none"></span>
-
-
-
-
-
-  
-  
-  
-  
-
-
-
-
-  
-  
-  
-  
-
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-
-  
-  <section id="hero" class="home-section wg-hero dark "  >
-   <div class="home-section-bg " style="background-image: linear-gradient(60deg, #8C1515, white);"></div>
-    <div class="container">
-
-    
-
-      
-
-
-
-
-<div class="row">
-  <div class="col-12 col-md-6 text-center text-md-left">
-
-
-    
-      <h1 class="hero-title">Stanford Chinese Postdoctoral Association<br>斯坦福中国博士后协会</h1>
-    
-
-    
-
-    
-    
-
-    
-    
-
-  
-  
-  </div>
-  <div class="col-12 mx-auto col-md-6  hero-media">
-      
-      
-
-        
-        
-        
-        
-
-        
-          
-          
-            
-          
-          
-        
-          
-          
-          
-        
-          
-          
-          
-        
-        
-
-        <img src="/media/scpa_logo_huc410adf2aadda30f0e17f7786b99bb29_30380_400x0_resize_lanczos_3.png" srcset="/media/scpa_logo_huc410adf2aadda30f0e17f7786b99bb29_30380_1200x0_resize_lanczos_3.png 1200w,/media/scpa_logo_huc410adf2aadda30f0e17f7786b99bb29_30380_800x0_resize_lanczos_3.png 800w,/media/scpa_logo_huc410adf2aadda30f0e17f7786b99bb29_30380_400x0_resize_lanczos_3.png 400w" width="1328" height="514" alt="Stanford Chinese Postdoctoral Association&lt;br&gt;斯坦福中国博士后协会">
-      
-    
-  </div>
-</div>
-
-
-
-    
-
-    </div>
-  </section>
-
-  
-  
-  
-  
-
-  
-
-  
-
-  
-    
-    
-    
-      
-    
-    
-      
-      
-    
-    
-      
-      
-    
-  
-
-  
-    
-  
-
-  
-    
-    
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-
-  
-  <section id="demo" class="home-section wg-blank dark " style="padding: 20px 0 20px 0;" >
-   <div class="home-section-bg  bg-image parallax" style="background-image: url(&#39;https://scpa.netlify.app/media/stanford.jpeg&#39;);background-size: cover;background-position: center;filter: brightness(0.7);"></div>
-    <div class="container">
-
-    
-      <div class="row  justify-content-center">
-      
-        
-          <div class="section-heading col-12 mb-3 text-center">
-            <h1 class="mb-0">关于我们/About</h1>
-            <p class="mt-1">斯坦福中国博士后协会(SCPA)</p>
-          </div>
-        
-      
-    
-
-      
-
-
-
-  <div class="col-12">
-    <p>斯坦福中国博士后协会(SCPA)是斯坦福所有中国/华人博士后的组织.我们欢迎所有在斯坦福的中国/华人博士后加入到我们协会.我们的使命是促进中国/华人博士后的交流,学习,并为他们的学习,工作和生活提供力所能及的帮助.<br>
-<strong><a href="https://www.shenxt.info/files/scpa_wechat.jpeg" target="_blank" rel="noopener">关注我们!</a></strong>
-<br>The Stanford Chinese Postdoc Association is a vibrant community of the Chinese postdocs, across all disciplines, at Stanford University. Our mission is to create and hold a space of all Chinese postdocs, and help them in study, work and life as much as we can. We welcome all the Chinese postdocs join us!<br>
-<strong><a href="https://www.shenxt.info/files/scpa_wechat.jpeg" target="_blank" rel="noopener">Follow Us!</a></strong></p>
-<div class="alert alert-note">
-  <div>
-    <p><i class="fab fa-weixin"></i>
-Please follow us in <a href="https://www.shenxt.info/files/scpa_wechat.jpeg">Wechat offical account</a>,</p>
-<p><i class="fas fa-envelope"></i>
-or join our <a href="https://mailman.stanford.edu/mailman/listinfo/chinesepostdocs">Stanford email list</a>,</p>
-<p><i class="fas fa-users"></i>
-or join our <a href="https://scpa.netlify.app/files/shaoyuan-zhu.jpg">Wechat group</a>.</p>
-  </div>
-</div>
-
-  </div>
-
-
-
-    
-      </div>
-    
-
-    </div>
-  </section>
-
-  
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-
-  
-  <section id="member" class="home-section wg-people  "  >
-   <div class="home-section-bg " ></div>
-    <div class="container">
-
-    
-
-      
-
-
-
-
-
-
-
-
-
-<div class="row justify-content-center people-widget">
-  
-  <div class="col-md-12 section-heading">
-    <h1>成员/Member</h1>
-    <p>2025-2026</p>
-  </div>
-  
-
-  
-
-  
-  
-
-  
-  <div class="col-md-12">
-    <h2 class="mb-4">联合主席/Co-Chair</h2>
-  </div>
-  
-
-  
-  
-  
-  
-  
-    
-  
-  <div class="col-12 col-sm-auto people-person">
-    
-    
-      
-      
-    
-    
-      
-      <a href="/author/%E5%88%98%E7%92%90/lu-liu/"><img class="avatar avatar-circle" src="/author/%E5%88%98%E7%92%90/lu-liu/avatar_huc2c18a60ee5363d2d7e8235a31f9baeb_141997_270x270_fill_q75_lanczos_center.jpg" alt="Avatar"></a>
-    
-
-    <div class="portrait-title">
-      <h2><a href="/author/%E5%88%98%E7%92%90/lu-liu/">刘璐/Lu Liu</a></h2>
-      
-      <h3>Postdoc</h3>
-      <ul class="network-icon" aria-hidden="true">
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://www.linkedin.com/in/lu-liu-981a721a9/" target="_blank" rel="noopener">
-        <i class="fab fa-linkedin"></i>
-      </a>
-    </li>
-  
-</ul>
-
-      
-    </div>
-  </div>
-  
-  
-  
-  
-  
-    
-  
-  <div class="col-12 col-sm-auto people-person">
-    
-    
-      
-      
-    
-    
-      
-      <a href="/author/%E9%9F%A9%E8%8C%97%E7%BE%BD/mingyu-han/"><img class="avatar avatar-circle" src="/author/%E9%9F%A9%E8%8C%97%E7%BE%BD/mingyu-han/avatar_hub52e9b12626ec9ccd190efe45bdf3964_31793_270x270_fill_q75_lanczos_center.jpeg" alt="Avatar"></a>
-    
-
-    <div class="portrait-title">
-      <h2><a href="/author/%E9%9F%A9%E8%8C%97%E7%BE%BD/mingyu-han/">韩茗羽/Mingyu Han</a></h2>
-      
-      <h3>Postdoc</h3>
-      <ul class="network-icon" aria-hidden="true">
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://www.linkedin.com/in/mingyu-han-9869001b1/?originalSubdomain=fr" target="_blank" rel="noopener">
-        <i class="fab fa-linkedin"></i>
-      </a>
-    </li>
-  
-</ul>
-
-      
-    </div>
-  </div>
-  
-  
-  
-
-  
-  <div class="col-md-12">
-    <h2 class="mb-4">成员/Member</h2>
-  </div>
-  
-
-  
-  
-  
-  
-  
-    
-  
-  <div class="col-12 col-sm-auto people-person">
-    
-    
-      
-      
-    
-    
-      
-      <a href="/author/%E5%BA%84%E5%86%8D%E4%B9%90/zaile-zhuang/"><img class="avatar avatar-circle" src="/author/%E5%BA%84%E5%86%8D%E4%B9%90/zaile-zhuang/avatar_hu794e47c49a96014e7820820557aed185_273643_270x270_fill_q75_lanczos_center.jpg" alt="Avatar"></a>
-    
-
-    <div class="portrait-title">
-      <h2><a href="/author/%E5%BA%84%E5%86%8D%E4%B9%90/zaile-zhuang/">庄再乐/Zaile Zhuang</a></h2>
-      
-      <h3>Postdoc</h3>
-      <ul class="network-icon" aria-hidden="true">
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://www.linkedin.com/in/zaile-zhuang-393736168/" target="_blank" rel="noopener">
-        <i class="fab fa-linkedin"></i>
-      </a>
-    </li>
-  
-</ul>
-
-      
-    </div>
-  </div>
-  
-  
-  
-  
-  
-    
-  
-  <div class="col-12 col-sm-auto people-person">
-    
-    
-      
-      
-    
-    
-      
-      <a href="/author/%E5%BC%A0%E6%AD%A6%E5%85%B5/wubing-zhang/"><img class="avatar avatar-circle" src="/author/%E5%BC%A0%E6%AD%A6%E5%85%B5/wubing-zhang/avatar_hud2986d712188727fb6c69d8792630c68_9542_270x270_fill_q75_lanczos_center.jpg" alt="Avatar"></a>
-    
-
-    <div class="portrait-title">
-      <h2><a href="/author/%E5%BC%A0%E6%AD%A6%E5%85%B5/wubing-zhang/">张武兵/Wubing Zhang</a></h2>
-      
-      <h3>Postdoc</h3>
-      <ul class="network-icon" aria-hidden="true">
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://www.linkedin.com/in/wubing-zhang-2168a0208/?originalSubdomain=cn" target="_blank" rel="noopener">
-        <i class="fab fa-linkedin"></i>
-      </a>
-    </li>
-  
-</ul>
-
-      
-    </div>
-  </div>
-  
-  
-  
-  
-  
-    
-  
-  <div class="col-12 col-sm-auto people-person">
-    
-    
-      
-      
-    
-    
-      
-      <a href="/author/%E6%9C%B1%E5%B0%91%E5%8E%9F/shaoyuan-zhu/"><img class="avatar avatar-circle" src="/author/%E6%9C%B1%E5%B0%91%E5%8E%9F/shaoyuan-zhu/avatar_hu0b0ce1f50f4f3f79415bcd050c84d5c5_39731_270x270_fill_q75_lanczos_center.jpg" alt="Avatar"></a>
-    
-
-    <div class="portrait-title">
-      <h2><a href="/author/%E6%9C%B1%E5%B0%91%E5%8E%9F/shaoyuan-zhu/">朱少原/Shaoyuan Zhu</a></h2>
-      
-      <h3>博士后/Postdoc</h3>
-      <ul class="network-icon" aria-hidden="true">
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://www.linkedin.com/in/shaoyuan-zhu-0352149a/" target="_blank" rel="noopener">
-        <i class="fab fa-linkedin"></i>
-      </a>
-    </li>
-  
-</ul>
-
-      
-    </div>
-  </div>
-  
-  
-  
-  
-  
-    
-  
-  <div class="col-12 col-sm-auto people-person">
-    
-    
-      
-      
-    
-    
-      
-      <a href="/author/%E6%BD%98%E6%9D%B0/jie-pan/"><img class="avatar avatar-circle" src="/author/%E6%BD%98%E6%9D%B0/jie-pan/avatar_hu68138de360985f0dcf15ea4f3410ece3_121210_270x270_fill_q75_lanczos_center.jpg" alt="Avatar"></a>
-    
-
-    <div class="portrait-title">
-      <h2><a href="/author/%E6%BD%98%E6%9D%B0/jie-pan/">潘杰/Jie Pan</a></h2>
-      
-      <h3>博士后/Postdoc</h3>
-      <ul class="network-icon" aria-hidden="true">
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://www.linkedin.com/in/jie-pan-a7ba60234/" target="_blank" rel="noopener">
-        <i class="fab fa-linkedin"></i>
-      </a>
-    </li>
-  
-</ul>
-
-      
-    </div>
-  </div>
-  
-  
-  
-  
-  
-    
-  
-  <div class="col-12 col-sm-auto people-person">
-    
-    
-      
-      
-    
-    
-      
-      <a href="/author/%E8%B5%B5%E6%9B%BC/man-zhao/"><img class="avatar avatar-circle" src="/author/%E8%B5%B5%E6%9B%BC/man-zhao/avatar_hu89f8b6c0880d2a327ba5006b285e86d2_178938_270x270_fill_q75_lanczos_center.jpg" alt="Avatar"></a>
-    
-
-    <div class="portrait-title">
-      <h2><a href="/author/%E8%B5%B5%E6%9B%BC/man-zhao/">赵曼/Man Zhao</a></h2>
-      
-      <h3>博士后/Postdoc</h3>
-      <ul class="network-icon" aria-hidden="true">
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://www.linkedin.com/in/man-zhao-514a20288/" target="_blank" rel="noopener">
-        <i class="fab fa-linkedin"></i>
-      </a>
-    </li>
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://profiles.stanford.edu/man-zhao" target="_blank" rel="noopener">
-        <i class="fas fa-home"></i>
-      </a>
-    </li>
-  
-</ul>
-
-      
-    </div>
-  </div>
-  
-  
-  
-  
-  
-    
-  
-  <div class="col-12 col-sm-auto people-person">
-    
-    
-      
-      
-    
-    
-      
-      <a href="/author/%E9%A2%9C%E6%98%8A/hao-yan/"><img class="avatar avatar-circle" src="/author/%E9%A2%9C%E6%98%8A/hao-yan/avatar_hu5ac2a4844ffc3e78c18a0a14f67907bd_277436_270x270_fill_q75_lanczos_center.jpg" alt="Avatar"></a>
-    
-
-    <div class="portrait-title">
-      <h2><a href="/author/%E9%A2%9C%E6%98%8A/hao-yan/">颜昊/Hao Yan</a></h2>
-      
-      <h3>Postdoc</h3>
-      <ul class="network-icon" aria-hidden="true">
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://www.linkedin.com/in/haoyan12345/" target="_blank" rel="noopener">
-        <i class="fab fa-linkedin"></i>
-      </a>
-    </li>
-  
-</ul>
-
-      
-    </div>
-  </div>
-  
-  
-</div>
-
-
-    
-
-    </div>
-  </section>
-
-  
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-
-  
-  <section id="news" class="home-section wg-pages  "  >
-   <div class="home-section-bg " ></div>
-    <div class="container">
-
-    
-      <div class="row  ">
-      
-        
-          <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
-            <h1 class="mb-0">新闻&amp;活动/News&amp;Events</h1>
-            
-          </div>
-        
-      
-    
-
-      
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-<div class="col-12 col-lg-8">
-
-  
-
-  
-    
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/post/2023-07-28-scpa-happy-hour/" >斯坦福大学中国博士后协会2023年7月happy hour</a>
-    </div>
-
-    
-    <a href="/post/2023-07-28-scpa-happy-hour/"  class="summary-link">
-      <div class="article-style">
-        斯坦福大学中国博士后协会2023年7月happy hour
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
-
-
-<div class="article-metadata">
-
-  
-  
-  
-  
-  <div>
-    
-
-  <span class="author-highlighted">
-      <a href="/author/%E7%8E%8B%E6%A5%9A%E6%A5%9A/chuchu-wang/">王楚楚/Chuchu Wang</a></span>, <span class="author-highlighted">
-      <a href="/author/%E7%94%B3%E5%B0%8F%E6%B6%9B/xiaotao-shen/">申小涛/Xiaotao Shen</a></span>
-  </div>
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-          Last updated on
-      
-    
-    Aug 23, 2023
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    1 min read
-  </span>
-  
-
-  
-  
-  
-  
-  
-  
-    <span class="middot-divider"></span>
-    <a href="/post/2023-07-28-scpa-happy-hour/#disqus_thread"></a>
-  
-
-  
-  
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i><a href="/category/meeting/">meeting</a></span>
-  
-
-</div>
-
-      
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-    
-  
-    
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/post/2023-7-7-scpa-election/" >斯坦福中国博士后协会举行换届选举，朱少原和赵曼当选</a>
-    </div>
-
-    
-    <a href="/post/2023-7-7-scpa-election/"  class="summary-link">
-      <div class="article-style">
-        斯坦福中国博士后协会举行换届选举，朱少原和赵曼当选
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
-
-
-<div class="article-metadata">
-
-  
-  
-  
-  
-  <div>
-    
-
-  <span class="author-highlighted">
-      <a href="/author/%E7%94%B3%E5%B0%8F%E6%B6%9B/xiaotao-shen/">申小涛/Xiaotao Shen</a></span>
-  </div>
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-          Last updated on
-      
-    
-    Aug 23, 2023
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    1 min read
-  </span>
-  
-
-  
-  
-  
-  
-  
-  
-    <span class="middot-divider"></span>
-    <a href="/post/2023-7-7-scpa-election/#disqus_thread"></a>
-  
-
-  
-  
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i><a href="/category/meeting/">meeting</a></span>
-  
-
-</div>
-
-      
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-    
-  
-    
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/post/event/" >Stanford Chinese Postdoc Journal Club and Oral Presentation Improvement</a>
-    </div>
-
-    
-    <a href="/post/event/"  class="summary-link">
-      <div class="article-style">
-        1 Introduction  1.1 Purpose of the Course 1.2 Leadership  1.2.1 Course Organizer 1.2.2 Finance Manager   2 Course History 3 Acknowledgement   1 Introduction 1.
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
-
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-          Last updated on
-      
-    
-    Nov 14, 2024
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    3 min read
-  </span>
-  
-
-  
-  
-  
-  
-  
-  
-    <span class="middot-divider"></span>
-    <a href="/post/event/#disqus_thread"></a>
-  
-
-  
-  
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i><a href="/category/event/">Event</a>, <a href="/category/english/">English</a></span>
-  
-
-</div>
-
-      
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-    
-  
-    
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/post/2021_9_scpa_happy_hour/" >2021年9月份SCPA happy hour</a>
-    </div>
-
-    
-    <a href="/post/2021_9_scpa_happy_hour/"  class="summary-link">
-      <div class="article-style">
-        2021年9月份SCPA happy hour
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
-
-
-<div class="article-metadata">
-
-  
-  
-  
-  
-  <div>
-    
-
-  <span class="author-highlighted">
-      <a href="/author/%E7%94%B3%E5%B0%8F%E6%B6%9B/xiaotao-shen/">申小涛/Xiaotao Shen</a></span>
-  </div>
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-          Last updated on
-      
-    
-    Nov 14, 2024
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    1 min read
-  </span>
-  
-
-  
-  
-  
-  
-  
-  
-    <span class="middot-divider"></span>
-    <a href="/post/2021_9_scpa_happy_hour/#disqus_thread"></a>
-  
-
-  
-  
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i><a href="/category/meeting/">meeting</a></span>
-  
-
-</div>
-
-      
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-    
-  
-    
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/post/2021_9_meeting/" >SCPA 2021年9月份会议</a>
-    </div>
-
-    
-    <a href="/post/2021_9_meeting/"  class="summary-link">
-      <div class="article-style">
-        2020-2021届SCPA第一次meeting
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
-
-
-<div class="article-metadata">
-
-  
-  
-  
-  
-  <div>
-    
-
-  <span class="author-highlighted">
-      <a href="/author/%E7%94%B3%E5%B0%8F%E6%B6%9B/xiaotao-shen/">申小涛/Xiaotao Shen</a></span>
-  </div>
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-          Last updated on
-      
-    
-    Nov 14, 2024
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    1 min read
-  </span>
-  
-
-  
-  
-  
-  
-  
-  
-    <span class="middot-divider"></span>
-    <a href="/post/2021_9_meeting/#disqus_thread"></a>
-  
-
-  
-  
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i><a href="/category/meeting/">meeting</a></span>
-  
-
-</div>
-
-      
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-    
-  
-
-  
-  
-  
-
-    
-    
-      
-    
-
-    
-
-    <div class="see-all">
-      <a href="/post/">
-        See all posts
-        <i class="fas fa-angle-right"></i>
-      </a>
-    </div>
-  
-
-</div>
-
-
-    
-      </div>
-    
-
-    </div>
-  </section>
-
-  
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-
-  
-  <section id="gallery" class="home-section wg-blank  "  >
-   <div class="home-section-bg " ></div>
-    <div class="container">
-
-    
-      <div class="row  ">
-      
-        
-          <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
-            <h1 class="mb-0">图集/Gallery</h1>
-            
-          </div>
-        
-      
-    
-
-      
-
-
-
-  <div class="col-12 col-lg-8">
-    
-
-
-
-
-
-
-
-
-
-
-<div class="gallery">
-
-  
-  
-  
-    
-    
-    
-    
-    
-    <a data-fancybox="gallery-gallery" href="/media/albums/gallery/IMG_6299.JPG" >
-      <img src="/media/albums/gallery/IMG_6299_hu4b9b699c64ed5b74e89ead5a7f6f4126_378561_0x190_resize_q75_lanczos.JPG" loading="lazy" alt="IMG_6299.JPG" width="143" height="190">
-    </a>
-  
-    
-    
-    
-    
-    
-    <a data-fancybox="gallery-gallery" href="/media/albums/gallery/IMG_6609.JPG" >
-      <img src="/media/albums/gallery/IMG_6609_hu628198fb127a779b241331c5789e30e0_8795185_0x190_resize_q75_lanczos.JPG" loading="lazy" alt="IMG_6609.JPG" width="253" height="190">
-    </a>
-  
-    
-    
-    
-    
-    
-    <a data-fancybox="gallery-gallery" href="/media/albums/gallery/IMG_6611.JPG" >
-      <img src="/media/albums/gallery/IMG_6611_hub58d048e091382a82afa4c23341a9abb_509278_0x190_resize_q75_lanczos.JPG" loading="lazy" alt="IMG_6611.JPG" width="253" height="190">
-    </a>
-  
-    
-    
-    
-    
-    
-    <a data-fancybox="gallery-gallery" href="/media/albums/gallery/IMG_6612.JPG" >
-      <img src="/media/albums/gallery/IMG_6612_hufd3b2b9aed016354cf887c1caa8fa990_480098_0x190_resize_q75_lanczos.JPG" loading="lazy" alt="IMG_6612.JPG" width="253" height="190">
-    </a>
-  
-    
-    
-    
-    
-    
-    <a data-fancybox="gallery-gallery" href="/media/albums/gallery/IMG_6613.JPG" >
-      <img src="/media/albums/gallery/IMG_6613_hu79a4e1dce0b935879656b8aec616b2d9_482250_0x190_resize_q75_lanczos.JPG" loading="lazy" alt="IMG_6613.JPG" width="253" height="190">
-    </a>
-  
-    
-    
-    
-    
-    
-    <a data-fancybox="gallery-gallery" href="/media/albums/gallery/WechatIMG288.jpeg" >
-      <img src="/media/albums/gallery/WechatIMG288_hu86deb638591eabb8b9b3199fa5ed6172_5880713_0x190_resize_q75_lanczos.jpeg" loading="lazy" alt="WechatIMG288.jpeg" width="253" height="190">
-    </a>
-  
-    
-    
-    
-    
-    
-    <a data-fancybox="gallery-gallery" href="/media/albums/gallery/WechatIMG448.jpeg" >
-      <img src="/media/albums/gallery/WechatIMG448_hu801d2b7ca82862a52c5fdb5ee4335921_183880_0x190_resize_q75_lanczos.jpeg" loading="lazy" alt="WechatIMG448.jpeg" width="253" height="190">
-    </a>
-  
-    
-    
-    
-    
-    
-    <a data-fancybox="gallery-gallery" href="/media/albums/gallery/WechatIMG450.jpeg" >
-      <img src="/media/albums/gallery/WechatIMG450_hubc0f1ceb8ae47193d967df8d98ec96a5_7114735_0x190_resize_q75_lanczos.jpeg" loading="lazy" alt="WechatIMG450.jpeg" width="253" height="190">
-    </a>
-  
-    
-    
-    
-    
-    
-    <a data-fancybox="gallery-gallery" href="/media/albums/gallery/WechatIMG451.jpeg" >
-      <img src="/media/albums/gallery/WechatIMG451_hu046076b6c502b6315747ed959c39afca_4467550_0x190_resize_q75_lanczos.jpeg" loading="lazy" alt="WechatIMG451.jpeg" width="285" height="190">
-    </a>
-  
-    
-    
-    
-    
-    
-    <a data-fancybox="gallery-gallery" href="/media/albums/gallery/WechatIMG452.jpeg" >
-      <img src="/media/albums/gallery/WechatIMG452_hu1219db07fb5628bd8d6af148b2c6494b_11584631_0x190_resize_q75_lanczos.jpeg" loading="lazy" alt="WechatIMG452.jpeg" width="253" height="190">
-    </a>
-  
-    
-    
-    
-    
-    
-    <a data-fancybox="gallery-gallery" href="/media/albums/gallery/WechatIMG453.jpeg" >
-      <img src="/media/albums/gallery/WechatIMG453_hu692fefd53b1642c1c6c99b3877f58b15_511127_0x190_resize_q75_lanczos.jpeg" loading="lazy" alt="WechatIMG453.jpeg" width="253" height="190">
-    </a>
-  
-    
-    
-    
-    
-    
-    <a data-fancybox="gallery-gallery" href="/media/albums/gallery/WechatIMG454.jpeg" >
-      <img src="/media/albums/gallery/WechatIMG454_hu046076b6c502b6315747ed959c39afca_4981337_0x190_resize_q75_lanczos.jpeg" loading="lazy" alt="WechatIMG454.jpeg" width="285" height="190">
-    </a>
-  
-    
-    
-    
-    
-    
-    <a data-fancybox="gallery-gallery" href="/media/albums/gallery/WechatIMG455.jpeg" >
-      <img src="/media/albums/gallery/WechatIMG455_hu046076b6c502b6315747ed959c39afca_4054340_0x190_resize_q75_lanczos.jpeg" loading="lazy" alt="WechatIMG455.jpeg" width="289" height="190">
-    </a>
-  
-
-</div>
-
-  </div>
-
-
-
-    
-      </div>
-    
-
-    </div>
-  </section>
-
-  
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-
-  
-  <section id="alumni" class="home-section wg-people  "  >
-   <div class="home-section-bg " ></div>
-    <div class="container">
-
-    
-
-      
-
-
-
-
-
-
-
-
-
-<div class="row justify-content-center people-widget">
-  
-  <div class="col-md-12 section-heading">
-    <h1>往届主席/Alumni</h1>
-    
-  </div>
-  
-
-  
-
-  
-  
-
-  
-  <div class="col-md-12">
-    <h2 class="mb-4">2024-2025</h2>
-  </div>
-  
-
-  
-  
-  
-  
-  
-    
-  
-  <div class="col-12 col-sm-auto people-person">
-    
-    
-      
-      
-    
-    
-      
-      <a href="/author/%E5%BE%90%E6%B5%B7%E9%9D%92/haiqing-xu/"><img class="avatar avatar-circle" src="/author/%E5%BE%90%E6%B5%B7%E9%9D%92/haiqing-xu/avatar_hu8aaea7d085391f7c37858cae6d122536_171223_270x270_fill_q75_lanczos_center.jpg" alt="Avatar"></a>
-    
-
-    <div class="portrait-title">
-      <h2><a href="/author/%E5%BE%90%E6%B5%B7%E9%9D%92/haiqing-xu/">徐海青/Haiqing Xu</a></h2>
-      
-      <h3>Postdoc</h3>
-      <ul class="network-icon" aria-hidden="true">
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://www.linkedin.com/in/xu-haiqing-7713ba13a/" target="_blank" rel="noopener">
-        <i class="fab fa-linkedin"></i>
-      </a>
-    </li>
-  
-</ul>
-
-      
-    </div>
-  </div>
-  
-  
-  
-  
-  
-    
-  
-  <div class="col-12 col-sm-auto people-person">
-    
-    
-      
-      
-    
-    
-      
-      <a href="/author/%E9%99%88%E9%AB%98%E8%B4%A4/gaoxian-chen/"><img class="avatar avatar-circle" src="/author/%E9%99%88%E9%AB%98%E8%B4%A4/gaoxian-chen/avatar_hu899f442701d4f82e4789de6b5da3df3c_467425_270x270_fill_q75_lanczos_center.jpg" alt="Avatar"></a>
-    
-
-    <div class="portrait-title">
-      <h2><a href="/author/%E9%99%88%E9%AB%98%E8%B4%A4/gaoxian-chen/">陈高贤/Gaoxian Chen</a></h2>
-      
-      <h3>Postdoc</h3>
-      <ul class="network-icon" aria-hidden="true">
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://www.linkedin.com/in/gaoxian-chen-370124265/" target="_blank" rel="noopener">
-        <i class="fab fa-linkedin"></i>
-      </a>
-    </li>
-  
-</ul>
-
-      
-    </div>
-  </div>
-  
-  
-  
-
-  
-  <div class="col-md-12">
-    <h2 class="mb-4">2023-2024</h2>
-  </div>
-  
-
-  
-  
-  
-  
-  
-    
-  
-  <div class="col-12 col-sm-auto people-person">
-    
-    
-      
-      
-    
-    
-      
-      <a href="/author/%E6%9C%B1%E5%B0%91%E5%8E%9F/shaoyuan-zhu/"><img class="avatar avatar-circle" src="/author/%E6%9C%B1%E5%B0%91%E5%8E%9F/shaoyuan-zhu/avatar_hu0b0ce1f50f4f3f79415bcd050c84d5c5_39731_270x270_fill_q75_lanczos_center.jpg" alt="Avatar"></a>
-    
-
-    <div class="portrait-title">
-      <h2><a href="/author/%E6%9C%B1%E5%B0%91%E5%8E%9F/shaoyuan-zhu/">朱少原/Shaoyuan Zhu</a></h2>
-      
-      <h3>博士后/Postdoc</h3>
-      <ul class="network-icon" aria-hidden="true">
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://www.linkedin.com/in/shaoyuan-zhu-0352149a/" target="_blank" rel="noopener">
-        <i class="fab fa-linkedin"></i>
-      </a>
-    </li>
-  
-</ul>
-
-      
-    </div>
-  </div>
-  
-  
-  
-  
-  
-    
-  
-  <div class="col-12 col-sm-auto people-person">
-    
-    
-      
-      
-    
-    
-      
-      <a href="/author/%E8%B5%B5%E6%9B%BC/man-zhao/"><img class="avatar avatar-circle" src="/author/%E8%B5%B5%E6%9B%BC/man-zhao/avatar_hu89f8b6c0880d2a327ba5006b285e86d2_178938_270x270_fill_q75_lanczos_center.jpg" alt="Avatar"></a>
-    
-
-    <div class="portrait-title">
-      <h2><a href="/author/%E8%B5%B5%E6%9B%BC/man-zhao/">赵曼/Man Zhao</a></h2>
-      
-      <h3>博士后/Postdoc</h3>
-      <ul class="network-icon" aria-hidden="true">
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://www.linkedin.com/in/man-zhao-514a20288/" target="_blank" rel="noopener">
-        <i class="fab fa-linkedin"></i>
-      </a>
-    </li>
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://profiles.stanford.edu/man-zhao" target="_blank" rel="noopener">
-        <i class="fas fa-home"></i>
-      </a>
-    </li>
-  
-</ul>
-
-      
-    </div>
-  </div>
-  
-  
-  
-
-  
-  <div class="col-md-12">
-    <h2 class="mb-4">2022-2023</h2>
-  </div>
-  
-
-  
-  
-  
-  
-  
-    
-  
-  <div class="col-12 col-sm-auto people-person">
-    
-    
-      
-      
-    
-    
-      
-      <a href="/author/%E6%BD%98%E6%9D%B0/jie-pan/"><img class="avatar avatar-circle" src="/author/%E6%BD%98%E6%9D%B0/jie-pan/avatar_hu68138de360985f0dcf15ea4f3410ece3_121210_270x270_fill_q75_lanczos_center.jpg" alt="Avatar"></a>
-    
-
-    <div class="portrait-title">
-      <h2><a href="/author/%E6%BD%98%E6%9D%B0/jie-pan/">潘杰/Jie Pan</a></h2>
-      
-      <h3>博士后/Postdoc</h3>
-      <ul class="network-icon" aria-hidden="true">
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://www.linkedin.com/in/jie-pan-a7ba60234/" target="_blank" rel="noopener">
-        <i class="fab fa-linkedin"></i>
-      </a>
-    </li>
-  
-</ul>
-
-      
-    </div>
-  </div>
-  
-  
-  
-  
-  
-    
-  
-  <div class="col-12 col-sm-auto people-person">
-    
-    
-      
-      
-    
-    
-      
-      <a href="/author/%E8%B0%AD%E6%98%8E%E5%85%B8/mingdian-tan/"><img class="avatar avatar-circle" src="/author/%E8%B0%AD%E6%98%8E%E5%85%B8/mingdian-tan/avatar_hu51c36b862259cdbb58e8df0e0ef7ea12_10515_270x270_fill_q75_lanczos_center.jpg" alt="Avatar"></a>
-    
-
-    <div class="portrait-title">
-      <h2><a href="/author/%E8%B0%AD%E6%98%8E%E5%85%B8/mingdian-tan/">谭明典/Mingdian Tan</a></h2>
-      
-      <h3>博士后/Postdoc</h3>
-      <ul class="network-icon" aria-hidden="true">
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://www.linkedin.com/in/%E6%98%8E%E5%85%B8-%E8%B0%AD-623495a8/" target="_blank" rel="noopener">
-        <i class="fab fa-linkedin"></i>
-      </a>
-    </li>
-  
-</ul>
-
-      
-    </div>
-  </div>
-  
-  
-  
-
-  
-  <div class="col-md-12">
-    <h2 class="mb-4">2021-2022</h2>
-  </div>
-  
-
-  
-  
-  
-  
-  
-    
-  
-  <div class="col-12 col-sm-auto people-person">
-    
-    
-      
-      
-    
-    
-      
-      <a href="/author/%E6%BD%98%E8%BE%B0%E6%9D%B0/chenjie-pan/"><img class="avatar avatar-circle" src="/author/%E6%BD%98%E8%BE%B0%E6%9D%B0/chenjie-pan/avatar_huc1d096a455f44b420e42879766914fa1_234229_270x270_fill_q75_lanczos_center.jpg" alt="Avatar"></a>
-    
-
-    <div class="portrait-title">
-      <h2><a href="/author/%E6%BD%98%E8%BE%B0%E6%9D%B0/chenjie-pan/">潘辰杰/Chenjie Pan</a></h2>
-      
-      <h3>博士后/Postdoc</h3>
-      <ul class="network-icon" aria-hidden="true">
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://www.linkedin.com/in/chenjie-pan-a723226b/" target="_blank" rel="noopener">
-        <i class="fab fa-linkedin"></i>
-      </a>
-    </li>
-  
-</ul>
-
-      
-    </div>
-  </div>
-  
-  
-  
-  
-  
-    
-  
-  <div class="col-12 col-sm-auto people-person">
-    
-    
-      
-      
-    
-    
-      
-      <a href="/author/%E7%94%B3%E5%B0%8F%E6%B6%9B/xiaotao-shen/"><img class="avatar avatar-circle" src="/author/%E7%94%B3%E5%B0%8F%E6%B6%9B/xiaotao-shen/avatar_hud5609ee1de730d4a9f6029e2873a93fe_20711_270x270_fill_q75_lanczos_center.jpg" alt="Avatar"></a>
-    
-
-    <div class="portrait-title">
-      <h2><a href="/author/%E7%94%B3%E5%B0%8F%E6%B6%9B/xiaotao-shen/">申小涛/Xiaotao Shen</a></h2>
-      
-      <h3>助理教授/Assistant Professor</h3>
-      <ul class="network-icon" aria-hidden="true">
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="/#contact" >
-        <i class="fas fa-envelope"></i>
-      </a>
-    </li>
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://www.linkedin.com/in/shenxt/" target="_blank" rel="noopener">
-        <i class="fab fa-linkedin"></i>
-      </a>
-    </li>
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://github.com/jaspershen" target="_blank" rel="noopener">
-        <i class="fab fa-github"></i>
-      </a>
-    </li>
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://jaspershen.github.io/" target="_blank" rel="noopener">
-        <i class="fas fa-home"></i>
-      </a>
-    </li>
-  
-</ul>
-
-      
-    </div>
-  </div>
-  
-  
-  
-
-  
-  <div class="col-md-12">
-    <h2 class="mb-4">2020-2021</h2>
-  </div>
-  
-
-  
-  
-  
-  
-  
-    
-  
-  <div class="col-12 col-sm-auto people-person">
-    
-    
-      
-      
-    
-    
-      
-      <a href="/author/%E5%B7%A6%E6%94%BF/zheng-zuo/"><img class="avatar avatar-circle" src="/author/%E5%B7%A6%E6%94%BF/zheng-zuo/avatar_hufaf212228ebc287cee9df7c2fd21b6aa_36828_270x270_fill_q75_lanczos_center.jpeg" alt="Avatar"></a>
-    
-
-    <div class="portrait-title">
-      <h2><a href="/author/%E5%B7%A6%E6%94%BF/zheng-zuo/">左政/Zheng Zuo</a></h2>
-      
-      <h3>教授/Professor</h3>
-      <ul class="network-icon" aria-hidden="true">
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://www.linkedin.com/in/zheng-zuo-1b055a19/" target="_blank" rel="noopener">
-        <i class="fab fa-linkedin"></i>
-      </a>
-    </li>
-  
-</ul>
-
-      
-    </div>
-  </div>
-  
-  
-  
-  
-  
-    
-  
-  <div class="col-12 col-sm-auto people-person">
-    
-    
-      
-      
-    
-    
-      
-      <a href="/author/%E6%9D%A8%E5%B8%86/fan-yang/"><img class="avatar avatar-circle" src="/author/%E6%9D%A8%E5%B8%86/fan-yang/avatar_hu764558053278185f93cce288023a79a8_25791_270x270_fill_q75_lanczos_center.jpeg" alt="Avatar"></a>
-    
-
-    <div class="portrait-title">
-      <h2><a href="/author/%E6%9D%A8%E5%B8%86/fan-yang/">杨帆/Fan Yang</a></h2>
-      
-      <h3>助理教授/Assistant Professor</h3>
-      <ul class="network-icon" aria-hidden="true">
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://www.linkedin.com/in/shenxt/" target="_blank" rel="noopener">
-        <i class="fab fa-linkedin"></i>
-      </a>
-    </li>
-  
-</ul>
-
-      
-    </div>
-  </div>
-  
-  
-  
-
-  
-  <div class="col-md-12">
-    <h2 class="mb-4">2019-2020</h2>
-  </div>
-  
-
-  
-  
-  
-  
-  
-    
-  
-  <div class="col-12 col-sm-auto people-person">
-    
-    
-      
-      
-    
-    
-      
-      <a href="/author/%E5%BE%90%E4%B8%80%E8%AF%BA/yinuo-xu/"><img class="avatar avatar-circle" src="/author/%E5%BE%90%E4%B8%80%E8%AF%BA/yinuo-xu/avatar_hu8f649b33839b4c2defb50a5b8b81de4d_26690_270x270_fill_q75_lanczos_center.jpeg" alt="Avatar"></a>
-    
-
-    <div class="portrait-title">
-      <h2><a href="/author/%E5%BE%90%E4%B8%80%E8%AF%BA/yinuo-xu/">徐一诺/Yinuo Xu</a></h2>
-      
-      <h3>博士生/PhD candidate</h3>
-      <ul class="network-icon" aria-hidden="true">
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://www.linkedin.com/in/shenxt/" target="_blank" rel="noopener">
-        <i class="fab fa-linkedin"></i>
-      </a>
-    </li>
-  
-</ul>
-
-      
-    </div>
-  </div>
-  
-  
-  
-  
-  
-    
-  
-  <div class="col-12 col-sm-auto people-person">
-    
-    
-      
-      
-    
-    
-      
-      <a href="/author/%E8%B5%B5%E7%A5%A5/xiang-zhao/"><img class="avatar avatar-circle" src="/author/%E8%B5%B5%E7%A5%A5/xiang-zhao/avatar_hu42435551c6eb35c47200b28e2242747a_18099_270x270_fill_q75_lanczos_center.jpg" alt="Avatar"></a>
-    
-
-    <div class="portrait-title">
-      <h2><a href="/author/%E8%B5%B5%E7%A5%A5/xiang-zhao/">赵祥/Xiang Zhao</a></h2>
-      
-      <h3>助理教授/Assistant Professor</h3>
-      <ul class="network-icon" aria-hidden="true">
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://www.linkedin.com/in/shenxt/" target="_blank" rel="noopener">
-        <i class="fab fa-linkedin"></i>
-      </a>
-    </li>
-  
-</ul>
-
-      
-    </div>
-  </div>
-  
-  
-  
-
-  
-  <div class="col-md-12">
-    <h2 class="mb-4">2018-2019</h2>
-  </div>
-  
-
-  
-  
-  
-  
-  
-    
-  
-  <div class="col-12 col-sm-auto people-person">
-    
-    
-      
-      
-    
-    
-      
-      <a href="/author/%E5%B0%81%E5%BF%97%E5%B9%B3/zhiping-feng/"><img class="avatar avatar-circle" src="/author/%E5%B0%81%E5%BF%97%E5%B9%B3/zhiping-feng/avatar_huc2bfd50ea2309a270303a3b40a89ce1d_518732_270x270_fill_q75_lanczos_center.jpeg" alt="Avatar"></a>
-    
-
-    <div class="portrait-title">
-      <h2><a href="/author/%E5%B0%81%E5%BF%97%E5%B9%B3/zhiping-feng/">封志平/Zhiping Feng</a></h2>
-      
-      <h3>博士后/Postdoc</h3>
-      <ul class="network-icon" aria-hidden="true">
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://www.linkedin.com/in/zhiping-feng-7a008779/" target="_blank" rel="noopener">
-        <i class="fab fa-linkedin"></i>
-      </a>
-    </li>
-  
-</ul>
-
-      
-    </div>
-  </div>
-  
-  
-  
-  
-  
-    
-  
-  <div class="col-12 col-sm-auto people-person">
-    
-    
-      
-      
-    
-    
-      
-      <a href="/author/%E7%8E%8B%E8%8E%B9/ying-wang/"><img class="avatar avatar-circle" src="/author/%E7%8E%8B%E8%8E%B9/ying-wang/avatar_hueebae2cfc772bda7c77e403c1029e978_5613_270x270_fill_q75_lanczos_center.jpeg" alt="Avatar"></a>
-    
-
-    <div class="portrait-title">
-      <h2><a href="/author/%E7%8E%8B%E8%8E%B9/ying-wang/">王莹/Ying Wang</a></h2>
-      
-      <h3>助理教授/Assistant Professor</h3>
-      <ul class="network-icon" aria-hidden="true">
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://www.linkedin.com/in/shenxt/" target="_blank" rel="noopener">
-        <i class="fab fa-linkedin"></i>
-      </a>
-    </li>
-  
-</ul>
-
-      
-    </div>
-  </div>
-  
-  
-</div>
-
-
-    
-
-    </div>
-  </section>
-
-  
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-
-  
-  <section id="contact" class="home-section wg-contact  "  >
-   <div class="home-section-bg " ></div>
-    <div class="container">
-
-    
-      <div class="row  ">
-      
-        
-          <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
-            <h1 class="mb-0">联系我们/Contact</h1>
-            
-          </div>
-        
-      
-    
-
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="col-12 col-lg-8">
-  
-
-  
-
-    
-    
-      
-      
-    
-
-    <div class="mb-3">
-      <form name="contact" method="POST" action="https://formspree.io/f/test"  >
-        <div class="form-group form-inline">
-          <label class="sr-only" for="inputName">Name</label>
-          <input type="text" name="name" class="form-control w-100" id="inputName" placeholder="Name" required>
-        </div>
-        <div class="form-group form-inline">
-          <label class="sr-only" for="inputEmail">Email</label>
-          <input type="email" name="email" class="form-control w-100" id="inputEmail" placeholder="Email" required>
-        </div>
-        <div class="form-group">
-          <label class="sr-only" for="inputMessage">Message</label>
-          <textarea name="message" class="form-control" id="inputMessage" rows="5" placeholder="Message" required></textarea>
-        </div>
-        
-        <button type="submit" class="btn btn-outline-primary px-3 py-2">Send</button>
-      </form>
-    </div>
-  
-
-  <ul class="fa-ul">
-
-    
-    <li>
-      <i class="fa-li fas fa-envelope fa-2x" aria-hidden="true"></i>
-      <span id="person-email"><a href="mailto:zhus@stanford.edu">zhus@stanford.edu</a></span>
-    </li>
-    
-
-    
-
-    
-    
-
-    
-
-    
-
-    
-
-    
-    
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <i class="fa-li fab fa-weixin fa-2x" aria-hidden="true"></i>
-      <a href="https://www.shenxt.info/files/scpa_wechat.jpeg" target="_blank" rel="noopener">微信公众号</a>
-    </li>
-    
-
-  </ul>
-
-  
-
-</div>
-
-
-    
-      </div>
-    
-
-    </div>
-  </section>
-
-
-
-  </div>
-
-  <div class="page-footer">
-    
-    
-    <div class="container">
-      <footer class="site-footer">
-
-  
-
-
-
-  
-
-  
-
-  
-  <p class="powered-by">
-    © SCPA 2025
-  </p>
-  
-
-  
-  
-
-
-
-
-
-
-  <p class="powered-by">
-    
-    
-    
-      
-      
-      
-      
-      
-      
-      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
-    
-  </p>
-</footer>
-
-    </div>
-    
-  </div>
-
-  
-<div id="modal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Cite</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <pre><code class="tex hljs"></code></pre>
-      </div>
-      <div class="modal-footer">
-        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
-          <i class="fas fa-copy"></i> Copy
-        </a>
-        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
-          <i class="fas fa-download"></i> Download
-        </a>
-        <div id="modal-error"></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-      
-
-    
-    
-    
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
-
-      
-      
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
-      
-
-      
-      
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
-      
-
-      
-
-      
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
-        
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js" crossorigin="anonymous"></script>
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js" crossorigin="anonymous"></script>
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/latex.min.js" crossorigin="anonymous"></script>
-        
-      
-
-    
-
-    
-    
-    
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
-    
-
-    
-    
-
-    
-    
-    
-      
-      <script id="search-hit-fuse-template" type="text/x-template">
-        <div class="search-hit" id="summary-{{key}}">
-          <div class="search-hit-content">
-            <div class="search-hit-name">
-              <a href="{{relpermalink}}">{{title}}</a>
-              <div class="article-metadata search-hit-type">{{type}}</div>
-              <p class="search-hit-description">{{snippet}}</p>
+<body class="bg-paper text-stanford-black selection:bg-stanford-red selection:text-white antialiased">
+
+    <!-- Floating Island Navigation (Enhanced) -->
+    <!-- Glass Nav (MUJI Calm + Premium Glass) -->
+    <nav id="siteNav" class="fixed left-1/2 top-4 z-50 w-[min(1100px,92vw)] -translate-x-1/2 rounded-2xl px-4 py-3
+             backdrop-blur-2xl bg-white/10 ring-1 ring-white/25 shadow-[0_10px_30px_rgba(0,0,0,0.10)]
+             supports-[backdrop-filter]:bg-white/10">
+        <div class="relative flex items-center justify-between">
+            <!-- specular highlight layer -->
+            <div class="pointer-events-none absolute inset-0 rounded-2xl overflow-hidden">
+                <div class="absolute -top-24 left-1/3 h-48 w-48 rounded-full bg-white/25 blur-2xl"></div>
+                <div class="absolute top-0 right-0 h-20 w-64 bg-gradient-to-l from-white/20 to-transparent"></div>
             </div>
-          </div>
+
+            <a class="relative font-serif font-bold tracking-wide text-stanford-red" href="#">SCPA</a>
+
+            <div class="relative flex gap-5 text-sm font-medium text-cool-grey">
+                <a class="navlink" href="#upcoming">Upcoming</a>
+                <a class="navlink" href="#council-2025">Council</a>
+                <a class="navlink" href="#latest-events">Events</a>
+                <a class="navlink" href="#archive-timeline">Archive</a>
+                <a class="navlink" href="#contact">Contact</a>
+            </div>
         </div>
-      </script>
-      
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
-      
-    
+    </nav>
 
-    
-    
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu"
+        class="fixed inset-0 z-40 bg-ivory/98 backdrop-blur-xl transform translate-x-full flex flex-col justify-center items-center space-y-8 md:hidden transition-transform duration-500">
+        <a href="#council-2025" class="mobile-nav-link text-2xl font-serif text-stanford-black">COUNCIL</a>
+        <a href="#latest-events" class="mobile-nav-link text-2xl font-serif text-stanford-black">EVENTS</a>
+        <a href="#about" class="mobile-nav-link text-2xl font-serif text-stanford-black">ABOUT</a>
+        <a href="#archive-timeline" class="mobile-nav-link text-2xl font-serif text-stanford-black">ARCHIVE</a>
+        <a href="#gallery" class="mobile-nav-link text-2xl font-serif text-stanford-black">GALLERY</a>
+        <button id="close-menu-btn" class="absolute top-8 right-8 p-2 text-stanford-red">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+    </div>
 
-    
-    
-    
-    
-      <script id="dsq-count-scr" src="https://blog-at8qrhng8b.disqus.com/count.js" async></script>
-    
+    <!-- Hero Section: Logo Showcase & About -->
+    <header
+        class="relative w-full min-h-screen flex flex-col justify-center items-center px-4 pt-24 pb-12 overflow-hidden">
+        <div
+            class="absolute inset-0 z-0 bg-gradient-radial from-stanford-red/5 via-transparent to-transparent opacity-80 pointer-events-none">
+        </div>
 
-    
-    <script src="/js/bootstrap.bundle.min.6aed84840afc03ab4d5750157f69c120.js"></script>
+        <!-- Stanford Campus Background (Fade In) -->
+        <div class="absolute inset-0 z-[-1] opacity-0 animate-fade-in-slow overflow-hidden">
+            <img src="assets/media/Stanford_Campus.jpg"
+                class="w-full h-full object-cover opacity-20 filter blur-[1px] scale-105">
+        </div>
 
-    
-    
-      
-      
-      
-      
-      
-      
-      
-    
+        <div class="z-10 text-center max-w-5xl mx-auto w-full flex flex-col items-center">
 
-    
-    
-    
-    
-    
-    
-    
-    
-      
-      
-    
-    
-    <script src="/en/js/wowchemy.min.8859d3cf6e5d748215fea2814e2e9c7f.js"></script>
+            <!-- Large Logo Banner -->
+            <div class="relative w-full max-w-3xl mx-auto mb-16 p-8 rounded-sm reveal-up logo-container">
+                <div class="absolute inset-0 bg-gradient-radial from-white/80 to-transparent blur-3xl -z-10 opacity-60">
+                </div>
+                <img src="assets/media/logo/SCPA_logo.png" alt="SCPA Logo"
+                    class="w-full drop-shadow-sm filter contrast-105">
+            </div>
 
-    
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
+            <!-- Follow Us Trigger & Particle Canvas (Restored) -->
+            <div class="relative group inline-block mb-12">
+                <div id="follow-us-trigger"
+                    class="relative z-30 transition-transform duration-300 group-hover:-translate-y-1 cursor-pointer">
+                    <p
+                        class="text-sm font-bold tracking-[0.3em] text-stanford-red uppercase group-hover:drop-shadow-sm transition-all">
+                        Follow Us!</p>
+                </div>
+                <!-- Canvas positioned centered on the text -->
+                <canvas id="explosion-canvas"
+                    class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none z-20"
+                    width="800" height="800"></canvas>
+
+                <!-- Hidden QR Panel (Revealed by JS - WIDER & UNIFORM) -->
+                <div id="qr-code-panel"
+                    class="absolute left-1/2 top-full mt-6 -translate-x-1/2 w-[95vw] max-w-5xl glass-liquid p-8 rounded-3xl opacity-0 pointer-events-none transform translate-y-4 transition-all duration-500 z-50">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                        <!-- XiaoHongShu -->
+                        <div class="text-center group/item hover:-translate-y-1 transition-transform relative z-10">
+                            <div
+                                class="bg-white p-3 rounded-2xl mb-3 shadow-sm aspect-square flex items-center justify-center overflow-hidden">
+                                <img src="assets/media/qrcodes/xiaohongshu_qr.PNG"
+                                    class="w-full h-full object-contain mix-blend-multiply">
+                            </div>
+                            <p class="text-[10px] uppercase tracking-widest font-bold text-stanford-red">Red</p>
+                        </div>
+                        <!-- Instagram -->
+                        <div class="text-center group/item hover:-translate-y-1 transition-transform relative z-10">
+                            <div
+                                class="bg-white p-3 rounded-2xl mb-3 shadow-sm aspect-square flex items-center justify-center overflow-hidden">
+                                <img src="assets/media/qrcodes/ins_qr.PNG"
+                                    class="w-full h-full object-contain mix-blend-multiply">
+                            </div>
+                            <p class="text-[10px] uppercase tracking-widest font-bold text-stanford-red">Ins</p>
+                        </div>
+                        <!-- Lu Liu -->
+                        <div class="text-center group/item hover:-translate-y-1 transition-transform relative z-10">
+                            <div
+                                class="bg-white p-3 rounded-2xl mb-3 shadow-sm aspect-square flex items-center justify-center overflow-hidden">
+                                <img src="assets/media/qrcodes/lu_wechat_group_leader.JPG"
+                                    class="w-full h-full object-contain mix-blend-multiply">
+                            </div>
+                            <p class="text-[10px] uppercase tracking-widest font-bold text-stanford-red">Lu</p>
+                        </div>
+                        <!-- Mingyu Han -->
+                        <div class="text-center group/item hover:-translate-y-1 transition-transform relative z-10">
+                            <div
+                                class="bg-white p-3 rounded-2xl mb-3 shadow-sm aspect-square flex items-center justify-center overflow-hidden">
+                                <img src="assets/media/qrcodes/Ming_wechat_group_leader.JPG"
+                                    class="w-full h-full object-contain mix-blend-multiply">
+                            </div>
+                            <p class="text-[10px] uppercase tracking-widest font-bold text-stanford-red">Mingyu</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Section (Professional Version) -->
+            <div id="about" class="max-w-4xl mx-auto text-center mb-16 reveal-up delay-100 space-y-12 px-6">
+                <!-- Chinese & English Professional Title -->
+                <div class="space-y-6">
+                    <h2 class="text-3xl md:text-4xl font-serif text-stanford-black font-semibold tracking-wide">
+                        关于我们 / About<br>
+                        <span class="text-xl md:text-2xl font-light text-stanford-red">斯坦福中国博士后协会 (SCPA)</span>
+                    </h2>
+
+                    <!-- Chinese Paragraph -->
+                    <p class="text-gray-700 leading-loose text-sm md:text-base font-medium max-w-3xl mx-auto">
+                        斯坦福中国博士后协会(SCPA)是斯坦福所有中国/华人博士后的组织.我们欢迎所有在斯坦福 prestige
+                        中国/华人博士后加入到我们协会.我们的使命是促进中国/华人博士后的交流,学习,并为他们的学习,工作和生活提供力所能及的帮助.
+                    </p>
+
+                    <!-- English Paragraph -->
+                    <p class="text-gray-500 leading-relaxed text-sm md:text-base font-light max-w-3xl mx-auto">
+                        The Stanford Chinese Postdoc Association is a vibrant community of the Chinese postdocs, across
+                        all disciplines, at Stanford University. Our mission is to create and hold a space of all
+                        Chinese postdocs, and help them in study, work and life as much as we can. We welcome all the
+                        Chinese postdocs join us!
+                    </p>
+                </div>
+            </div>
+
+            <!-- Upcoming Event Card (Integrated) -->
+            <div id="upcoming" class="glass-liquid w-full max-w-2xl mx-auto rounded-xl p-6 reveal-up delay-200">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-6 px-4 md:px-8">
+                    <div class="text-left flex-1 border-l-2 border-stanford-red pl-4">
+                        <span
+                            class="block text-[10px] tracking-widest font-bold text-stanford-red mb-1 uppercase">UPCOMING</span>
+                        <h2 class="text-xl font-serif text-stanford-black">2026 SCPA 春节庆祝活动</h2>
+                        <div class="text-xs text-gray-500 font-mono mt-2">
+                            <span>时间待定 / Time TBD</span> • <span>Stanford Campus</span>
+                        </div>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <a href="#"
+                            class="inline-block px-8 py-3 bg-stanford-black text-ivory hover:bg-stanford-red hover:shadow-lg transition-all duration-300 text-xs tracking-widest uppercase rounded-sm">
+                            View Details
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 opacity-40 animate-bounce text-stanford-red hover:opacity-100 transition-opacity cursor-pointer"
+                onclick="document.getElementById('latest-events').scrollIntoView({behavior: 'smooth'})">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                        d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section: Latest Events & Posts (Minimalist Text-based) -->
+    <section id="latest-events" class="py-24 px-6 md:px-12 bg-white relative z-10 overflow-hidden">
+        <div class="max-w-5xl mx-auto">
+            <div class="mb-16 reveal-up">
+                <h2 class="text-4xl font-serif text-stanford-black">Latest Events & Posts</h2>
+                <div class="flex items-center gap-4 mt-4">
+                    <div class="w-12 h-[1px] bg-stanford-red"></div>
+                    <p class="text-xs tracking-widest text-cool-grey uppercase font-bold">Stay connected with our
+                        community</p>
+                </div>
+            </div>
+
+            <div class="space-y-4 reveal-up">
+                <!-- Event 1 -->
+                <a href="#" class="group block p-6 rounded-xl glass-liquid transition-all duration-300">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                        <div class="flex-1">
+                            <span
+                                class="inline-block px-2 py-0.5 bg-stanford-red/10 text-stanford-red text-[9px] font-bold tracking-widest uppercase mb-2 rounded">SOCIAL</span>
+                            <h3
+                                class="text-lg font-serif text-stanford-black group-hover:text-stanford-red transition-colors">
+                                Stanford Sparks - 斯坦福之心动火花</h3>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-xs text-gray-400 font-mono uppercase">2025.10.23</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Event 2 -->
+                <a href="#" class="group block p-6 rounded-xl glass-liquid transition-all duration-300">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                        <div class="flex-1">
+                            <span
+                                class="inline-block px-2 py-0.5 bg-stanford-red/10 text-stanford-red text-[9px] font-bold tracking-widest uppercase mb-2 rounded">ACADEMIC</span>
+                            <h3
+                                class="text-lg font-serif text-stanford-black group-hover:text-stanford-red transition-colors">
+                                斯坦福 K99 获得者科研分享交流会</h3>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-xs text-gray-400 font-mono uppercase">2025.10.25</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Event 3 -->
+                <a href="#" class="group block p-6 rounded-xl glass-liquid transition-all duration-300">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                        <div class="flex-1">
+                            <span
+                                class="inline-block px-2 py-0.5 bg-stanford-red/10 text-stanford-red text-[9px] font-bold tracking-widest uppercase mb-2 rounded">CELEBRATION</span>
+                            <h3
+                                class="text-lg font-serif text-stanford-black group-hover:text-stanford-red transition-colors">
+                                SCPA 冬日暖心 Happy Hour</h3>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-xs text-gray-400 font-mono uppercase">2025.12.05</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Event 4 -->
+                <a href="#" class="group block p-6 rounded-xl glass-liquid transition-all duration-300">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                        <div class="flex-1">
+                            <span
+                                class="inline-block px-2 py-0.5 bg-stanford-red/10 text-stanford-red text-[9px] font-bold tracking-widest uppercase mb-2 rounded">ANNUAL</span>
+                            <h3
+                                class="text-lg font-serif text-stanford-black group-hover:text-stanford-red transition-colors">
+                                SCPA | 感谢有你，一起走过闪光的 2025</h3>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-xs text-gray-400 font-mono uppercase">2025.12.24</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="mt-12 text-center reveal-up">
+                <a href="#gallery"
+                    class="inline-flex items-center gap-2 text-xs font-bold tracking-widest text-stanford-red hover:gap-4 transition-all">
+                    EXPLORE FULL GALLERY <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: 2025-2026 Council (Standardized Names) -->
+    <section id="council-2025" class="py-24 px-6 md:px-12 bg-white relative z-10">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-20 text-center reveal-up">
+                <h2 class="text-5xl font-serif mb-6 text-stanford-black">Council 2025–26</h2>
+                <div class="w-16 h-[2px] bg-stanford-red mx-auto opacity-40"></div>
+            </div>
+
+            <!-- Co-Chairs -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-24 mb-32 max-w-5xl mx-auto">
+                <div class="group text-center reveal-up">
+                    <div
+                        class="relative w-60 h-60 mx-auto mb-8 rounded-full overflow-hidden shadow-xl ring-4 ring-stanford-red/5 group-hover:ring-stanford-red/20 transition-all duration-700 bg-gray-50">
+                        <img src="assets/media/members/Lu%20Liu.JPG"
+                            class="object-cover w-full h-full transform group-hover:scale-110 transition-transform duration-1000">
+                    </div>
+                    <h3 class="text-2xl font-serif font-medium mb-2 text-stanford-black">刘璐 / Lu Liu</h3>
+                    <p class="text-xs tracking-widest text-stanford-red uppercase font-bold">Co-Chair</p>
+                </div>
+                <div class="group text-center reveal-up delay-100">
+                    <div
+                        class="relative w-60 h-60 mx-auto mb-8 rounded-full overflow-hidden shadow-xl ring-4 ring-stanford-red/5 group-hover:ring-stanford-red/20 transition-all duration-700 bg-gray-50">
+                        <img src="assets/media/members/Mingyu%20Han.jpeg"
+                            class="object-cover w-full h-full transform group-hover:scale-110 transition-transform duration-1000">
+                    </div>
+                    <h3 class="text-2xl font-serif font-medium mb-2 text-stanford-black">韩茗羽 / Mingyu Han</h3>
+                    <p class="text-xs tracking-widest text-stanford-red uppercase font-bold">Co-Chair</p>
+                </div>
+            </div>
+
+            <!-- Members (5-Column Layout) -->
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-x-4 gap-y-12">
+                <!-- Row 1 -->
+                <div class="group text-center reveal-up">
+                    <div
+                        class="w-32 h-32 mx-auto mb-4 bg-gray-50 rounded-full overflow-hidden shadow-lg border-2 border-white group-hover:border-stanford-red/10 transition-all duration-500">
+                        <img src="assets/media/members/Yingkun%20Yang.JPG"
+                            class="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <h4 class="text-lg font-serif text-gray-900 mb-0.5">杨膺琨 / Yingkun Yang</h4>
+                    <p class="text-[10px] text-gray-400 uppercase tracking-widest">Council Member</p>
+                </div>
+
+                <div class="group text-center reveal-up">
+                    <div
+                        class="w-32 h-32 mx-auto mb-4 bg-gray-50 rounded-full overflow-hidden shadow-lg border-2 border-white group-hover:border-stanford-red/10 transition-all duration-500">
+                        <img src="assets/media/members/Man%20Zhao.JPG"
+                            class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <h4 class="text-lg font-serif text-gray-900 mb-0.5">赵曼 / Man Zhao</h4>
+                    <p class="text-[10px] text-gray-400 uppercase tracking-widest">Council Member</p>
+                </div>
+
+                <div class="group text-center reveal-up">
+                    <div
+                        class="w-32 h-32 mx-auto mb-4 bg-gray-50 rounded-full overflow-hidden shadow-lg border-2 border-white group-hover:border-stanford-red/10 transition-all duration-500">
+                        <img src="assets/media/members/Chenchen%20Ren.JPG"
+                            class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <h4 class="text-lg font-serif text-gray-900 mb-0.5">任琛琛 / Chenchen Ren</h4>
+                    <p class="text-[10px] text-gray-400 uppercase tracking-widest">Council Member</p>
+                </div>
+
+                <div class="group text-center reveal-up">
+                    <div
+                        class="w-32 h-32 mx-auto mb-4 bg-gray-50 rounded-full overflow-hidden shadow-lg border-2 border-white group-hover:border-stanford-red/10 transition-all duration-500">
+                        <img src="assets/media/members/Jiaming%20Wen.JPG"
+                            class="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <h4 class="text-lg font-serif text-gray-900 mb-0.5">温佳明 / Jiaming Wen</h4>
+                    <p class="text-[10px] text-gray-400 uppercase tracking-widest">Council Member</p>
+                </div>
+
+                <div class="group text-center reveal-up">
+                    <div
+                        class="w-32 h-32 mx-auto mb-4 bg-gray-50 rounded-full overflow-hidden shadow-lg border-2 border-white group-hover:border-stanford-red/10 transition-all duration-500">
+                        <img src="assets/media/members/Zongyi%20Wang.JPG"
+                            class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <h4 class="text-lg font-serif text-gray-900 mb-0.5">汪宗怡 / Zongyi Wang</h4>
+                    <p class="text-[10px] text-gray-400 uppercase tracking-widest">Council Member</p>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="group text-center reveal-up">
+                    <div
+                        class="w-32 h-32 mx-auto mb-4 bg-gray-50 rounded-full overflow-hidden shadow-lg border-2 border-white group-hover:border-stanford-red/10 transition-all duration-500">
+                        <img src="assets/media/members/Meng%20Zhang.jpeg"
+                            class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <h4 class="text-lg font-serif text-gray-900 mb-0.5">张猛 / Meng Zhang</h4>
+                    <p class="text-[10px] text-gray-400 uppercase tracking-widest">Council Member</p>
+                </div>
+
+                <div class="group text-center reveal-up">
+                    <div
+                        class="w-32 h-32 mx-auto mb-4 bg-gray-50 rounded-full overflow-hidden shadow-lg border-2 border-white group-hover:border-stanford-red/10 transition-all duration-500">
+                        <img src="assets/media/members/Yigao%20Yuan.JPG"
+                            class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <h4 class="text-lg font-serif text-gray-900 mb-0.5">袁义高 / Yigao Yuan</h4>
+                    <p class="text-[10px] text-gray-400 uppercase tracking-widest">Council Member</p>
+                </div>
+
+                <div class="group text-center reveal-up">
+                    <div
+                        class="w-32 h-32 mx-auto mb-4 bg-gray-50 rounded-full overflow-hidden shadow-lg border-2 border-white group-hover:border-stanford-red/10 transition-all duration-500">
+                        <img src="assets/media/members/Gaoxian%20Chen.jpg"
+                            class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <h4 class="text-lg font-serif text-gray-900 mb-0.5">陈高贤 / Gaoxian Chen</h4>
+                    <p class="text-[10px] text-gray-400 uppercase tracking-widest">Council Member</p>
+                </div>
+
+                <div class="group text-center reveal-up">
+                    <div
+                        class="w-32 h-32 mx-auto mb-4 bg-gray-50 rounded-full overflow-hidden shadow-lg border-2 border-white group-hover:border-stanford-red/10 transition-all duration-500">
+                        <img src="assets/media/members/Jing%20Lin.jpeg"
+                            class="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <h4 class="text-lg font-serif text-gray-900 mb-0.5">林靓 / Jing Lin</h4>
+                    <p class="text-[10px] text-gray-400 uppercase tracking-widest">Council Member</p>
+                </div>
+
+                <div class="group text-center reveal-up">
+                    <div
+                        class="w-32 h-32 mx-auto mb-4 bg-gray-50 rounded-full overflow-hidden shadow-lg border-2 border-white group-hover:border-stanford-red/10 transition-all duration-500">
+                        <img src="assets/media/members/Menren%20Wu.JPG"
+                            class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <h4 class="text-lg font-serif text-gray-900 mb-0.5">吴孟人 / Menren Wu</h4>
+                    <p class="text-[10px] text-gray-400 uppercase tracking-widest">Council Member</p>
+                </div>
+
+                <!-- Row 3 -->
+                <div class="group text-center reveal-up">
+                    <div
+                        class="w-32 h-32 mx-auto mb-4 bg-gray-50 rounded-full overflow-hidden shadow-lg border-2 border-white group-hover:border-stanford-red/10 transition-all duration-500">
+                        <img src="assets/media/members/archive/jie-pan.jpg"
+                            class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <h4 class="text-lg font-serif text-gray-900 mb-0.5">潘杰 / Jie Pan</h4>
+                    <p class="text-[10px] text-gray-400 uppercase tracking-widest">Council Member</p>
+                </div>
+
+                <div class="group text-center reveal-up">
+                    <div
+                        class="w-32 h-32 mx-auto mb-4 bg-gray-50 rounded-full overflow-hidden shadow-lg border-2 border-white group-hover:border-stanford-red/10 transition-all duration-500">
+                        <img src="assets/media/members/Yinyu%20Xiang.jpg"
+                            class="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <h4 class="text-lg font-serif text-gray-900 mb-0.5">相欣雨 / Yinyu Xiang</h4>
+                    <p class="text-[10px] text-gray-400 uppercase tracking-widest">Council Member</p>
+                </div>
+
+                <div class="group text-center reveal-up">
+                    <div
+                        class="w-32 h-32 mx-auto mb-4 bg-gray-50 rounded-full overflow-hidden shadow-lg border-2 border-white group-hover:border-stanford-red/10 transition-all duration-500">
+                        <img src="assets/media/members/Min%20Huang.JPG"
+                            class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <h4 class="text-lg font-serif text-gray-900 mb-0.5">黄敏 / Min Huang</h4>
+                    <p class="text-[10px] text-gray-400 uppercase tracking-widest">Council Member</p>
+                </div>
+
+                <div class="group text-center reveal-up">
+                    <div
+                        class="w-32 h-32 mx-auto mb-4 bg-gray-50 rounded-full overflow-hidden shadow-lg border-2 border-white group-hover:border-stanford-red/10 transition-all duration-500">
+                        <img src="assets/media/members/Sa%20Zhou.JPG"
+                            class="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <h4 class="text-lg font-serif text-gray-900 mb-0.5">周飒 / Sa Zhou</h4>
+                    <p class="text-[10px] text-gray-400 uppercase tracking-widest">Council Member</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Archive Timeline (Specific User Data - Standardized) -->
+    <section id="archive-timeline" class="py-24 px-4 md:px-12 bg-paper border-t border-dashed border-gray-200">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-20 text-center reveal-up">
+                <h2 class="text-3xl font-serif text-stanford-black">Archive Timeline</h2>
+                <div class="w-8 h-[1px] bg-stanford-red mx-auto mt-4 mb-2"></div>
+                <p class="text-[10px] tracking-widest text-cool-grey uppercase">HONORING OUR HISTORY</p>
+            </div>
+
+            <div class="relative border-l border-stanford-red/20 ml-4 md:ml-32 space-y-24">
+
+                <!-- 2024-2025 (Council Members from Backup) -->
+                <div class="pl-8 md:pl-16 relative">
+                    <div
+                        class="absolute -left-[45px] md:-left-[120px] top-0 sticky top-32 z-10 transition-all duration-300">
+                        <span
+                            class="text-3xl md:text-5xl font-serif text-fog opacity-50 font-bold group-hover:text-stanford-red group-hover:opacity-100">2024</span>
+                        <span class="block text-[10px] text-gray-300 text-right pr-1">-2025</span>
+                    </div>
+                    <div class="reveal-up pb-12 border-b border-gray-100">
+                        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+                            <!-- Co-Chairs -->
+                            <div class="text-center group">
+                                <div
+                                    class="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden bg-white shadow-sm ring-2 ring-transparent group-hover:ring-stanford-red/30 transition-all">
+                                    <img src="assets/media/members/archive/Gaoxian%20Chen.jpg"
+                                        class="object-cover w-full h-full">
+                                </div>
+                                <p class="text-[11px] font-bold text-gray-800">陈高贤 / Gaoxian Chen</p>
+                                <p class="text-[9px] text-stanford-red uppercase tracking-wider font-bold">Co-Chair</p>
+                            </div>
+                            <div class="text-center group">
+                                <div
+                                    class="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden bg-white shadow-sm ring-2 ring-transparent group-hover:ring-stanford-red/30 transition-all">
+                                    <img src="assets/media/members/archive/Haiqing%20Xu.JPG"
+                                        class="object-cover w-full h-full">
+                                </div>
+                                <p class="text-[11px] font-bold text-gray-800">徐海清 / Haiqing Xu</p>
+                                <p class="text-[9px] text-stanford-red uppercase tracking-wider font-bold">Co-Chair</p>
+                            </div>
+                            <!-- Members -->
+                            <div class="text-center group">
+                                <div
+                                    class="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden bg-white shadow-sm ring-2 ring-transparent group-hover:ring-stanford-red/30 transition-all">
+                                    <img src="assets/media/members/archive/Chenchen%20Ren.JPG"
+                                        class="object-cover w-full h-full">
+                                </div>
+                                <p class="text-[11px] font-bold text-gray-800">任晨晨 / Chenchen Ren</p>
+                                <p class="text-[9px] text-gray-500 uppercase tracking-wider">Member</p>
+                            </div>
+                            <div class="text-center group">
+                                <div
+                                    class="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden bg-white shadow-sm ring-2 ring-transparent group-hover:ring-stanford-red/30 transition-all">
+                                    <img src="assets/media/members/archive/jie-pan.jpg"
+                                        class="object-cover w-full h-full">
+                                </div>
+                                <p class="text-[11px] font-bold text-gray-800">潘杰 / Jie Pan</p>
+                                <p class="text-[9px] text-gray-500 uppercase tracking-wider">Member</p>
+                            </div>
+                            <div class="text-center group">
+                                <div
+                                    class="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden bg-white shadow-sm ring-2 ring-transparent group-hover:ring-stanford-red/30 transition-all">
+                                    <img src="assets/media/members/archive/Jin%20Liu.JPG"
+                                        class="object-cover w-full h-full">
+                                </div>
+                                <p class="text-[11px] font-bold text-gray-800">刘瑾 / Jin Liu</p>
+                                <p class="text-[9px] text-gray-500 uppercase tracking-wider">Member</p>
+                            </div>
+                            <div class="text-center group">
+                                <div
+                                    class="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden bg-white shadow-sm ring-2 ring-transparent group-hover:ring-stanford-red/30 transition-all">
+                                    <img src="assets/media/members/archive/Lu%20Liu.JPG"
+                                        class="object-cover w-full h-full">
+                                </div>
+                                <p class="text-[11px] font-bold text-gray-800">刘璐 / Lu Liu</p>
+                                <p class="text-[9px] text-gray-500 uppercase tracking-wider">Member</p>
+                            </div>
+                            <div class="text-center group">
+                                <div
+                                    class="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden bg-white shadow-sm ring-2 ring-transparent group-hover:ring-stanford-red/30 transition-all">
+                                    <img src="assets/media/members/archive/Man%20Zhao.JPG"
+                                        class="object-cover w-full h-full">
+                                </div>
+                                <p class="text-[11px] font-bold text-gray-800">赵曼 / Man Zhao</p>
+                                <p class="text-[9px] text-gray-500 uppercase tracking-wider">Member</p>
+                            </div>
+                            <div class="text-center group">
+                                <div
+                                    class="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden bg-white shadow-sm ring-2 ring-transparent group-hover:ring-stanford-red/30 transition-all">
+                                    <img src="assets/media/members/archive/Meng%20Zhang.jpeg"
+                                        class="object-cover w-full h-full">
+                                </div>
+                                <p class="text-[11px] font-bold text-gray-800">张猛 / Meng Zhang</p>
+                                <p class="text-[9px] text-gray-500 uppercase tracking-wider">Member</p>
+                            </div>
+                            <div class="text-center group">
+                                <div
+                                    class="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden bg-white shadow-sm ring-2 ring-transparent group-hover:ring-stanford-red/30 transition-all">
+                                    <img src="assets/media/members/archive/Menren%20Wu.JPG"
+                                        class="object-cover w-full h-full">
+                                </div>
+                                <p class="text-[11px] font-bold text-gray-800">吴孟人 / Menren Wu</p>
+                                <p class="text-[9px] text-gray-500 uppercase tracking-wider">Member</p>
+                            </div>
+                            <div class="text-center group">
+                                <div
+                                    class="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden bg-white shadow-sm ring-2 ring-transparent group-hover:ring-stanford-red/30 transition-all">
+                                    <img src="assets/media/members/archive/Min%20Huang.JPG"
+                                        class="object-cover w-full h-full">
+                                </div>
+                                <p class="text-[11px] font-bold text-gray-800">黄敏 / Min Huang</p>
+                                <p class="text-[9px] text-gray-500 uppercase tracking-wider">Member</p>
+                            </div>
+                            <div class="text-center group">
+                                <div
+                                    class="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden bg-white shadow-sm ring-2 ring-transparent group-hover:ring-stanford-red/30 transition-all">
+                                    <img src="assets/media/members/archive/Mingyu%20Han.jpeg"
+                                        class="object-cover w-full h-full">
+                                </div>
+                                <p class="text-[11px] font-bold text-gray-800">韩茗羽 / Mingyu Han</p>
+                                <p class="text-[9px] text-gray-500 uppercase tracking-wider">Member</p>
+                            </div>
+                            <div class="text-center group">
+                                <div
+                                    class="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden bg-white shadow-sm ring-2 ring-transparent group-hover:ring-stanford-red/30 transition-all">
+                                    <img src="assets/media/members/archive/Panpan%20Ma.jpeg"
+                                        class="object-cover w-full h-full">
+                                </div>
+                                <p class="text-[11px] font-bold text-gray-800">马盼盼 / Panpan Ma</p>
+                                <p class="text-[9px] text-gray-500 uppercase tracking-wider">Member</p>
+                            </div>
+                            <div class="text-center group">
+                                <div
+                                    class="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden bg-white shadow-sm ring-2 ring-transparent group-hover:ring-stanford-red/30 transition-all">
+                                    <img src="assets/media/members/archive/Shaoyuan%20Zhu.jpg"
+                                        class="object-cover w-full h-full">
+                                </div>
+                                <p class="text-[11px] font-bold text-gray-800">朱少原 / Shaoyuan Zhu</p>
+                                <p class="text-[9px] text-gray-500 uppercase tracking-wider">Member</p>
+                            </div>
+                            <div class="text-center group">
+                                <div
+                                    class="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden bg-white shadow-sm ring-2 ring-transparent group-hover:ring-stanford-red/30 transition-all">
+                                    <img src="assets/media/members/archive/Yigao%20Yuan.JPG"
+                                        class="object-cover w-full h-full">
+                                </div>
+                                <p class="text-[11px] font-bold text-gray-800">袁义高 / Yigao Yuan</p>
+                                <p class="text-[9px] text-gray-500 uppercase tracking-wider">Member</p>
+                            </div>
+                            <div class="text-center group">
+                                <div
+                                    class="w-28 h-28 mx-auto mb-3 rounded-full border border-gray-100 flex items-center justify-center overflow-hidden bg-gray-50 shadow-sm ring-2 ring-transparent group-hover:ring-stanford-red/30 transition-all">
+                                    <span class="text-2xl font-serif text-gray-300">冒</span>
+                                </div>
+                                <p class="text-[11px] font-bold text-gray-800">冒海燕 / Haiyan Mao</p>
+                                <p class="text-[9px] text-gray-500 uppercase tracking-wider">Member</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2023-2024 -->
+                <div class="pl-8 md:pl-16 relative">
+                    <div class="absolute -left-[45px] md:-left-[120px] top-0 sticky top-32 z-10">
+                        <span class="text-3xl md:text-5xl font-serif text-fog opacity-50 font-bold">2023</span>
+                        <span class="block text-[10px] text-gray-300 text-right pr-1">-2024</span>
+                    </div>
+                    <div class="reveal-up pb-12 border-b border-gray-100">
+                        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+                            <div class="text-center group">
+                                <div
+                                    class="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden bg-white shadow-sm ring-2 ring-transparent group-hover:ring-stanford-red/30 transition-all">
+                                    <img src="assets/media/members/archive/shaoyuan-zhu.jpg"
+                                        class="object-cover w-full h-full">
+                                </div>
+                                <p class="text-[11px] font-bold text-gray-800">朱少原 / Shaoyuan Zhu</p>
+                                <p class="text-[9px] text-stanford-red uppercase tracking-wider font-bold mt-1">Co-Chair
+                                </p>
+                            </div>
+                            <div class="text-center group">
+                                <div
+                                    class="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden bg-white shadow-sm ring-2 ring-transparent group-hover:ring-stanford-red/30 transition-all">
+                                    <img src="assets/media/members/archive/man-zhao.jpg"
+                                        class="object-cover w-full h-full">
+                                </div>
+                                <p class="text-[11px] font-bold text-gray-800">赵曼 / Man Zhao</p>
+                                <p class="text-[9px] text-stanford-red uppercase tracking-wider font-bold mt-1">Co-Chair
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2022-2023 -->
+                <div class="pl-8 md:pl-16 relative">
+                    <div class="absolute -left-[45px] md:-left-[120px] top-0 sticky top-32 z-10">
+                        <span class="text-3xl md:text-5xl font-serif text-fog opacity-50 font-bold">2022</span>
+                        <span class="block text-[10px] text-gray-300 text-right pr-1">-2023</span>
+                    </div>
+                    <div class="reveal-up pb-12 border-b border-gray-100">
+                        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+                            <div class="text-center group">
+                                <div
+                                    class="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden bg-white shadow-sm ring-2 ring-transparent group-hover:ring-stanford-red/30 transition-all">
+                                    <img src="assets/media/members/archive/jie-pan.jpg"
+                                        class="object-cover w-full h-full">
+                                </div>
+                                <p class="text-[11px] font-bold text-gray-800">潘杰 / Jie Pan</p>
+                                <p class="text-[9px] text-stanford-red uppercase tracking-wider font-bold mt-1">Co-Chair
+                                </p>
+                            </div>
+                            <div class="text-center group">
+                                <div
+                                    class="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden bg-white shadow-sm ring-2 ring-transparent group-hover:ring-stanford-red/30 transition-all">
+                                    <img src="assets/media/members/archive/mingdian-tan.jpg"
+                                        class="object-cover w-full h-full">
+                                </div>
+                                <p class="text-[11px] font-bold text-gray-800">谭明典 / Mingdian Tan</p>
+                                <p class="text-[9px] text-stanford-red uppercase tracking-wider font-bold mt-1">Co-Chair
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2021-2022 -->
+                <div class="pl-8 md:pl-16 relative">
+                    <div class="absolute -left-[45px] md:-left-[120px] top-0 sticky top-32 z-10">
+                        <span class="text-3xl md:text-5xl font-serif text-fog opacity-50 font-bold">2021</span>
+                        <span class="block text-[10px] text-gray-300 text-right pr-1">-2022</span>
+                    </div>
+                    <div class="reveal-up pb-12 border-b border-gray-100">
+                        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+                            <div class="text-center group">
+                                <div
+                                    class="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden bg-white shadow-sm ring-2 ring-transparent group-hover:ring-stanford-red/30 transition-all">
+                                    <img src="assets/media/members/archive/chenjie-pan.jpg"
+                                        class="object-cover w-full h-full">
+                                </div>
+                                <p class="text-[11px] font-bold text-gray-800">潘辰杰 / Chenjie Pan</p>
+                                <p class="text-[9px] text-stanford-red uppercase tracking-wider font-bold mt-1">Co-Chair
+                                </p>
+                            </div>
+                            <div class="text-center group">
+                                <div
+                                    class="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden bg-white shadow-sm ring-2 ring-transparent group-hover:ring-stanford-red/30 transition-all">
+                                    <img src="assets/media/members/archive/xiaotao-shen.jpg"
+                                        class="object-cover w-full h-full">
+                                </div>
+                                <p class="text-[11px] font-bold text-gray-800">申小涛 / Xiaotao Shen</p>
+                                <p class="text-[9px] text-stanford-red uppercase tracking-wider font-bold mt-1">Co-Chair
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2020-2021 -->
+                <div class="pl-8 md:pl-16 relative">
+                    <div class="absolute -left-[45px] md:-left-[120px] top-0 sticky top-32 z-10">
+                        <span class="text-3xl md:text-5xl font-serif text-fog opacity-50 font-bold">2020</span>
+                        <span class="block text-[10px] text-gray-300 text-right pr-1">-2021</span>
+                    </div>
+                    <div class="reveal-up pb-12 border-b border-gray-100">
+                        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+                            <div class="text-center group">
+                                <div
+                                    class="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden bg-white shadow-sm ring-2 ring-transparent group-hover:ring-stanford-red/30 transition-all">
+                                    <img src="assets/media/members/zheng_zuo.jpeg" class="object-cover w-full h-full">
+                                </div>
+                                <p class="text-[11px] font-bold text-gray-800">左政 / Zheng Zuo</p>
+                                <p class="text-[9px] text-stanford-red uppercase tracking-wider font-bold mt-1">Co-Chair
+                                </p>
+                            </div>
+                            <div class="text-center group">
+                                <div
+                                    class="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden bg-white shadow-sm ring-2 ring-transparent group-hover:ring-stanford-red/30 transition-all">
+                                    <img src="assets/media/members/fan_yang.jpeg" class="object-cover w-full h-full">
+                                </div>
+                                <p class="text-[11px] font-bold text-gray-800">杨帆 / Fan Yang</p>
+                                <p class="text-[9px] text-stanford-red uppercase tracking-wider font-bold mt-1">Co-Chair
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2019-2020 -->
+                <div class="pl-8 md:pl-16 relative">
+                    <div class="absolute -left-[45px] md:-left-[120px] top-0 sticky top-32 z-10">
+                        <span class="text-3xl md:text-5xl font-serif text-fog opacity-50 font-bold">2019</span>
+                        <span class="block text-[10px] text-gray-300 text-right pr-1">-2020</span>
+                    </div>
+                    <div class="reveal-up pb-12 border-b border-gray-100">
+                        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+                            <div class="text-center group">
+                                <div
+                                    class="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden bg-white shadow-sm ring-2 ring-transparent group-hover:ring-stanford-red/30 transition-all">
+                                    <img src="assets/media/members/yinuo_xu.jpeg" class="object-cover w-full h-full">
+                                </div>
+                                <p class="text-[11px] font-bold text-gray-800">徐一诺 / Yinuo Xu</p>
+                                <p class="text-[9px] text-stanford-red uppercase tracking-wider font-bold mt-1">Co-Chair
+                                </p>
+                            </div>
+                            <div class="text-center group">
+                                <div
+                                    class="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden bg-white shadow-sm ring-2 ring-transparent group-hover:ring-stanford-red/30 transition-all">
+                                    <img src="assets/media/members/archive/xiang-zhao.jpg"
+                                        class="object-cover w-full h-full">
+                                </div>
+                                <p class="text-[11px] font-bold text-gray-800">赵祥 / Xiang Zhao</p>
+                                <p class="text-[9px] text-stanford-red uppercase tracking-wider font-bold mt-1">Co-Chair
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2018-2019 -->
+                <div class="pl-8 md:pl-16 relative">
+                    <div class="absolute -left-[45px] md:-left-[120px] top-0 sticky top-32 z-10">
+                        <span class="text-3xl md:text-5xl font-serif text-fog opacity-50 font-bold">2018</span>
+                        <span class="block text-[10px] text-gray-300 text-right pr-1">-2019</span>
+                    </div>
+                    <div class="reveal-up pb-12 border-b border-gray-100">
+                        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+                            <div class="text-center group">
+                                <div
+                                    class="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden bg-white shadow-sm ring-2 ring-transparent group-hover:ring-stanford-red/30 transition-all">
+                                    <img src="assets/media/members/archive/zhiping-feng.jpeg"
+                                        class="object-cover w-full h-full">
+                                </div>
+                                <p class="text-[11px] font-bold text-gray-800">封志平 / Zhiping Feng</p>
+                                <p class="text-[9px] text-stanford-red uppercase tracking-wider font-bold mt-1">Co-Chair
+                                </p>
+                            </div>
+                            <div class="text-center group">
+                                <div
+                                    class="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden bg-white shadow-sm ring-2 ring-transparent group-hover:ring-stanford-red/30 transition-all">
+                                    <img src="assets/media/members/archive/ying-wang.jpeg"
+                                        class="object-cover w-full h-full">
+                                </div>
+                                <p class="text-[11px] font-bold text-gray-800">王莹 / Ying Wang</p>
+                                <p class="text-[9px] text-stanford-red uppercase tracking-wider font-bold mt-1">Co-Chair
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Alumni & Community (The Foundation) -->
+                <div class="pl-8 md:pl-16 relative">
+                    <div
+                        class="absolute -left-[45px] md:-left-[120px] top-0 sticky top-32 z-10 transition-all duration-300">
+                        <span
+                            class="text-3xl md:text-5xl font-serif text-fog opacity-50 font-bold group-hover:text-stanford-red group-hover:opacity-100">ALL</span>
+                        <span class="block text-[10px] text-gray-300 text-right pr-1 uppercase">ALUMNI</span>
+                    </div>
+                    <div class="reveal-up pb-12">
+                        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+                            <!-- Chuchu Wang -->
+                            <div class="text-center group">
+                                <div
+                                    class="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden bg-white shadow-sm ring-2 ring-transparent group-hover:ring-stanford-red/30 transition-all">
+                                    <img src="assets/media/members/archive/chuchu-wang.jpg"
+                                        class="object-cover w-full h-full">
+                                </div>
+                                <p class="text-[11px] font-bold text-gray-800">王楚楚 / Chuchu Wang</p>
+                                <p class="text-[10px] text-stanford-red font-bold uppercase tracking-wider mt-1">
+                                    Founding Member / Bylaw Drafter</p>
+                            </div>
+                            <!-- Enqi He -->
+                            <div class="text-center group">
+                                <div
+                                    class="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden bg-white shadow-sm ring-2 ring-transparent group-hover:ring-stanford-red/30 transition-all">
+                                    <img src="assets/media/members/archive/enqi-he.jpg"
+                                        class="object-cover w-full h-full">
+                                </div>
+                                <p class="text-[11px] font-bold text-gray-800">何恩琪 / Enqi He</p>
+                                <p class="text-[9px] text-gray-500 uppercase tracking-wider mt-1">Member</p>
+                            </div>
+                            <!-- Hao Yan -->
+                            <div class="text-center group">
+                                <div
+                                    class="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden bg-white shadow-sm ring-2 ring-transparent group-hover:ring-stanford-red/30 transition-all">
+                                    <img src="assets/media/members/archive/hao-yan.jpg"
+                                        class="object-cover w-full h-full">
+                                </div>
+                                <p class="text-[11px] font-bold text-gray-800">颜豪 / Hao Yan</p>
+                                <p class="text-[9px] text-gray-500 uppercase tracking-wider mt-1">Member</p>
+                            </div>
+                            <!-- Jiancheng Lai -->
+                            <div class="text-center group">
+                                <div
+                                    class="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden bg-white shadow-sm ring-2 ring-transparent group-hover:ring-stanford-red/30 transition-all">
+                                    <img src="assets/media/members/archive/jiancheng-lai.jpg"
+                                        class="object-cover w-full h-full">
+                                </div>
+                                <p class="text-[11px] font-bold text-gray-800">赖建诚 / Jiancheng Lai</p>
+                                <p class="text-[9px] text-gray-500 uppercase tracking-wider mt-1">Member</p>
+                            </div>
+                            <!-- Jiawei Zhou -->
+                            <div class="text-center group">
+                                <div
+                                    class="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden bg-white shadow-sm ring-2 ring-transparent group-hover:ring-stanford-red/30 transition-all">
+                                    <img src="assets/media/members/archive/jiawei-zhou.jpg"
+                                        class="object-cover w-full h-full">
+                                </div>
+                                <p class="text-[11px] font-bold text-gray-800">周佳伟 / Jiawei Zhou</p>
+                                <p class="text-[9px] text-gray-500 uppercase tracking-wider mt-1">Member</p>
+                            </div>
+                            <!-- Peng Gao -->
+                            <div class="text-center group">
+                                <div
+                                    class="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden bg-white shadow-sm ring-2 ring-transparent group-hover:ring-stanford-red/30 transition-all">
+                                    <img src="assets/media/members/archive/peng-gao.jpg"
+                                        class="object-cover w-full h-full">
+                                </div>
+                                <p class="text-[11px] font-bold text-gray-800">高鹏 / Peng Gao</p>
+                                <p class="text-[9px] text-gray-500 uppercase tracking-wider mt-1">Member</p>
+                            </div>
+                            <!-- Qing Wang -->
+                            <div class="text-center group">
+                                <div
+                                    class="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden bg-white shadow-sm ring-2 ring-transparent group-hover:ring-stanford-red/30 transition-all">
+                                    <img src="assets/media/members/archive/qing-wang.jpg"
+                                        class="object-cover w-full h-full">
+                                </div>
+                                <p class="text-[11px] font-bold text-gray-800">王青 / Qing Wang</p>
+                                <p class="text-[9px] text-gray-500 uppercase tracking-wider mt-1">Member</p>
+                            </div>
+                            <!-- Shan Jiang -->
+                            <div class="text-center group">
+                                <div
+                                    class="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden bg-white shadow-sm ring-2 ring-transparent group-hover:ring-stanford-red/30 transition-all">
+                                    <img src="assets/media/members/archive/shan-jiang.jpg"
+                                        class="object-cover w-full h-full">
+                                </div>
+                                <p class="text-[11px] font-bold text-gray-800">江山 / Shan Jiang</p>
+                                <p class="text-[9px] text-gray-500 uppercase tracking-wider mt-1">Member</p>
+                            </div>
+                            <!-- Shuke Xiao -->
+                            <div class="text-center group">
+                                <div
+                                    class="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden bg-white shadow-sm ring-2 ring-transparent group-hover:ring-stanford-red/30 transition-all">
+                                    <img src="assets/media/members/archive/shuke-xiao.jpg"
+                                        class="object-cover w-full h-full">
+                                </div>
+                                <p class="text-[11px] font-bold text-gray-800">肖淑克 / Shuke Xiao</p>
+                                <p class="text-[9px] text-gray-500 uppercase tracking-wider mt-1">Member</p>
+                            </div>
+                            <!-- Wenchao Lu -->
+                            <div class="text-center group">
+                                <div
+                                    class="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden bg-white shadow-sm ring-2 ring-transparent group-hover:ring-stanford-red/30 transition-all">
+                                    <img src="assets/media/members/archive/wenchao-lu.jpg"
+                                        class="object-cover w-full h-full">
+                                </div>
+                                <p class="text-[11px] font-bold text-gray-800">卢文超 / Wenchao Lu</p>
+                                <p class="text-[9px] text-gray-500 uppercase tracking-wider mt-1">Member</p>
+                            </div>
+                            <!-- Wubing Zhang -->
+                            <div class="text-center group">
+                                <div
+                                    class="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden bg-white shadow-sm ring-2 ring-transparent group-hover:ring-stanford-red/30 transition-all">
+                                    <img src="assets/media/members/archive/wubing-zhang.jpg"
+                                        class="object-cover w-full h-full">
+                                </div>
+                                <p class="text-[11px] font-bold text-gray-800">张武兵 / Wubing Zhang</p>
+                                <p class="text-[9px] text-gray-500 uppercase tracking-wider mt-1">Member</p>
+                            </div>
+                            <!-- Xudong Chen -->
+                            <div class="text-center group">
+                                <div
+                                    class="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden bg-white shadow-sm ring-2 ring-transparent group-hover:ring-stanford-red/30 transition-all">
+                                    <img src="assets/media/members/archive/xudong-chen.jpg"
+                                        class="object-cover w-full h-full">
+                                </div>
+                                <p class="text-[11px] font-bold text-gray-800">陈旭东 / Xudong Chen</p>
+                                <p class="text-[9px] text-gray-500 uppercase tracking-wider mt-1">Member</p>
+                            </div>
+                            <!-- Yucan Peng -->
+                            <div class="text-center group">
+                                <div
+                                    class="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden bg-white shadow-sm ring-2 ring-transparent group-hover:ring-stanford-red/30 transition-all">
+                                    <img src="assets/media/members/archive/yucan-peng.jpg"
+                                        class="object-cover w-full h-full">
+                                </div>
+                                <p class="text-[11px] font-bold text-gray-800">彭雨灿 / Yucan Peng</p>
+                                <p class="text-[9px] text-gray-500 uppercase tracking-wider mt-1">Member</p>
+                            </div>
+                            <!-- Zaile Zhuang -->
+                            <div class="text-center group">
+                                <div
+                                    class="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden bg-white shadow-sm ring-2 ring-transparent group-hover:ring-stanford-red/30 transition-all">
+                                    <img src="assets/media/members/archive/zaile-zhuang.jpg"
+                                        class="object-cover w-full h-full">
+                                </div>
+                                <p class="text-[11px] font-bold text-gray-800">庄在乐 / Zaile Zhuang</p>
+                                <p class="text-[9px] text-gray-500 uppercase tracking-wider mt-1">Member</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
 
+                <!-- Legacy Marker -->
+                <div class="pl-8 md:pl-16">
+                    <div class="w-3 h-3 bg-stanford-red rounded-full absolute -left-[5px]"></div>
+                    <p class="text-xs tracking-widest text-cool-grey uppercase mt-1">FOUNDING / 2017</p>
+                </div>
+            </div>
+    </section>
 
+    <!-- Gallery -->
+    <section id="gallery" class="py-24 bg-ivory overflow-hidden">
+        <div class="px-6 md:px-12 mb-10 flex justify-between items-end max-w-7xl mx-auto">
+            <h2 class="text-3xl font-serif text-stanford-black">Gallery</h2>
+            <span class="text-xs tracking-widest text-gray-400 hidden md:inline-block">SCROLL TO EXPLORE →</span>
+        </div>
 
+        <div class="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-12 px-6 md:px-12 scrollbar-hide">
+            <div
+                class="snap-center shrink-0 w-[85vw] md:w-[600px] aspect-[4/3] rounded-sm overflow-hidden bg-gray-200 relative group">
+                <img src="assets/media/events/IMG_3598.JPG" loading="lazy" class="w-full h-full object-cover">
+            </div>
+            <div
+                class="snap-center shrink-0 w-[85vw] md:w-[600px] aspect-[4/3] rounded-sm overflow-hidden bg-gray-200 relative group">
+                <img src="assets/media/events/6504bfa787c8ed03a6cdf0054fc1f545.JPG" loading="lazy"
+                    class="w-full h-full object-cover">
+            </div>
+            <div
+                class="snap-center shrink-0 w-[85vw] md:w-[600px] aspect-[4/3] rounded-sm overflow-hidden bg-gray-200 relative group">
+                <img src="assets/media/events/2f974dc26055ccd762dda417a9d9a85b.JPG" loading="lazy"
+                    class="w-full h-full object-cover">
+            </div>
+            <div
+                class="snap-center shrink-0 w-[85vw] md:w-[600px] aspect-[4/3] rounded-sm overflow-hidden bg-gray-200 relative group">
+                <img src="assets/media/events/b959f33544ea45ed78a9e73a274248c7.JPG" loading="lazy"
+                    class="w-full h-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact (Redesigned V2 - Prominent) -->
+    <section id="contact" class="py-24 bg-stanford-black text-white border-t border-white/5 relative overflow-hidden">
+        <!-- Ambient Background -->
+        <div class="absolute inset-0 bg-gradient-to-t from-stanford-red/10 to-transparent pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 text-center reveal-up relative z-10">
+            <div class="mb-16">
+                <h2 class="text-4xl md:text-5xl font-serif mb-6 text-white tracking-tight">Join Our Community</h2>
+                <p class="text-warm-grey text-lg font-light max-w-2xl mx-auto">Connect with us on social media or reach
+                    out to our co-chairs directly. We are here to support every Chinese scholar at Stanford.</p>
+            </div>
+
+            <!-- QR Code Grid (Flexible & Complete) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-20 max-w-6xl mx-auto">
+
+                <!-- Item 1: Xiaohongshu (Wide) -->
+                <div
+                    class="group bg-white/5 p-4 rounded-sm border border-white/10 hover:bg-white/10 transition-all duration-500 flex flex-col">
+                    <div
+                        class="aspect-[4/5] w-full bg-white p-4 rounded-sm mb-4 overflow-hidden relative flex items-center justify-center">
+                        <img src="assets/media/qrcodes/xiaohongshu_qr.PNG"
+                            class="w-full h-full object-contain transform group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <h3 class="text-xl font-serif mb-1 text-ivory">Xiaohongshu</h3>
+                    <p class="text-[10px] tracking-widest text-warm-grey uppercase">OFFICIAL ACCOUNT</p>
+                </div>
+
+                <!-- Item 2: Instagram (Square-ish) -->
+                <div
+                    class="group bg-white/5 p-4 rounded-sm border border-white/10 hover:bg-white/10 transition-all duration-500 flex flex-col">
+                    <div
+                        class="aspect-[4/5] w-full bg-white p-4 rounded-sm mb-4 overflow-hidden relative flex items-center justify-center">
+                        <img src="assets/media/qrcodes/ins_qr.PNG"
+                            class="w-full h-full object-contain transform group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <h3 class="text-xl font-serif mb-1 text-ivory">Instagram</h3>
+                    <p class="text-[10px] tracking-widest text-warm-grey uppercase">FOLLOW US</p>
+                </div>
+
+                <!-- Item 3: Co-Chair Lu (Tall) -->
+                <div
+                    class="group bg-white/5 p-4 rounded-sm border border-white/10 hover:bg-white/10 transition-all duration-500 flex flex-col">
+                    <div
+                        class="aspect-[4/5] w-full bg-white p-2 rounded-sm mb-4 overflow-hidden relative flex items-center justify-center">
+                        <img src="assets/media/qrcodes/lu_wechat_group_leader.JPG"
+                            class="w-full h-full object-contain transform group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <h3 class="text-xl font-serif mb-1 text-ivory">Lu Liu</h3>
+                    <p class="text-[10px] tracking-widest text-warm-grey uppercase">CO-CHAIR WECHAT</p>
+                </div>
+
+                <!-- Item 4: Co-Chair Mingyu (Square-ish) -->
+                <div
+                    class="group bg-white/5 p-4 rounded-sm border border-white/10 hover:bg-white/10 transition-all duration-500 flex flex-col">
+                    <div
+                        class="aspect-[4/5] w-full bg-white p-2 rounded-sm mb-4 overflow-hidden relative flex items-center justify-center">
+                        <img src="assets/media/qrcodes/Ming_wechat_group_leader.JPG"
+                            class="w-full h-full object-contain transform group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <h3 class="text-xl font-serif mb-1 text-ivory">Mingyu Han</h3>
+                    <p class="text-[10px] tracking-widest text-warm-grey uppercase">CO-CHAIR WECHAT</p>
+                </div>
+
+            </div>
+
+            <!-- Email & Footer -->
+            <div class="border-t border-white/10 pt-12">
+                <!-- Logo Fix: Use screen blend mode to make black transparent and keep white -->
+                <div class="w-32 mx-auto mb-8 mix-blend-screen opacity-80 hover:opacity-100 transition-opacity">
+                    <img src="assets/media/logo/SCPA_logo.png" class="w-full h-auto object-contain">
+                </div>
+
+                <a href="mailto:scpa@stanford.edu"
+                    class="text-2xl font-serif text-white hover:text-stanford-red transition-colors mb-8 inline-block border-b border-white/20 pb-1">scpa@stanford.edu</a>
+                <p class="text-[10px] tracking-widest text-gray-500 uppercase font-sans mt-8">
+                    &copy; 2025 Stanford Chinese Postdoc Association. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/main.js"></script>
 </body>
+
 </html>
