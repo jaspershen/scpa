@@ -1,0 +1,9 @@
+[build]
+  # Static HTML site - no build step required
+  command = "echo 'Static site - no build'"
+  publish = "."
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
