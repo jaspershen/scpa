@@ -1,0 +1,52 @@
+---
+title: "Stanford Chinese Postdoc Journal Club and Oral Presentation Improvement"
+author: xiaotao-shen
+date: '2022-01-08'
+slug: event
+categories: ["Event", "English"]
+tags: ["Event", "English"]
+output:
+  blogdown::html_page:
+    toc: true
+    number_sections: true
+---
+
+# **Introduction**
+
+---
+
+## **Purpose of the Course**
+
+This course aims to help bring cutting-edge interdisciplinary research topics related to biomedical sciences. We not only discuss the most recent advances in research publications but also help to improve the presentation skills of Non-native English-speaker. This presentation platform is also intended to promote collaborations between participants. The majority of the course participants are postdoctoral fellows from Stanford Schools of Medicine, with several external affiliated members.
+
+## **Organizing Committee**
+
+### **Course Organizer**
+
+* [Xin Zhou PhD](https://www.linkedin.com/in/xinzhou-uchc/)
+
+* [Xiaotao Shen PhD](https://www.shenxt.info/)
+
+### **Finance Manager**
+
+* [Chuchu Wang PhD](https://www.linkedin.com/in/chuchu-wang-71331190/)
+
+# **Course History**
+
+---
+
+```{r, echo=FALSE, eval=TRUE, message=FALSE, warning=FALSE, message=FALSE}
+data = readxl::read_xlsx("Schedule.xlsx")
+library(knitr)
+library(kableExtra)
+data %>%
+  kbl() %>%
+  kable_material(c("striped", "hover", "condensed", "responsive")) %>% 
+  column_spec(1, width = "60em", bold = TRUE)
+```
+
+# **Acknowledgement**
+
+---
+
+This course is financially supported by **SURPAS (the Stanford University Postdoctoral Association)** and **SCPA (Stanford Chinese Postdoctoral Association)**.

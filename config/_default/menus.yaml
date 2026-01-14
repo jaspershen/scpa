@@ -1,0 +1,28 @@
+# Navigation Links
+#   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
+#     desired widget in your `content/home/` folder.
+#   The weight parameter defines the order that the links will appear in.
+
+main:
+  - name: 关于我们/About
+    url: '#hero'
+    weight: 10
+  - name: 成员/Member
+    url: '#member'
+    weight: 20
+  - name: 新闻&活动/News&Events
+    url: '#news'
+    weight: 30
+  - name: 往届成员/Alumni
+    url: '#alumni'
+    weight: 70
+  - name: 资源/Resource
+    identifier: resource
+    weight: 80
+  - name: 微信群/WeChat
+    parent: resource
+    url: resource/wechat/
+    weight: 10
+  - name: 联系我们/Contact
+    url: '#contact'
+    weight: 90

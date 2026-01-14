@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: https://scpa.netlify.app/sitemap.xml
