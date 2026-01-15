@@ -45,17 +45,119 @@
 /* Liquid Glass - Advanced Silicon Valley Aesthetic */
 /* Liquid Glass - Advanced Silicon Valley Aesthetic */
 .glass-liquid {
-    background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(24px) saturate(200%);
-    -webkit-backdrop-filter: blur(24px) saturate(200%);
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.82);
+    /* Higher opacity for premium weight */
+    backdrop-filter: blur(40px) saturate(180%);
+    -webkit-backdrop-filter: blur(40px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.6);
     box-shadow:
-        0 10px 40px -10px rgba(0, 0, 0, 0.1),
-        inset 0 0 0 1px rgba(255, 255, 255, 0.6),
-        inset 0 1px 20px rgba(255, 255, 255, 0.5);
-    transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+        0 20px 50px -10px rgba(0, 0, 0, 0.12),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.5),
+        inset 0 1px 20px rgba(255, 255, 255, 0.4);
+    transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+    /* Ultra smooth expo easing */
     position: relative;
     overflow: hidden;
+}
+
+/* Prismatic Sheen Effect */
+.glass-liquid::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(115deg,
+            rgba(255, 255, 255, 0.0) 30%,
+            rgba(255, 255, 255, 0.4) 50%,
+            rgba(255, 255, 255, 0.0) 70%);
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    pointer-events: none;
+    z-index: 1;
+    mix-blend-mode: overlay;
+}
+
+.glass-liquid:hover::before {
+    opacity: 1;
+}
+
+.glass-liquid:hover {
+    transform: translateY(-4px) scale(1.005);
+    box-shadow:
+        0 40px 80px -20px rgba(140, 21, 21, 0.15),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.9);
+}
+
+/* Italian Art School Electronic Aesthetic - QR Cards */
+.qr-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 28px;
+    padding: 32px;
+    width: 360px;
+    /* Significantly larger */
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+
+    /* Entry Animation State */
+    opacity: 0;
+    transform: translateY(40px) scale(0.9);
+    animation: italianReveal 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+@keyframes italianReveal {
+    0% {
+        opacity: 0;
+        transform: translateY(40px) scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.qr-card:nth-child(1) {
+    animation-delay: 0.05s;
+}
+
+.qr-card:nth-child(2) {
+    animation-delay: 0.15s;
+}
+
+.qr-card img {
+    width: 280px;
+    /* Massive QR code */
+    height: 280px;
+    border-radius: 12px;
+    mix-blend-mode: multiply;
+    transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.qr-card:hover img {
+    transform: scale(1.08);
+}
+
+.qr-card h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--stanford-black);
+    letter-spacing: -0.02em;
+}
+
+.qr-fan-container {
+    display: flex;
+    gap: 40px;
+    /* Spacious layout */
+    padding: 20px 40px;
+    perspective: 1200px;
 }
 
 /* Prismatic Sheen Effect */

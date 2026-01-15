@@ -64,8 +64,8 @@
     <!-- Floating Island Navigation (Enhanced) -->
     <!-- Glass Nav (MUJI Calm + Premium Glass) -->
     <nav id="siteNav" class="fixed left-1/2 top-4 z-50 w-[min(1100px,92vw)] -translate-x-1/2 rounded-2xl px-4 py-3
-             backdrop-blur-2xl bg-stanford-red/80 ring-1 ring-white/20 shadow-[0_10px_30px_rgba(140,21,21,0.25)]
-             supports-[backdrop-filter]:bg-stanford-red/80 transition-all duration-300">
+             bg-transparent shadow-none ring-0 backdrop-blur-none
+             transition-all duration-500 ease-out">
         <div class="relative flex items-center justify-between">
             <!-- specular highlight layer -->
             <div class="pointer-events-none absolute inset-0 rounded-2xl overflow-hidden">
@@ -102,137 +102,175 @@
 
     <!-- Hero Section: Logo Showcase & About -->
     <header
-        class="relative w-full min-h-screen flex flex-col justify-center items-center px-4 pt-24 pb-12 overflow-hidden">
+        class="relative w-full min-h-screen flex flex-col justify-end px-4 pt-24 pb-2 overflow-hidden bg-transparent">
+
+        <!-- Background Layer: Image (Focus on Sky/Logo, Crop Grass) -->
+        <div class="absolute inset-0 z-[-1] opacity-100">
+            <img src="assets/media/SCPA_design.png" class="w-full h-full object-cover object-[50%_35%]">
+        </div>
+
         <div
-            class="absolute inset-0 z-0 bg-gradient-radial from-stanford-red/5 via-transparent to-transparent opacity-80 pointer-events-none">
+            class="relative z-10 w-full max-w-7xl mx-auto flex flex-col items-center justify-end h-full pb-0 md:pb-2 pointer-events-none">
+
+            <!-- Follow Us Trigger - Premium Glass Capsule (CRITICAL FEATURE) -->
+            <div class="pointer-events-auto flex flex-col items-center justify-center mb-0">
+                <div class="relative group">
+                    <!-- Glass Capsule Button -->
+                    <div id="followBtn"
+                        class="relative z-30 px-8 py-3 rounded-full border border-white/40 bg-white/10 backdrop-blur-md shadow-lg 
+                               transition-all duration-500 hover:bg-white/20 hover:scale-105 hover:shadow-stanford-red/20 hover:shadow-2xl cursor-pointer group/btn">
+                        <div class="flex items-center gap-3">
+                            <span class="w-2 h-2 rounded-full bg-stanford-red animate-pulse"></span>
+                            <p class="text-[11px] md:text-xs font-bold tracking-[0.4em] text-stanford-red uppercase">
+                                Follow Us
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Particle Explosion Canvas Moved to Body -->
+
+                    <!-- QR Panel (Floating above/centered) -->
+                    <!-- QR Panel (Floating above/centered) -->
+                    <div id="follow-us-overlay"
+                        class="absolute left-1/2 bottom-full mb-8 -translate-x-1/2 w-[95vw] max-w-4xl glass-liquid !bg-white/60 !backdrop-blur-2xl p-10 rounded-[2rem] opacity-0 pointer-events-none transform translate-y-4 transition-all duration-500 z-50 ring-1 ring-white/40 shadow-glass-strong">
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+                            <!-- Xiaohongshu -->
+                            <div class="text-center group/item hover:-translate-y-1 transition-transform relative z-10">
+                                <div
+                                    class="bg-white/80 p-3 rounded-2xl mb-3 shadow-[0_8px_30px_rgba(0,0,0,0.06)] aspect-square flex items-center justify-center overflow-hidden border border-white/50 backdrop-blur-sm">
+                                    <img src="assets/media/qrcodes/xiaohongshu_qr.PNG"
+                                        class="w-full h-full object-contain mix-blend-multiply opacity-90 group-hover/item:opacity-100 transition-opacity">
+                                </div>
+                                <p
+                                    class="text-[10px] uppercase tracking-widest font-bold text-stanford-red/90 group-hover/item:text-stanford-red">
+                                    Red</p>
+                            </div>
+                            <!-- Instagram -->
+                            <div class="text-center group/item hover:-translate-y-1 transition-transform relative z-10">
+                                <div
+                                    class="bg-white/80 p-3 rounded-2xl mb-3 shadow-[0_8px_30px_rgba(0,0,0,0.06)] aspect-square flex items-center justify-center overflow-hidden border border-white/50 backdrop-blur-sm">
+                                    <img src="assets/media/qrcodes/ins_qr.PNG"
+                                        class="w-full h-full object-contain mix-blend-multiply opacity-90 group-hover/item:opacity-100 transition-opacity">
+                                </div>
+                                <p
+                                    class="text-[10px] uppercase tracking-widest font-bold text-stanford-red/90 group-hover/item:text-stanford-red">
+                                    Ins</p>
+                            </div>
+                            <!-- Wechat Lu -->
+                            <div class="text-center group/item hover:-translate-y-1 transition-transform relative z-10">
+                                <div
+                                    class="bg-white/80 p-3 rounded-2xl mb-3 shadow-[0_8px_30px_rgba(0,0,0,0.06)] aspect-square flex items-center justify-center overflow-hidden border border-white/50 backdrop-blur-sm">
+                                    <img src="assets/media/qrcodes/lu_wechat_group_leader.JPG"
+                                        class="w-full h-full object-contain mix-blend-multiply opacity-90 group-hover/item:opacity-100 transition-opacity">
+                                </div>
+                                <p
+                                    class="text-[10px] uppercase tracking-widest font-bold text-stanford-red/90 group-hover/item:text-stanford-red">
+                                    Lu</p>
+                            </div>
+                            <!-- Wechat Mingyu -->
+                            <div class="text-center group/item hover:-translate-y-1 transition-transform relative z-10">
+                                <div
+                                    class="bg-white/80 p-3 rounded-2xl mb-3 shadow-[0_8px_30px_rgba(0,0,0,0.06)] aspect-square flex items-center justify-center overflow-hidden border border-white/50 backdrop-blur-sm">
+                                    <img src="assets/media/qrcodes/Ming_wechat_group_leader.JPG"
+                                        class="w-full h-full object-contain mix-blend-multiply opacity-90 group-hover/item:opacity-100 transition-opacity">
+                                </div>
+                                <p
+                                    class="text-[10px] uppercase tracking-widest font-bold text-stanford-red/90 group-hover/item:text-stanford-red">
+                                    Mingyu</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
-        <!-- Stanford Campus Background (Fade In) -->
-        <div class="absolute inset-0 z-[-1] opacity-0 animate-fade-in-slow overflow-hidden">
-            <img src="assets/media/Stanford_Campus.jpg"
-                class="w-full h-full object-cover opacity-20 filter blur-[1px] scale-105">
+        <div class="mt-1 opacity-40 animate-bounce text-stanford-red hover:opacity-100 transition-opacity cursor-pointer pointer-events-auto"
+            onclick="document.getElementById('info-modules').scrollIntoView({behavior: 'smooth'})">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M19 14l-7 7m0 0l-7-7m7 7V3">
+                </path>
+            </svg>
         </div>
-
-        <div class="z-10 text-center max-w-5xl mx-auto w-full flex flex-col items-center">
-
-            <!-- Large Logo Banner -->
-            <div class="relative w-full max-w-3xl mx-auto mb-16 p-8 rounded-sm reveal-up logo-container">
-                <div class="absolute inset-0 bg-gradient-radial from-white/80 to-transparent blur-3xl -z-10 opacity-60">
-                </div>
-                <img src="assets/media/logo/SCPA_logo.png" alt="SCPA Logo"
-                    class="w-full drop-shadow-sm filter contrast-105">
-            </div>
-
-            <!-- Follow Us Trigger & Particle Canvas (Restored) -->
-            <div class="relative group inline-block mb-12">
-                <div id="follow-us-trigger"
-                    class="relative z-30 transition-transform duration-300 group-hover:-translate-y-1 cursor-pointer">
-                    <p
-                        class="text-sm font-bold tracking-[0.3em] text-stanford-red uppercase group-hover:drop-shadow-sm transition-all">
-                        Follow Us!</p>
-                </div>
-                <!-- Canvas positioned centered on the text -->
-                <canvas id="explosion-canvas"
-                    class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none z-20"
-                    width="800" height="800"></canvas>
-
-                <!-- Hidden QR Panel (Revealed by JS - WIDER & UNIFORM) -->
-                <div id="qr-code-panel"
-                    class="absolute left-1/2 top-full mt-6 -translate-x-1/2 w-[95vw] max-w-5xl glass-liquid p-8 rounded-3xl opacity-0 pointer-events-none transform translate-y-4 transition-all duration-500 z-50">
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-                        <!-- XiaoHongShu -->
-                        <div class="text-center group/item hover:-translate-y-1 transition-transform relative z-10">
-                            <div
-                                class="bg-white p-3 rounded-2xl mb-3 shadow-sm aspect-square flex items-center justify-center overflow-hidden">
-                                <img src="assets/media/qrcodes/xiaohongshu_qr.PNG"
-                                    class="w-full h-full object-contain mix-blend-multiply">
-                            </div>
-                            <p class="text-[10px] uppercase tracking-widest font-bold text-stanford-red">Red</p>
-                        </div>
-                        <!-- Instagram -->
-                        <div class="text-center group/item hover:-translate-y-1 transition-transform relative z-10">
-                            <div
-                                class="bg-white p-3 rounded-2xl mb-3 shadow-sm aspect-square flex items-center justify-center overflow-hidden">
-                                <img src="assets/media/qrcodes/ins_qr.PNG"
-                                    class="w-full h-full object-contain mix-blend-multiply">
-                            </div>
-                            <p class="text-[10px] uppercase tracking-widest font-bold text-stanford-red">Ins</p>
-                        </div>
-                        <!-- Lu Liu -->
-                        <div class="text-center group/item hover:-translate-y-1 transition-transform relative z-10">
-                            <div
-                                class="bg-white p-3 rounded-2xl mb-3 shadow-sm aspect-square flex items-center justify-center overflow-hidden">
-                                <img src="assets/media/qrcodes/lu_wechat_group_leader.JPG"
-                                    class="w-full h-full object-contain mix-blend-multiply">
-                            </div>
-                            <p class="text-[10px] uppercase tracking-widest font-bold text-stanford-red">Lu</p>
-                        </div>
-                        <!-- Mingyu Han -->
-                        <div class="text-center group/item hover:-translate-y-1 transition-transform relative z-10">
-                            <div
-                                class="bg-white p-3 rounded-2xl mb-3 shadow-sm aspect-square flex items-center justify-center overflow-hidden">
-                                <img src="assets/media/qrcodes/Ming_wechat_group_leader.JPG"
-                                    class="w-full h-full object-contain mix-blend-multiply">
-                            </div>
-                            <p class="text-[10px] uppercase tracking-widest font-bold text-stanford-red">Mingyu</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- About Section (Professional Version) -->
-            <div id="about" class="max-w-4xl mx-auto text-center mb-16 reveal-up delay-100 space-y-12 px-6">
-                <!-- Chinese & English Professional Title -->
-                <div class="space-y-6">
-                    <h2 class="text-3xl md:text-4xl font-serif text-stanford-black font-semibold tracking-wide">
-                        关于我们 / About<br>
-                        <span class="text-xl md:text-2xl font-light text-stanford-red">斯坦福中国博士后协会 (SCPA)</span>
-                    </h2>
-
-                    <!-- Chinese Paragraph -->
-                    <p class="text-gray-700 leading-loose text-sm md:text-base font-medium max-w-3xl mx-auto">
-                        斯坦福中国博士后协会（SCPA）致力于连接每一位在斯坦福奋斗的华人学者。我们希望搭建一个温暖的社区，促进大家的交流与协作。无论是在科研探索还是异国生活中，我们都愿为你提供最真诚的支持与陪伴。不仅是学术的同行者，更是生活的同行者。
-                    </p>
-
-                    <!-- English Paragraph -->
-                    <p class="text-gray-500 leading-relaxed text-sm md:text-base font-light max-w-3xl mx-auto">
-                        The Stanford Chinese Postdoc Association (SCPA) is a dedicated community for all Chinese
-                        postdocs and scholars at Stanford. Our mission is to build a supportive network that fosters
-                        connection, collaboration, and growth. Whether in your research endeavors or daily life abroad,
-                        we are here to support you. We warmly welcome you to join our family.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Upcoming Event Card (Integrated) -->
-            <div id="upcoming" class="glass-liquid w-full max-w-2xl mx-auto rounded-xl p-6 reveal-up delay-200">
-                <div class="flex flex-col md:flex-row items-center justify-between gap-6 px-4 md:px-8">
-                    <div class="text-left flex-1 border-l-2 border-stanford-red pl-4">
-                        <span
-                            class="block text-[10px] tracking-widest font-bold text-stanford-red mb-1 uppercase">UPCOMING</span>
-                        <h2 class="text-xl font-serif text-stanford-black">2026 SCPA 春节庆祝活动</h2>
-                        <div class="text-xs text-gray-500 font-mono mt-2">
-                            <span>时间待定 / Time TBD</span> • <span>Stanford Campus</span>
-                        </div>
-                    </div>
-                    <div class="flex-shrink-0">
-                        <a href="#"
-                            class="inline-block px-8 py-3 bg-stanford-black text-ivory hover:bg-stanford-red hover:shadow-lg transition-all duration-300 text-xs tracking-widest uppercase rounded-sm">
-                            View Details
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="mt-12 opacity-40 animate-bounce text-stanford-red hover:opacity-100 transition-opacity cursor-pointer"
-                onclick="document.getElementById('latest-events').scrollIntoView({behavior: 'smooth'})">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
-                        d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-                </svg>
-            </div>
         </div>
     </header>
+
+    <!-- Info Modules Section (About & Upcoming) -->
+    <section id="info-modules" class="relative w-full py-16 md:py-24 bg-[#fafafa]">
+        <div class="w-full max-w-7xl mx-auto px-4 flex flex-col md:flex-row gap-8 justify-center items-stretch">
+
+            <!-- About Section (Text Only) -->
+            <div id="about" class="w-full md:max-w-md p-8 md:p-10 space-y-6">
+                <div class="w-10 h-1 bg-stanford-red rounded-full"></div>
+                <h3 class="text-xl font-bold text-stanford-black tracking-tight">About SCPA</h3>
+                <p class="text-stanford-black leading-relaxed text-sm md:text-base font-medium">
+                    斯坦福中国博士后协会（SCPA）致力于连接每一位在斯坦福奋斗的华人学者。我们希望搭建一个温暖的社区，促进大家的交流与协作。
+                </p>
+                <p class="text-gray-600 leading-relaxed text-xs md:text-sm font-light">
+                    The Stanford Chinese Postdoc Association (SCPA) is a dedicated community for all Chinese
+                    postdocs and scholars at Stanford. Our mission is to build a supportive network that fosters
+                    connection, collaboration, and growth.
+                </p>
+            </div>
+
+            <!-- Upcoming Event Card -->
+            <div id="upcoming"
+                class="w-full md:max-w-md bg-white p-8 md:p-10 rounded-3xl shadow-[0_2px_20px_rgba(0,0,0,0.04)] hover:shadow-xl transition-all duration-500 border border-gray-100 group relative overflow-hidden">
+                <div
+                    class="absolute top-0 left-0 w-full h-12 bg-gradient-to-b from-white to-transparent z-20 pointer-events-none">
+                </div>
+
+                <div class="relative h-[250px] overflow-hidden my-4">
+                    <div class="animate-marquee-vertical space-y-8">
+                        <!-- Event 1 -->
+                        <div class="space-y-3">
+                            <h2 class="text-xl font-serif text-stanford-black leading-tight">2026 SCPA 春节庆祝活动</h2>
+                            <div class="text-xs text-gray-500 font-mono flex items-center gap-2">
+                                <span>Time TBD</span> • <span>Stanford Campus</span>
+                            </div>
+                            <a href="#"
+                                class="inline-block text-[10px] font-bold text-stanford-red tracking-widest uppercase border-b border-stanford-red/20 hover:border-stanford-red">Details</a>
+                        </div>
+                        <!-- Event 2 -->
+                        <div class="space-y-3">
+                            <h2 class="text-xl font-serif text-stanford-black leading-tight">学术职业发展研讨会</h2>
+                            <div class="text-xs text-gray-500 font-mono flex items-center gap-2">
+                                <span>Mar 15, 2026</span> • <span>LKSC</span>
+                            </div>
+                            <a href="#"
+                                class="inline-block text-[10px] font-bold text-stanford-red tracking-widest uppercase border-b border-stanford-red/20 hover:border-stanford-red">Details</a>
+                        </div>
+                        <!-- Event 3 -->
+                        <div class="space-y-3">
+                            <h2 class="text-xl font-serif text-stanford-black leading-tight">夏日烧烤联谊</h2>
+                            <div class="text-xs text-gray-500 font-mono flex items-center gap-2">
+                                <span>Jun 20, 2026</span> • <span>Lake Lagunita</span>
+                            </div>
+                            <a href="#"
+                                class="inline-block text-[10px] font-bold text-stanford-red tracking-widest uppercase border-b border-stanford-red/20 hover:border-stanford-red">Details</a>
+                        </div>
+                        <!-- Duplicate for infinite scroll smoothness -->
+                        <div class="space-y-3">
+                            <h2 class="text-xl font-serif text-stanford-black leading-tight">2026 SCPA 春节庆祝活动</h2>
+                            <div class="text-xs text-gray-500 font-mono flex items-center gap-2">
+                                <span>Time TBD</span> • <span>Stanford Campus</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="absolute bottom-0 left-0 w-full h-12 bg-gradient-to-t from-white to-transparent z-20 pointer-events-none">
+                </div>
+                <div class="mt-8">
+                    <a href="#"
+                        class="block w-full py-4 bg-stanford-black text-ivory text-center hover:bg-stanford-red transition-all duration-300 text-xs tracking-[0.2em] uppercase rounded-xl font-bold">
+                        View Details
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Section: Latest Events & Posts (Minimalist Text-based) -->
     <section id="latest-events" class="py-24 px-6 md:px-12 bg-white relative z-10 overflow-hidden">
@@ -527,7 +565,7 @@
                             <div class="text-center group">
                                 <div
                                     class="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden bg-white shadow-sm ring-2 ring-transparent group-hover:ring-stanford-red/30 transition-all">
-                                    <img src="assets/media/members/archive/Gaoxian%20Chen.jpg"
+                                    <img src="assets/media/members/Gaoxian%20Chen.jpg"
                                         class="object-cover w-full h-full">
                                 </div>
                                 <p class="text-[11px] font-bold text-gray-800">陈高贤 / Gaoxian Chen</p>
@@ -917,8 +955,7 @@
                             <div class="text-center group">
                                 <div
                                     class="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden bg-white shadow-sm ring-2 ring-transparent group-hover:ring-stanford-red/30 transition-all">
-                                    <img src="assets/media/members/archive/peng-gao.jpg"
-                                        class="object-cover w-full h-full">
+                                    <img src="assets/media/members/Gao%20Peng.jpg" class="object-cover w-full h-full">
                                 </div>
                                 <p class="text-[11px] font-bold text-gray-800">高鹏 / Peng Gao</p>
                                 <p class="text-[9px] text-gray-500 uppercase tracking-wider mt-1">Member</p>
@@ -1126,6 +1163,17 @@
             </div>
         </div>
     </section>
+
+    <!-- Footer Credit -->
+    <footer class="py-12 bg-paper border-t border-dashed border-gray-200/50 text-center">
+        <p
+            class="text-[10px] uppercase tracking-[0.2em] text-cool-grey/40 font-bold hover:text-stanford-red transition-colors duration-300">
+            Designed & Developed by <span class="text-stanford-black">Gaoxian Chen</span>
+        </p>
+    </footer>
+
+    <!-- Canvas for Particle Explosion (Moved to Body Root for Correct Positioning) -->
+    <canvas id="explosion-canvas" class="fixed inset-0 pointer-events-none z-[60]" width="800" height="800"></canvas>
 
     <script src="assets/js/main.js"></script>
 </body>
