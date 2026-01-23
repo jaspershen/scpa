@@ -220,41 +220,42 @@
                     class="absolute top-0 left-0 w-full h-12 bg-gradient-to-b from-white to-transparent z-20 pointer-events-none">
                 </div>
 
-                <div class="relative h-[250px] overflow-hidden my-4">
-                    <div class="animate-marquee-vertical space-y-8">
-                        <!-- Event 1 -->
-                        <div class="space-y-3">
-                            <h2 class="text-xl font-serif text-stanford-black leading-tight">2026 SCPA 春节庆祝活动</h2>
-                            <div class="text-xs text-gray-500 font-mono flex items-center gap-2">
-                                <span>Time TBD</span> • <span>Stanford Campus</span>
+                <!-- Event Poster Preview -->
+                <div
+                    class="relative w-full aspect-[16/9] rounded-2xl overflow-hidden mb-6 shadow-sm border border-gray-100">
+                    <img src="assets/media/events/lunar_new_year_2026.jpg" class="w-full h-full object-cover">
+                </div>
+
+                <div class="relative py-2">
+                    <div class="space-y-4">
+                        <!-- Event 1: Lunar New Year (Static) -->
+                        <div class="space-y-4">
+                            <h2 class="text-2xl font-serif text-stanford-black leading-tight">SCPA 春节特别活动｜把年味搬到斯坦福</h2>
+                            <div class="flex flex-wrap gap-4 text-xs text-gray-500 font-mono">
+                                <div class="flex items-center gap-2">
+                                    <svg class="w-4 h-4 text-stanford-red" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                        </path>
+                                    </svg>
+                                    <span>Feb 15, 2026</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <svg class="w-4 h-4 text-stanford-red" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                        </path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    </svg>
+                                    <span>Havana Room</span>
+                                </div>
                             </div>
-                            <a href="#"
-                                class="inline-block text-[10px] font-bold text-stanford-red tracking-widest uppercase border-b border-stanford-red/20 hover:border-stanford-red">Details</a>
-                        </div>
-                        <!-- Event 2 -->
-                        <div class="space-y-3">
-                            <h2 class="text-xl font-serif text-stanford-black leading-tight">学术职业发展研讨会</h2>
-                            <div class="text-xs text-gray-500 font-mono flex items-center gap-2">
-                                <span>Mar 15, 2026</span> • <span>LKSC</span>
-                            </div>
-                            <a href="#"
-                                class="inline-block text-[10px] font-bold text-stanford-red tracking-widest uppercase border-b border-stanford-red/20 hover:border-stanford-red">Details</a>
-                        </div>
-                        <!-- Event 3 -->
-                        <div class="space-y-3">
-                            <h2 class="text-xl font-serif text-stanford-black leading-tight">夏日烧烤联谊</h2>
-                            <div class="text-xs text-gray-500 font-mono flex items-center gap-2">
-                                <span>Jun 20, 2026</span> • <span>Lake Lagunita</span>
-                            </div>
-                            <a href="#"
-                                class="inline-block text-[10px] font-bold text-stanford-red tracking-widest uppercase border-b border-stanford-red/20 hover:border-stanford-red">Details</a>
-                        </div>
-                        <!-- Duplicate for infinite scroll smoothness -->
-                        <div class="space-y-3">
-                            <h2 class="text-xl font-serif text-stanford-black leading-tight">2026 SCPA 春节庆祝活动</h2>
-                            <div class="text-xs text-gray-500 font-mono flex items-center gap-2">
-                                <span>Time TBD</span> • <span>Stanford Campus</span>
-                            </div>
+                            <p class="text-sm text-gray-600 leading-relaxed font-light">
+                                传统民俗体验、精美传统美食、还有 AirPods Pro 等多重抽奖惊喜，把年味搬进校园！
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -263,9 +264,9 @@
                     class="absolute bottom-0 left-0 w-full h-12 bg-gradient-to-t from-white to-transparent z-20 pointer-events-none">
                 </div>
                 <div class="mt-8">
-                    <a href="#"
+                    <a href="https://forms.gle/rAfnqqYgoRghYreR7" target="_blank"
                         class="block w-full py-4 bg-stanford-black text-ivory text-center hover:bg-stanford-red transition-all duration-300 text-xs tracking-[0.2em] uppercase rounded-xl font-bold">
-                        View Details
+                        RSVP NOW
                     </a>
                 </div>
             </div>
@@ -285,24 +286,65 @@
             </div>
 
             <div class="space-y-4 reveal-up">
-                <!-- Event 1 -->
-                <a href="#" class="group block p-6 rounded-xl glass-liquid transition-all duration-300">
+                <!-- Latest Event: Lunar New Year -->
+                <div
+                    class="group block p-6 rounded-xl glass-liquid transition-all duration-300 ring-1 ring-stanford-red/10 overflow-hidden relative">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 relative z-10">
+                        <div class="flex items-center gap-6">
+                            <!-- Thumbnail -->
+                            <div
+                                class="hidden md:block w-24 h-24 rounded-lg overflow-hidden flex-shrink-0 shadow-sm border border-white/20">
+                                <img src="assets/media/events/lunar_new_year_2026.jpg"
+                                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            </div>
+                            <div class="flex-1">
+                                <span
+                                    class="inline-block px-2 py-0.5 bg-stanford-red/10 text-stanford-red text-[9px] font-bold tracking-widest uppercase mb-2 rounded">FEATURED</span>
+                                <h3
+                                    class="text-lg font-serif text-stanford-black group-hover:text-stanford-red transition-colors">
+                                    SCPA 春节特别活动｜把年味搬到斯坦福</h3>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-xs text-gray-400 font-mono uppercase">2026.01.17</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 2: SCPA 2025 Recap -->
+                <div class="group block p-6 rounded-xl glass-liquid transition-all duration-300">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                        <div class="flex-1">
+                            <span
+                                class="inline-block px-2 py-0.5 bg-stanford-red/10 text-stanford-red text-[9px] font-bold tracking-widest uppercase mb-2 rounded">COMMUNITY</span>
+                            <h3
+                                class="text-lg font-serif text-stanford-black group-hover:text-stanford-red transition-colors">
+                                SCPA | 感谢有你，一起走过闪光的 2025</h3>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-xs text-gray-400 font-mono uppercase">2025.12.24</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 3: Happy Hour -->
+                <div class="group block p-6 rounded-xl glass-liquid transition-all duration-300">
                     <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
                         <div class="flex-1">
                             <span
                                 class="inline-block px-2 py-0.5 bg-stanford-red/10 text-stanford-red text-[9px] font-bold tracking-widest uppercase mb-2 rounded">SOCIAL</span>
                             <h3
                                 class="text-lg font-serif text-stanford-black group-hover:text-stanford-red transition-colors">
-                                Stanford Sparks - 斯坦福之心动火花</h3>
+                                SCPA 冬日暖心 Happy Hour | 12月5日</h3>
                         </div>
                         <div class="text-right">
-                            <p class="text-xs text-gray-400 font-mono uppercase">2025.10.23</p>
+                            <p class="text-xs text-gray-400 font-mono uppercase">2025.12.01</p>
                         </div>
                     </div>
-                </a>
+                </div>
 
-                <!-- Event 2 -->
-                <a href="#" class="group block p-6 rounded-xl glass-liquid transition-all duration-300">
+                <!-- Event 4: K99 Seminar -->
+                <div class="group block p-6 rounded-xl glass-liquid transition-all duration-300">
                     <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
                         <div class="flex-1">
                             <span
@@ -315,39 +357,55 @@
                             <p class="text-xs text-gray-400 font-mono uppercase">2025.10.25</p>
                         </div>
                     </div>
-                </a>
+                </div>
 
-                <!-- Event 3 -->
-                <a href="#" class="group block p-6 rounded-xl glass-liquid transition-all duration-300">
+                <!-- Event 5: Stanford Sparks -->
+                <div class="group block p-6 rounded-xl glass-liquid transition-all duration-300">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                        <div class="flex-1">
+                            <span
+                                class="inline-block px-2 py-0.5 bg-stanford-red/10 text-stanford-red text-[9px] font-bold tracking-widest uppercase mb-2 rounded">SOCIAL</span>
+                            <h3
+                                class="text-lg font-serif text-stanford-black group-hover:text-stanford-red transition-colors">
+                                Stanford sparks - 斯坦福之心动火花</h3>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-xs text-gray-400 font-mono uppercase">2025.10.23</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 6: Mid-Autumn Countdown -->
+                <div class="group block p-6 rounded-xl glass-liquid transition-all duration-300">
                     <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
                         <div class="flex-1">
                             <span
                                 class="inline-block px-2 py-0.5 bg-stanford-red/10 text-stanford-red text-[9px] font-bold tracking-widest uppercase mb-2 rounded">CELEBRATION</span>
                             <h3
                                 class="text-lg font-serif text-stanford-black group-hover:text-stanford-red transition-colors">
-                                SCPA 冬日暖心 Happy Hour</h3>
+                                倒计时 5 天 | SCPA 中秋特别活动-预告来啦</h3>
                         </div>
                         <div class="text-right">
-                            <p class="text-xs text-gray-400 font-mono uppercase">2025.12.05</p>
+                            <p class="text-xs text-gray-400 font-mono uppercase">2025.10.07</p>
                         </div>
                     </div>
-                </a>
+                </div>
 
-                <!-- Event 4 -->
-                <a href="#" class="group block p-6 rounded-xl glass-liquid transition-all duration-300">
+                <!-- Event 7: Mid-Autumn Festival -->
+                <div class="group block p-6 rounded-xl glass-liquid transition-all duration-300">
                     <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
                         <div class="flex-1">
                             <span
-                                class="inline-block px-2 py-0.5 bg-stanford-red/10 text-stanford-red text-[9px] font-bold tracking-widest uppercase mb-2 rounded">ANNUAL</span>
+                                class="inline-block px-2 py-0.5 bg-stanford-red/10 text-stanford-red text-[9px] font-bold tracking-widest uppercase mb-2 rounded">CELEBRATION</span>
                             <h3
                                 class="text-lg font-serif text-stanford-black group-hover:text-stanford-red transition-colors">
-                                SCPA | 感谢有你，一起走过闪光的 2025</h3>
+                                月圆人未远 · 他乡亦团圆 · SCPA 中秋特别活动</h3>
                         </div>
                         <div class="text-right">
-                            <p class="text-xs text-gray-400 font-mono uppercase">2025.12.24</p>
+                            <p class="text-xs text-gray-400 font-mono uppercase">2025.09.22</p>
                         </div>
                     </div>
-                </a>
+                </div>
             </div>
 
             <div class="mt-12 text-center reveal-up">
