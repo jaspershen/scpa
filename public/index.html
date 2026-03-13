@@ -75,12 +75,15 @@
 
             <a class="relative font-serif font-bold tracking-wide text-white drop-shadow-sm" href="#">SCPA</a>
 
-            <div class="relative flex gap-5 text-sm font-medium text-white/90">
-                <a class="navlink hover:text-white" href="#upcoming">Upcoming</a>
-                <a class="navlink hover:text-white" href="#council-2025">Council</a>
-                <a class="navlink hover:text-white" href="#latest-events">Events</a>
-                <a class="navlink hover:text-white" href="#archive-timeline">Archive</a>
-                <a class="navlink hover:text-white" href="#contact">Contact</a>
+            <div class="relative flex gap-5 text-sm font-medium text-cool-grey items-center">
+                <a class="navlink" href="#upcoming" data-en="Upcoming" data-zh="特别活动">Upcoming</a>
+                <a class="navlink" href="#council-2025" data-en="Council" data-zh="理事会">Council</a>
+                <a class="navlink" href="#latest-events" data-en="Events" data-zh="最近动态">Events</a>
+                <a class="navlink" href="#archive-timeline" data-en="Archive" data-zh="往届回顾">Archive</a>
+                <a class="navlink" href="#contact" data-en="Contact" data-zh="联系我们">Contact</a>
+                <button id="langToggle" class="navlink px-2 py-0.5 rounded-md border border-stanford-red/30 hover:bg-stanford-red/5 transition-all text-[10px] uppercase tracking-widest font-bold text-stanford-red">
+                    中文
+                </button>
             </div>
         </div>
     </nav>
@@ -88,11 +91,11 @@
     <!-- Mobile Menu Overlay -->
     <div id="mobile-menu"
         class="fixed inset-0 z-40 bg-ivory/98 backdrop-blur-xl transform translate-x-full flex flex-col justify-center items-center space-y-8 md:hidden transition-transform duration-500">
-        <a href="#council-2025" class="mobile-nav-link text-2xl font-serif text-stanford-black">COUNCIL</a>
-        <a href="#latest-events" class="mobile-nav-link text-2xl font-serif text-stanford-black">EVENTS</a>
-        <a href="#about" class="mobile-nav-link text-2xl font-serif text-stanford-black">ABOUT</a>
-        <a href="#archive-timeline" class="mobile-nav-link text-2xl font-serif text-stanford-black">ARCHIVE</a>
-        <a href="#gallery" class="mobile-nav-link text-2xl font-serif text-stanford-black">GALLERY</a>
+        <a href="#council-2025" class="mobile-nav-link text-2xl font-serif text-stanford-black" data-en="COUNCIL" data-zh="理事会">COUNCIL</a>
+        <a href="#latest-events" class="mobile-nav-link text-2xl font-serif text-stanford-black" data-en="EVENTS" data-zh="最近动态">EVENTS</a>
+        <a href="#about" class="mobile-nav-link text-2xl font-serif text-stanford-black" data-en="ABOUT" data-zh="关于我们">ABOUT</a>
+        <a href="#archive-timeline" class="mobile-nav-link text-2xl font-serif text-stanford-black" data-en="ARCHIVE" data-zh="往届回顾">ARCHIVE</a>
+        <a href="#gallery" class="mobile-nav-link text-2xl font-serif text-stanford-black" data-en="GALLERY" data-zh="画廊">GALLERY</a>
         <button id="close-menu-btn" class="absolute top-8 right-8 p-2 text-stanford-red">
             <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"></path>
@@ -121,9 +124,10 @@
                                transition-all duration-500 hover:bg-white/20 hover:scale-105 hover:shadow-stanford-red/20 hover:shadow-2xl cursor-pointer group/btn">
                         <div class="flex items-center gap-3">
                             <span class="w-2 h-2 rounded-full bg-stanford-red animate-pulse"></span>
-                            <p class="text-[11px] md:text-xs font-bold tracking-[0.4em] text-stanford-red uppercase">
-                                Follow Us
-                            </p>
+                            <p
+                        class="text-[11px] md:text-xs font-bold tracking-[0.4em] text-stanford-red uppercase group-hover:drop-shadow-sm transition-all"
+                        data-en="Follow Us!" data-zh="关注我们！">
+                        Follow Us!</p>
                         </div>
                     </div>
 
@@ -133,50 +137,51 @@
                     <!-- QR Panel (Floating above/centered) -->
                     <div id="follow-us-overlay"
                         class="absolute left-1/2 bottom-full mb-8 -translate-x-1/2 w-[95vw] max-w-4xl glass-liquid !bg-white/60 !backdrop-blur-2xl p-10 rounded-[2rem] opacity-0 pointer-events-none transform translate-y-4 transition-all duration-500 z-50 ring-1 ring-white/40 shadow-glass-strong">
-                        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
-                            <!-- Xiaohongshu -->
+                        <div class="grid grid-cols-2 md:grid-cols-5 gap-6">
+                            <!-- XiaoHongShu -->
                             <div class="text-center group/item hover:-translate-y-1 transition-transform relative z-10">
                                 <div
-                                    class="bg-white/80 p-3 rounded-2xl mb-3 shadow-[0_8px_30px_rgba(0,0,0,0.06)] aspect-square flex items-center justify-center overflow-hidden border border-white/50 backdrop-blur-sm">
+                                    class="bg-white p-3 rounded-2xl mb-3 shadow-sm aspect-square flex items-center justify-center overflow-hidden">
                                     <img src="assets/media/qrcodes/xiaohongshu_qr.PNG"
-                                        class="w-full h-full object-contain mix-blend-multiply opacity-90 group-hover/item:opacity-100 transition-opacity">
+                                        class="w-full h-full object-contain">
                                 </div>
-                                <p
-                                    class="text-[10px] uppercase tracking-widest font-bold text-stanford-red/90 group-hover/item:text-stanford-red">
-                                    Red</p>
+                                <p class="text-[10px] uppercase tracking-widest font-bold text-stanford-red" data-en="Red" data-zh="小红书">Red</p>
                             </div>
                             <!-- Instagram -->
                             <div class="text-center group/item hover:-translate-y-1 transition-transform relative z-10">
                                 <div
-                                    class="bg-white/80 p-3 rounded-2xl mb-3 shadow-[0_8px_30px_rgba(0,0,0,0.06)] aspect-square flex items-center justify-center overflow-hidden border border-white/50 backdrop-blur-sm">
+                                    class="bg-white p-3 rounded-2xl mb-3 shadow-sm aspect-square flex items-center justify-center overflow-hidden">
                                     <img src="assets/media/qrcodes/ins_qr.PNG"
-                                        class="w-full h-full object-contain mix-blend-multiply opacity-90 group-hover/item:opacity-100 transition-opacity">
+                                        class="w-full h-full object-contain">
                                 </div>
-                                <p
-                                    class="text-[10px] uppercase tracking-widest font-bold text-stanford-red/90 group-hover/item:text-stanford-red">
-                                    Ins</p>
+                                <p class="text-[10px] uppercase tracking-widest font-bold text-stanford-red" data-en="Ins" data-zh="Instagram">Ins</p>
                             </div>
-                            <!-- Wechat Lu -->
+                            <!-- Official Website -->
                             <div class="text-center group/item hover:-translate-y-1 transition-transform relative z-10">
                                 <div
-                                    class="bg-white/80 p-3 rounded-2xl mb-3 shadow-[0_8px_30px_rgba(0,0,0,0.06)] aspect-square flex items-center justify-center overflow-hidden border border-white/50 backdrop-blur-sm">
+                                    class="bg-white p-3 rounded-2xl mb-3 shadow-sm aspect-square flex items-center justify-center overflow-hidden">
+                                    <img src="assets/media/qrcodes/website_qr.png"
+                                        class="w-full h-full object-contain">
+                                </div>
+                                <p class="text-[10px] uppercase tracking-widest font-bold text-stanford-red" data-en="Website" data-zh="官方网站">Website</p>
+                            </div>
+                            <!-- Lu Liu -->
+                            <div class="text-center group/item hover:-translate-y-1 transition-transform relative z-10">
+                                <div
+                                    class="bg-white p-3 rounded-2xl mb-3 shadow-sm aspect-square flex items-center justify-center overflow-hidden">
                                     <img src="assets/media/qrcodes/lu_wechat_group_leader.JPG"
-                                        class="w-full h-full object-contain mix-blend-multiply opacity-90 group-hover/item:opacity-100 transition-opacity">
+                                        class="w-full h-full object-contain">
                                 </div>
-                                <p
-                                    class="text-[10px] uppercase tracking-widest font-bold text-stanford-red/90 group-hover/item:text-stanford-red">
-                                    Lu</p>
+                                <p class="text-[10px] uppercase tracking-widest font-bold text-stanford-red" data-en="Lu" data-zh="刘璐">Lu</p>
                             </div>
-                            <!-- Wechat Mingyu -->
+                            <!-- Mingyu Han -->
                             <div class="text-center group/item hover:-translate-y-1 transition-transform relative z-10">
                                 <div
-                                    class="bg-white/80 p-3 rounded-2xl mb-3 shadow-[0_8px_30px_rgba(0,0,0,0.06)] aspect-square flex items-center justify-center overflow-hidden border border-white/50 backdrop-blur-sm">
+                                    class="bg-white p-3 rounded-2xl mb-3 shadow-sm aspect-square flex items-center justify-center overflow-hidden">
                                     <img src="assets/media/qrcodes/Ming_wechat_group_leader.JPG"
-                                        class="w-full h-full object-contain mix-blend-multiply opacity-90 group-hover/item:opacity-100 transition-opacity">
+                                        class="w-full h-full object-contain">
                                 </div>
-                                <p
-                                    class="text-[10px] uppercase tracking-widest font-bold text-stanford-red/90 group-hover/item:text-stanford-red">
-                                    Mingyu</p>
+                                <p class="text-[10px] uppercase tracking-widest font-bold text-stanford-red" data-en="Mingyu" data-zh="韩茗羽">Mingyu</p>
                             </div>
                         </div>
                     </div>
@@ -202,15 +207,18 @@
             <!-- About Section (Text Only) -->
             <div id="about" class="w-full md:max-w-md p-8 md:p-10 space-y-6">
                 <div class="w-10 h-1 bg-stanford-red rounded-full"></div>
-                <h3 class="text-xl font-bold text-stanford-black tracking-tight">About SCPA</h3>
-                <p class="text-stanford-black leading-relaxed text-sm md:text-base font-medium">
-                    斯坦福中国博士后协会（SCPA）致力于连接每一位在斯坦福奋斗的华人学者。我们希望搭建一个温暖的社区，促进大家的交流与协作。
-                </p>
-                <p class="text-gray-600 leading-relaxed text-xs md:text-sm font-light">
-                    The Stanford Chinese Postdoc Association (SCPA) is a dedicated community for all Chinese
-                    postdocs and scholars at Stanford. Our mission is to build a supportive network that fosters
-                    connection, collaboration, and growth.
-                </p>
+                <div class="space-y-6">
+                    <h2 class="text-3xl md:text-4xl font-serif text-stanford-black font-semibold tracking-wide"
+                        data-en="About Us / Stanford Chinese Postdoc Association (SCPA)" data-zh="关于我们 / 斯坦福中国博士后协会 (SCPA)">
+                        About Us / 斯坦福中国博士后协会 (SCPA)
+                    </h2>
+
+                    <p class="text-gray-700 leading-loose text-sm md:text-base font-medium max-w-3xl mx-auto"
+                        data-en="The Stanford Chinese Postdoc Association (SCPA) is a vibrant community of Chinese postdocs across all disciplines at Stanford University. Our mission is to promote communication and learning among Chinese postdocs, providing support for their studies, work, and life. We welcome all Chinese postdocs at Stanford to join us!"
+                        data-zh="斯坦福中国博士后协会(SCPA)是斯坦福所有中国/华人博士后的组织.我们欢迎所有在斯坦福 prestige 中国/华人博士后加入到我们协会.我们的使命是促进中国/华人博士后的交流,学习,并为他们的学习,工作和生活提供力所能及的帮助.">
+                        The Stanford Chinese Postdoc Association (SCPA) is a vibrant community of Chinese postdocs across all disciplines at Stanford University. Our mission is to promote communication and learning among Chinese postdocs, providing support for their studies, work, and life. We welcome all Chinese postdocs at Stanford to join us!
+                    </p>
+                </div>
             </div>
 
             <!-- Upcoming Event Card -->
@@ -230,7 +238,7 @@
                     <div class="space-y-4">
                         <!-- Event 1: Lunar New Year (Static) -->
                         <div class="space-y-4">
-                            <h2 class="text-2xl font-serif text-stanford-black leading-tight">SCPA 春节特别活动｜把年味搬到斯坦福</h2>
+                            <h2 class="text-2xl font-serif text-stanford-black leading-tight" data-en="SCPA Lunar New Year Special Event | Bringing the New Year Flavor to Stanford" data-zh="SCPA 春节特别活动｜把年味搬到斯坦福">SCPA 春节特别活动｜把年味搬到斯坦福</h2>
                             <div class="flex flex-wrap gap-4 text-xs text-gray-500 font-mono">
                                 <div class="flex items-center gap-2">
                                     <svg class="w-4 h-4 text-stanford-red" fill="none" stroke="currentColor"
@@ -239,7 +247,7 @@
                                             d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
                                         </path>
                                     </svg>
-                                    <span>Feb 15, 2026</span>
+                                    <span data-en="Feb 15, 2026" data-zh="2026年2月15日">Feb 15, 2026</span>
                                 </div>
                                 <div class="flex items-center gap-2">
                                     <svg class="w-4 h-4 text-stanford-red" fill="none" stroke="currentColor"
@@ -250,10 +258,10 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                                     </svg>
-                                    <span>Havana Room</span>
+                                    <span data-en="Havana Room" data-zh="哈瓦那厅">Havana Room</span>
                                 </div>
                             </div>
-                            <p class="text-sm text-gray-600 leading-relaxed font-light">
+                            <p class="text-sm text-gray-600 leading-relaxed font-light" data-en="Traditional folk experiences, exquisite traditional delicacies, and multiple raffle prizes including AirPods Pro – bringing the New Year flavor to campus!" data-zh="传统民俗体验、精美传统美食、还有 AirPods Pro 等多重抽奖惊喜，把年味搬进校园！">
                                 传统民俗体验、精美传统美食、还有 AirPods Pro 等多重抽奖惊喜，把年味搬进校园！
                             </p>
                         </div>
@@ -277,15 +285,68 @@
     <section id="latest-events" class="py-24 px-6 md:px-12 bg-white relative z-10 overflow-hidden">
         <div class="max-w-5xl mx-auto">
             <div class="mb-16 reveal-up">
-                <h2 class="text-4xl font-serif text-stanford-black">Latest Events & Posts</h2>
+                <h2 class="text-4xl font-serif text-stanford-black" data-en="Latest Events & Posts" data-zh="最近动态 & 帖子">Latest Events & Posts</h2>
                 <div class="flex items-center gap-4 mt-4">
                     <div class="w-12 h-[1px] bg-stanford-red"></div>
-                    <p class="text-xs tracking-widest text-cool-grey uppercase font-bold">Stay connected with our
-                        community</p>
+                    <p class="text-xs tracking-widest text-cool-grey uppercase font-bold" data-en="Stay connected with our community" data-zh="与我们的社区保持联系">Stay connected with our community</p>
                 </div>
             </div>
 
             <div class="space-y-4 reveal-up">
+                <!-- Event: March 2 -->
+                <a href="#" class="group block p-6 rounded-xl glass-liquid transition-all duration-300">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                        <div class="flex-1">
+                            <span
+                                class="inline-block px-2 py-0.5 bg-stanford-red/10 text-stanford-red text-[9px] font-bold tracking-widest uppercase mb-2 rounded"
+                                data-en="CAREER" data-zh="职场">CAREER</span>
+                            <h3
+                                class="text-lg font-serif text-stanford-black group-hover:text-stanford-red transition-colors"
+                                data-en="Life Sciences × Business & Career" data-zh="生命科学 × 商业职场">
+                                生命科学 × 商业职场</h3>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-xs text-gray-400 font-mono uppercase">2026.03.02</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Event: Feb 27 -->
+                <a href="#" class="group block p-6 rounded-xl glass-liquid transition-all duration-300">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                        <div class="flex-1">
+                            <span
+                                class="inline-block px-2 py-0.5 bg-stanford-red/10 text-stanford-red text-[9px] font-bold tracking-widest uppercase mb-2 rounded"
+                                data-en="SOCIAL" data-zh="社交">SOCIAL</span>
+                            <h3
+                                class="text-lg font-serif text-stanford-black group-hover:text-stanford-red transition-colors"
+                                data-en="SCPA Happy Hour | March 6" data-zh="SCPA Happy Hour | 3月6日">
+                                SCPA Happy Hour | 3月6日</h3>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-xs text-gray-400 font-mono uppercase">2026.02.27</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Event: Feb 24 -->
+                <a href="#" class="group block p-6 rounded-xl glass-liquid transition-all duration-300">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                        <div class="flex-1">
+                            <span
+                                class="inline-block px-2 py-0.5 bg-stanford-red/10 text-stanford-red text-[9px] font-bold tracking-widest uppercase mb-2 rounded"
+                                data-en="COMPETITION" data-zh="大赛">COMPETITION</span>
+                            <h3
+                                class="text-lg font-serif text-stanford-black group-hover:text-stanford-red transition-colors"
+                                data-en="Science in Motion 2026 Competition Launch" data-zh="Science in Motion 2026 全球智能影像科普创新大赛正式启动">
+                                Science in Motion 2026 全球智能影像科普创新大赛正式启动</h3>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-xs text-gray-400 font-mono uppercase">2026.02.24</p>
+                        </div>
+                    </div>
+                </a>
+
                 <!-- Latest Event: Lunar New Year -->
                 <div
                     class="group block p-6 rounded-xl glass-liquid transition-all duration-300 ring-1 ring-stanford-red/10 overflow-hidden relative">
@@ -299,9 +360,11 @@
                             </div>
                             <div class="flex-1">
                                 <span
-                                    class="inline-block px-2 py-0.5 bg-stanford-red/10 text-stanford-red text-[9px] font-bold tracking-widest uppercase mb-2 rounded">FEATURED</span>
+                                    class="inline-block px-2 py-0.5 bg-stanford-red/10 text-stanford-red text-[9px] font-bold tracking-widest uppercase mb-2 rounded"
+                                    data-en="FEATURED" data-zh="精选">FEATURED</span>
                                 <h3
-                                    class="text-lg font-serif text-stanford-black group-hover:text-stanford-red transition-colors">
+                                    class="text-lg font-serif text-stanford-black group-hover:text-stanford-red transition-colors"
+                                    data-en="SCPA Lunar New Year Special Event | Bringing the New Year Flavor to Stanford" data-zh="SCPA 春节特别活动｜把年味搬到斯坦福">
                                     SCPA 春节特别活动｜把年味搬到斯坦福</h3>
                             </div>
                         </div>
@@ -312,68 +375,76 @@
                 </div>
 
                 <!-- Event 2: SCPA 2025 Recap -->
-                <div class="group block p-6 rounded-xl glass-liquid transition-all duration-300">
+                <a href="#" class="group block p-6 rounded-xl glass-liquid transition-all duration-300">
                     <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
                         <div class="flex-1">
                             <span
-                                class="inline-block px-2 py-0.5 bg-stanford-red/10 text-stanford-red text-[9px] font-bold tracking-widest uppercase mb-2 rounded">COMMUNITY</span>
+                                class="inline-block px-2 py-0.5 bg-stanford-red/10 text-stanford-red text-[9px] font-bold tracking-widest uppercase mb-2 rounded"
+                                data-en="ANNUAL" data-zh="年度">ANNUAL</span>
                             <h3
-                                class="text-lg font-serif text-stanford-black group-hover:text-stanford-red transition-colors">
+                                class="text-lg font-serif text-stanford-black group-hover:text-stanford-red transition-colors"
+                                data-en="SCPA | Thank You for a Shining 2025" data-zh="SCPA | 感谢有你，一起走过闪光的 2025">
                                 SCPA | 感谢有你，一起走过闪光的 2025</h3>
                         </div>
                         <div class="text-right">
                             <p class="text-xs text-gray-400 font-mono uppercase">2025.12.24</p>
                         </div>
                     </div>
-                </div>
+                </a>
 
                 <!-- Event 3: Happy Hour -->
-                <div class="group block p-6 rounded-xl glass-liquid transition-all duration-300">
-                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                <a href="#" class="group block p-6 rounded-xl glass-liquid transition-all duration-300">
+                    <div class="flex flex-col md:flex-row md::items-center justify-between gap-4">
                         <div class="flex-1">
                             <span
-                                class="inline-block px-2 py-0.5 bg-stanford-red/10 text-stanford-red text-[9px] font-bold tracking-widest uppercase mb-2 rounded">SOCIAL</span>
+                                class="inline-block px-2 py-0.5 bg-stanford-red/10 text-stanford-red text-[9px] font-bold tracking-widest uppercase mb-2 rounded"
+                                data-en="SOCIAL" data-zh="社交">SOCIAL</span>
                             <h3
-                                class="text-lg font-serif text-stanford-black group-hover:text-stanford-red transition-colors">
-                                SCPA 冬日暖心 Happy Hour | 12月5日</h3>
+                                class="text-lg font-serif text-stanford-black group-hover:text-stanford-red transition-colors"
+                                data-en="SCPA Winter Happy Hour" data-zh="SCPA 冬日暖心 Happy Hour">
+                                SCPA 冬日暖心 Happy Hour</h3>
                         </div>
                         <div class="text-right">
-                            <p class="text-xs text-gray-400 font-mono uppercase">2025.12.01</p>
+                            <p class="text-xs text-gray-400 font-mono uppercase">2025.12.05</p>
                         </div>
                     </div>
-                </div>
+                </a>
 
                 <!-- Event 4: K99 Seminar -->
-                <div class="group block p-6 rounded-xl glass-liquid transition-all duration-300">
+                <a href="#" class="group block p-6 rounded-xl glass-liquid transition-all duration-300">
                     <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
                         <div class="flex-1">
                             <span
-                                class="inline-block px-2 py-0.5 bg-stanford-red/10 text-stanford-red text-[9px] font-bold tracking-widest uppercase mb-2 rounded">ACADEMIC</span>
+                                class="inline-block px-2 py-0.5 bg-stanford-red/10 text-stanford-red text-[9px] font-bold tracking-widest uppercase mb-2 rounded"
+                                data-en="ACADEMIC" data-zh="学术">ACADEMIC</span>
                             <h3
-                                class="text-lg font-serif text-stanford-black group-hover:text-stanford-red transition-colors">
+                                class="text-lg font-serif text-stanford-black group-hover:text-stanford-red transition-colors"
+                                data-en="Stanford K99 Recipients Sharing Seminar" data-zh="斯坦福 K99 获得者科研分享交流会">
                                 斯坦福 K99 获得者科研分享交流会</h3>
                         </div>
                         <div class="text-right">
                             <p class="text-xs text-gray-400 font-mono uppercase">2025.10.25</p>
                         </div>
                     </div>
-                </div>
+                </a>
 
                 <!-- Event 5: Stanford Sparks -->
-                <div class="group block p-6 rounded-xl glass-liquid transition-all duration-300">
+                <a href="#" class="group block p-6 rounded-xl glass-liquid transition-all duration-300">
                     <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
                         <div class="flex-1">
                             <span
-                                class="inline-block px-2 py-0.5 bg-stanford-red/10 text-stanford-red text-[9px] font-bold tracking-widest uppercase mb-2 rounded">SOCIAL</span>
+                                class="inline-block px-2 py-0.5 bg-stanford-red/10 text-stanford-red text-[9px] font-bold tracking-widest uppercase mb-2 rounded"
+                                data-en="SOCIAL" data-zh="社交">SOCIAL</span>
                             <h3
-                                class="text-lg font-serif text-stanford-black group-hover:text-stanford-red transition-colors">
-                                Stanford sparks - 斯坦福之心动火花</h3>
+                                class="text-lg font-serif text-stanford-black group-hover:text-stanford-red transition-colors"
+                                data-en="Stanford Sparks" data-zh="Stanford Sparks - 斯坦福之心动火花">
+                                Stanford Sparks - 斯坦福之心动火花</h3>
                         </div>
                         <div class="text-right">
                             <p class="text-xs text-gray-400 font-mono uppercase">2025.10.23</p>
                         </div>
                     </div>
-                </div>
+                </a>
 
                 <!-- Event 6: Mid-Autumn Countdown -->
                 <div class="group block p-6 rounded-xl glass-liquid transition-all duration-300">
@@ -410,7 +481,8 @@
 
             <div class="mt-12 text-center reveal-up">
                 <a href="#gallery"
-                    class="inline-flex items-center gap-2 text-xs font-bold tracking-widest text-stanford-red hover:gap-4 transition-all">
+                    class="inline-flex items-center gap-2 text-xs font-bold tracking-widest text-stanford-red hover:gap-4 transition-all"
+                    data-en="EXPLORE FULL GALLERY" data-zh="探索完整画廊">
                     EXPLORE FULL GALLERY <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
@@ -424,7 +496,7 @@
     <section id="council-2025" class="py-24 px-6 md:px-12 bg-white relative z-10">
         <div class="max-w-7xl mx-auto">
             <div class="mb-20 text-center reveal-up">
-                <h2 class="text-5xl font-serif mb-6 text-stanford-black">Council 2025–26</h2>
+                <h2 class="text-5xl font-serif mb-6 text-stanford-black" data-en="Council 2025–26" data-zh="2025–26 届理事会">Council 2025–26</h2>
                 <div class="w-16 h-[2px] bg-stanford-red mx-auto opacity-40"></div>
             </div>
 
@@ -436,8 +508,8 @@
                         <img src="assets/media/members/Lu%20Liu.JPG"
                             class="object-cover w-full h-full transform group-hover:scale-110 transition-transform duration-1000">
                     </div>
-                    <h3 class="text-2xl font-serif font-medium mb-2 text-stanford-black">刘璐 / Lu Liu</h3>
-                    <p class="text-xs tracking-widest text-stanford-red uppercase font-bold">Co-Chair</p>
+                    <h3 class="text-2xl font-serif font-medium mb-2 text-stanford-black" data-en="Lu Liu" data-zh="刘璐">刘璐 / Lu Liu</h3>
+                    <p class="text-xs tracking-widest text-stanford-red uppercase font-bold" data-en="Co-Chair" data-zh="联席主席">Co-Chair</p>
                 </div>
                 <div class="group text-center reveal-up delay-100">
                     <div
@@ -445,8 +517,8 @@
                         <img src="assets/media/members/Mingyu%20Han.jpeg"
                             class="object-cover w-full h-full transform group-hover:scale-110 transition-transform duration-1000">
                     </div>
-                    <h3 class="text-2xl font-serif font-medium mb-2 text-stanford-black">韩茗羽 / Mingyu Han</h3>
-                    <p class="text-xs tracking-widest text-stanford-red uppercase font-bold">Co-Chair</p>
+                    <h3 class="text-2xl font-serif font-medium mb-2 text-stanford-black" data-en="Mingyu Han" data-zh="韩茗羽">韩茗羽 / Mingyu Han</h3>
+                    <p class="text-xs tracking-widest text-stanford-red uppercase font-bold" data-en="Co-Chair" data-zh="联席主席">Co-Chair</p>
                 </div>
             </div>
 
@@ -602,9 +674,9 @@
     <section id="archive-timeline" class="py-24 px-4 md:px-12 bg-paper border-t border-dashed border-gray-200">
         <div class="max-w-6xl mx-auto">
             <div class="mb-20 text-center reveal-up">
-                <h2 class="text-3xl font-serif text-stanford-black">Archive Timeline</h2>
+                <h2 class="text-3xl font-serif text-stanford-black" data-en="Archive Timeline" data-zh="历届档案">Archive Timeline</h2>
                 <div class="w-8 h-[1px] bg-stanford-red mx-auto mt-4 mb-2"></div>
-                <p class="text-[10px] tracking-widest text-cool-grey uppercase">HONORING OUR HISTORY</p>
+                <p class="text-[10px] tracking-widest text-cool-grey uppercase" data-en="HONORING OUR HISTORY" data-zh="致敬历史">HONORING OUR HISTORY</p>
             </div>
 
             <div class="relative border-l border-stanford-red/20 ml-4 md:ml-32 space-y-24">

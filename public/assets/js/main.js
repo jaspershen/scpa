@@ -122,25 +122,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 5. Ambient Micro-Interaction (DISABLED by User Request for Static Stability)
-    /*
-    if (!prefersReducedMotion && window.matchMedia('(pointer: fine)').matches) {
-        const logoContainer = document.querySelector('.logo-container');
-        if (logoContainer) {
-            document.addEventListener('mousemove', (e) => {
-                const x = (window.innerWidth / 2 - e.pageX) / 50;
-                const y = (window.innerHeight / 2 - e.pageY) / 50;
-
-                requestAnimationFrame(() => {
-                    logoContainer.style.transform = `translate(${x}px, ${y}px)`;
-                });
-            });
-        }
-    }
-    */
-
-    // 6. 'Italian Electronic Art' Particle Explosion & QR Reveal
-    const trigger = document.getElementById('followBtn');
+    // 5. 'Italian Electronic Art' Particle Explosion & QR Reveal
+    const trigger = document.getElementById('follow-us-trigger');
     const canvas = document.getElementById('explosion-canvas');
     const qrPanel = document.getElementById('follow-us-overlay');
 
@@ -227,18 +210,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         function createExplosion(x, y) {
-            // Clear previous just in case
-            // particles = []; 
-            // Actually, let's keep adding for multiple clicks!
-
             const burstCount = 200; // MORE PARTICLES
             for (let i = 0; i < burstCount; i++) {
                 const type = Math.random() > 0.6 ? 'square' : 'circle';
                 particles.push(new ElectronicParticle(x, y, type));
             }
-
-            // Add a centralized "White Flash" particle
-            particles.push(new ElectronicParticle(x, y, 'circle')); // Just triggers animation start if list was empty
 
             if (!animationId) animate();
         }
@@ -284,37 +260,58 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // Interaction Logic
-        // Hover -> Small discrete burst (optional, maybe keep it clean)
-        // trigger.addEventListener('mouseenter', () => createExplosion(trigger.getBoundingClientRect()));
-
         // Click -> Reveal QR Panel & Big Digital Explosion
         trigger.addEventListener('click', (e) => {
             e.stopPropagation();
-
             const rect = trigger.getBoundingClientRect();
             const centerX = rect.left + rect.width / 2;
             const centerY = rect.top + rect.height / 2;
 
-            // Toggle panel
             const isHidden = qrPanel.classList.contains('opacity-0');
-
             if (isHidden) {
-                // Show with delay to sync with explosion
                 qrPanel.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-4');
-
-                // EXPLOSION!
                 createExplosion(centerX, centerY);
-                setTimeout(() => createExplosion(centerX, centerY), 150); // Second wave!
+                setTimeout(() => createExplosion(centerX, centerY), 150);
             } else {
                 qrPanel.classList.add('opacity-0', 'pointer-events-none', 'translate-y-4');
             }
         });
 
-        // Close panel when clicking outside
         document.addEventListener('click', (e) => {
             if (!qrPanel.contains(e.target) && e.target !== trigger && !trigger.contains(e.target)) {
                 qrPanel.classList.add('opacity-0', 'pointer-events-none', 'translate-y-4');
             }
         });
     }
+
+    // 6. Bilingual Language Toggle
+    const langToggle = document.getElementById('langToggle');
+    const langElements = document.querySelectorAll('[data-en][data-zh]');
+
+    function setLanguage(lang) {
+        langElements.forEach(el => {
+            const translation = el.getAttribute(`data-${lang}`);
+            if (translation) {
+                el.textContent = translation;
+            }
+        });
+        
+        if (langToggle) {
+            langToggle.textContent = lang === 'en' ? '中文' : 'EN';
+        }
+        
+        document.documentElement.lang = lang === 'en' ? 'en' : 'zh-CN';
+        localStorage.setItem('scpa_lang', lang);
+    }
+
+    if (langToggle) {
+        langToggle.addEventListener('click', () => {
+            const currentLang = localStorage.getItem('scpa_lang') || 'en';
+            const newLang = currentLang === 'en' ? 'zh' : 'en';
+            setLanguage(newLang);
+        });
+    }
+
+    const savedLang = localStorage.getItem('scpa_lang') || 'en';
+    setLanguage(savedLang);
 });
