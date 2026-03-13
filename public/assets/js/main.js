@@ -218,4 +218,34 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // 7. Bilingual Support
+    const langToggle = document.getElementById('langToggle');
+    let currentLang = localStorage.getItem('scpa-lang') || 'en';
+
+    function setLanguage(lang) {
+        currentLang = lang;
+        localStorage.setItem('scpa-lang', lang);
+        
+        document.querySelectorAll('[data-en]').forEach(el => {
+            const translation = el.getAttribute(`data-${lang}`);
+            if (translation) {
+                el.textContent = translation;
+            }
+        });
+
+        if (langToggle) {
+            langToggle.textContent = lang === 'en' ? '中文' : 'EN';
+        }
+        
+        document.documentElement.lang = lang === 'en' ? 'en' : 'zh-CN';
+    }
+
+    if (langToggle) {
+        setLanguage(currentLang);
+        langToggle.addEventListener('click', (e) => {
+            e.preventDefault();
+            setLanguage(currentLang === 'en' ? 'zh' : 'en');
+        });
+    }
 });
