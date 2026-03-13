@@ -59,6 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 3. Navbar Scroll Effect - Dynamic Stanford Red (Gradual Transition)
     const navbar = document.getElementById('siteNav');
+    const navItems = document.querySelectorAll('.navlink');
 
     if (navbar) {
         window.addEventListener('scroll', () => {
@@ -71,17 +72,24 @@ document.addEventListener('DOMContentLoaded', () => {
             let opacity = scrollRatio * maxOpacity;
 
             // Apply calculated Stanford Red background
-            // RGB: 140, 21, 21 (#8C1515)
             navbar.style.backgroundColor = `rgba(140, 21, 21, ${opacity})`;
+
+            // Change link colors for contrast
+            if (scrollY > 100) {
+                navItems.forEach(link => {
+                    link.style.color = '#FAFAF8'; // Ivory/White
+                });
+            } else {
+                navItems.forEach(link => {
+                    link.style.color = ''; // Reset to default
+                });
+            }
 
             // Dynamic Blur & Shadow for depth
             if (scrollY > 10) {
-                // Increase blur as we scroll
                 const blurAmount = Math.min(scrollY / 20, 16);
                 navbar.style.backdropFilter = `blur(${blurAmount}px)`;
                 navbar.style.webkitBackdropFilter = `blur(${blurAmount}px)`;
-
-                // Add shadow
                 navbar.style.boxShadow = `0 10px 40px -10px rgba(0, 0, 0, ${scrollRatio * 0.3})`;
             } else {
                 navbar.style.backdropFilter = 'none';
@@ -99,21 +107,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
             e.preventDefault();
 
-            // Close mobile menu if open
-            if (!mobileMenu.classList.contains('translate-x-full')) {
+            if (mobileMenu && !mobileMenu.classList.contains('translate-x-full')) {
                 toggleMenu();
             }
 
             const targetElement = document.querySelector(targetId);
 
             if (targetElement) {
-                // Use View Transition if available and preferred
                 if (document.startViewTransition && !prefersReducedMotion) {
                     document.startViewTransition(() => {
-                        targetElement.scrollIntoView({ behavior: 'auto' }); // Instant scroll inside transition
+                        targetElement.scrollIntoView({ behavior: 'auto' });
                     });
                 } else {
-                    // Fallback smooth scroll
                     targetElement.scrollIntoView({
                         behavior: prefersReducedMotion ? 'auto' : 'smooth'
                     });
@@ -123,7 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // 5. 'Italian Electronic Art' Particle Explosion & QR Reveal
-    const trigger = document.getElementById('follow-us-trigger');
+    const trigger = document.getElementById('followBtn');
     const canvas = document.getElementById('explosion-canvas');
     const qrPanel = document.getElementById('follow-us-overlay');
 
@@ -132,15 +137,14 @@ document.addEventListener('DOMContentLoaded', () => {
         let particles = [];
         let animationId;
 
-        // Resize Canvas to cover full window for maximum drama
         function resizeCanvas() {
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
             canvas.style.position = 'fixed';
             canvas.style.top = '0';
             canvas.style.left = '0';
-            canvas.style.pointerEvents = 'none'; // Click-through
-            canvas.style.zIndex = '60'; // Above overlay content for initial pop
+            canvas.style.pointerEvents = 'none';
+            canvas.style.zIndex = '60';
         }
         resizeCanvas();
         window.addEventListener('resize', resizeCanvas);
@@ -149,55 +153,32 @@ document.addEventListener('DOMContentLoaded', () => {
             constructor(x, y, type = 'circle') {
                 this.x = x;
                 this.y = y;
-                // High velocity for initial "Bang"
                 const angle = Math.random() * Math.PI * 2;
-                const velocity = Math.random() * 25 + 10; // Much Faster!
-
+                const velocity = Math.random() * 25 + 10;
                 this.vx = Math.cos(angle) * velocity;
                 this.vy = Math.sin(angle) * velocity;
-
-                this.friction = 0.94; // Glossy air resistance
+                this.friction = 0.94;
                 this.gravity = 0.6;
-
                 this.size = Math.random() * 5 + 2;
-                this.life = 1; // Alpha value
+                this.life = 1;
                 this.decay = Math.random() * 0.02 + 0.01;
-
-                this.type = type; // 'circle' or 'square' (digital datum)
-
-                // Palette: Stanford Red, Deep Red, White, Gold, Electric Pulse
-                const colors = [
-                    '140, 21, 21',   // Stanford Red
-                    '200, 30, 30',   // Bright Red
-                    '255, 255, 255', // White
-                    '210, 194, 149',  // Gold-ish
-                    '255, 215, 0'     // Pure Gold spark
-                ];
+                this.type = type;
+                const colors = ['140, 21, 21', '200, 30, 30', '255, 255, 255', '210, 194, 149', '255, 215, 0'];
                 this.rgb = colors[Math.floor(Math.random() * colors.length)];
             }
-
             update() {
                 this.vx *= this.friction;
                 this.vy *= this.friction;
                 this.vy += this.gravity;
-
                 this.x += this.vx;
                 this.y += this.vy;
                 this.life -= this.decay;
-
-                // Digital glitch movement occasionally
-                if (Math.random() < 0.05) {
-                    this.x += (Math.random() - 0.5) * 15;
-                }
+                if (Math.random() < 0.05) this.x += (Math.random() - 0.5) * 15;
             }
-
             draw() {
                 ctx.fillStyle = `rgba(${this.rgb}, ${this.life})`;
-
-                // Add glow
                 ctx.shadowBlur = 10;
                 ctx.shadowColor = `rgba(${this.rgb}, 0.5)`;
-
                 if (this.type === 'circle') {
                     ctx.beginPath();
                     ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
@@ -205,62 +186,48 @@ document.addEventListener('DOMContentLoaded', () => {
                 } else {
                     ctx.fillRect(this.x, this.y, this.size * 1.5, this.size * 1.5);
                 }
-                ctx.shadowBlur = 0; // Reset
+                ctx.shadowBlur = 0;
             }
         }
 
         function createExplosion(x, y) {
-            const burstCount = 200; // MORE PARTICLES
+            const burstCount = 200;
             for (let i = 0; i < burstCount; i++) {
                 const type = Math.random() > 0.6 ? 'square' : 'circle';
                 particles.push(new ElectronicParticle(x, y, type));
             }
-
             if (!animationId) animate();
         }
 
         function animate() {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-            // Connect particles that are close (The "Network" effect)
             ctx.lineWidth = 0.5;
-
             for (let i = 0; i < particles.length; i++) {
                 const p = particles[i];
                 p.update();
                 p.draw();
-
-                // Connect logic (expensive, keep distance low)
                 for (let j = i + 1; j < particles.length; j++) {
                     const p2 = particles[j];
                     const dx = p.x - p2.x;
                     const dy = p.y - p2.y;
                     const dist = Math.sqrt(dx * dx + dy * dy);
-
                     if (dist < 60 && p.life > 0.5 && p2.life > 0.5) {
-                        ctx.strokeStyle = `rgba(140, 21, 21, ${0.15 * p.life})`; // Faint connective tissue
+                        ctx.strokeStyle = `rgba(140, 21, 21, ${0.15 * p.life})`;
                         ctx.beginPath();
                         ctx.moveTo(p.x, p.y);
                         ctx.lineTo(p2.x, p2.y);
                         ctx.stroke();
                     }
                 }
-
                 if (p.life <= 0) {
                     particles.splice(i, 1);
                     i--;
                 }
             }
-
-            if (particles.length > 0) {
-                animationId = requestAnimationFrame(animate);
-            } else {
-                animationId = null;
-            }
+            if (particles.length > 0) animationId = requestAnimationFrame(animate);
+            else animationId = null;
         }
 
-        // Interaction Logic
-        // Click -> Reveal QR Panel & Big Digital Explosion
         trigger.addEventListener('click', (e) => {
             e.stopPropagation();
             const rect = trigger.getBoundingClientRect();
@@ -295,11 +262,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 el.textContent = translation;
             }
         });
-        
-        if (langToggle) {
-            langToggle.textContent = lang === 'en' ? '中文' : 'EN';
-        }
-        
+        if (langToggle) langToggle.textContent = lang === 'en' ? '中文' : 'EN';
         document.documentElement.lang = lang === 'en' ? 'en' : 'zh-CN';
         localStorage.setItem('scpa_lang', lang);
     }
