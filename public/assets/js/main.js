@@ -326,12 +326,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const langToggleMobile = document.getElementById('langToggleMobile');
     const langToggles = [langToggle, langToggleMobile].filter(Boolean);
     const langElements = document.querySelectorAll('[data-en][data-zh]');
+    const langImages = document.querySelectorAll('img[data-alt-en][data-alt-zh]');
 
     function setLanguage(lang) {
         langElements.forEach(el => {
             const translation = el.getAttribute(`data-${lang}`);
             if (translation) {
                 el.textContent = translation;
+            }
+        });
+        langImages.forEach(image => {
+            const translatedAlt = image.getAttribute(`data-alt-${lang}`);
+            if (translatedAlt) {
+                image.alt = translatedAlt;
             }
         });
         langToggles.forEach(toggle => {

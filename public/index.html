@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="scroll-smooth">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -102,7 +102,7 @@
         <a href="#latest-events" class="mobile-nav-link text-2xl font-serif text-stanford-black" data-en="EVENTS" data-zh="最近动态">EVENTS</a>
         <a href="#about" class="mobile-nav-link text-2xl font-serif text-stanford-black" data-en="ABOUT" data-zh="关于我们">ABOUT</a>
         <a href="#archive-timeline" class="mobile-nav-link text-2xl font-serif text-stanford-black" data-en="ARCHIVE" data-zh="往届回顾">ARCHIVE</a>
-        <a href="#gallery" class="mobile-nav-link text-2xl font-serif text-stanford-black" data-en="GALLERY" data-zh="画廊">GALLERY</a>
+        <a href="#gallery" class="mobile-nav-link text-2xl font-serif text-stanford-black" data-en="GALLERY" data-zh="活动相册">GALLERY</a>
         <button id="langToggleMobile" type="button"
             class="px-4 py-2 rounded-full border border-stanford-red/30 text-xs font-bold tracking-[0.2em] text-stanford-red">
             中文
@@ -1175,68 +1175,121 @@
             <div>
                 <p class="text-[10px] tracking-[0.2em] text-stanford-red font-bold uppercase mb-2"
                     data-en="FROM OUR COMMUNITY" data-zh="来自我们的社区">FROM OUR COMMUNITY</p>
-                <h2 class="text-3xl font-serif text-stanford-black" data-en="Gallery" data-zh="活动相册">Gallery</h2>
+                <h2 id="gallery-title" class="text-3xl font-serif text-stanford-black" data-en="Gallery" data-zh="活动相册">Gallery</h2>
             </div>
-            <span class="text-xs tracking-widest text-gray-400 hidden md:inline-block"
+            <span class="max-w-[9rem] md:max-w-none text-right text-[10px] md:text-xs leading-relaxed tracking-widest text-gray-400 md:whitespace-nowrap"
                 data-en="SCROLL TO EXPLORE →" data-zh="左右滑动查看更多 →">SCROLL TO EXPLORE →</span>
         </div>
 
-        <div class="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-12 px-6 md:px-12 scrollbar-hide">
+        <div id="gallery-track" role="region" aria-labelledby="gallery-title" tabindex="0"
+            class="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-12 px-6 md:px-12 scrollbar-hide focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-stanford-red focus-visible:ring-inset">
             <figure class="snap-center shrink-0 w-[85vw] md:w-[600px] aspect-[4/3] rounded-xl overflow-hidden bg-gray-200 relative group">
-                <img src="assets/media/events/community/2026-spring-festival-group.jpg" loading="lazy"
-                    alt="SCPA 2026 春节活动参与者室内合影"
-                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                <img src="assets/media/events/community/2026-spring-festival-group.jpg" loading="lazy" decoding="async"
+                    width="1600" height="900" alt="SCPA 2026 Lunar New Year participants in an indoor group photo"
+                    data-alt-en="SCPA 2026 Lunar New Year participants in an indoor group photo"
+                    data-alt-zh="SCPA 2026 春节活动参与者室内合影"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 motion-reduce:transform-none motion-reduce:transition-none">
                 <figcaption class="absolute inset-x-0 bottom-0 p-5 text-sm text-white bg-gradient-to-t from-black/70 to-transparent"
                     data-en="2026 Lunar New Year · Community Photo" data-zh="2026 春节活动 · 社区合影">2026 Lunar New Year · Community Photo</figcaption>
             </figure>
             <figure class="snap-center shrink-0 w-[85vw] md:w-[600px] aspect-[4/3] rounded-xl overflow-hidden bg-gray-200 relative group">
-                <img src="assets/media/events/community/2026-spring-festival-prep.jpg" loading="lazy"
-                    alt="志愿者准备 SCPA 2026 春节活动"
-                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                <img src="assets/media/events/community/2026-spring-festival-prep.jpg" loading="lazy" decoding="async"
+                    width="1600" height="900" alt="Volunteers preparing the SCPA 2026 Lunar New Year celebration"
+                    data-alt-en="Volunteers preparing the SCPA 2026 Lunar New Year celebration"
+                    data-alt-zh="志愿者准备 SCPA 2026 春节活动"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 motion-reduce:transform-none motion-reduce:transition-none">
                 <figcaption class="absolute inset-x-0 bottom-0 p-5 text-sm text-white bg-gradient-to-t from-black/70 to-transparent"
                     data-en="2026 Lunar New Year · Behind the Scenes" data-zh="2026 春节活动 · 现场准备">2026 Lunar New Year · Behind the Scenes</figcaption>
             </figure>
             <figure class="snap-center shrink-0 w-[85vw] md:w-[600px] aspect-[4/3] rounded-xl overflow-hidden bg-gray-200 relative group">
-                <img src="assets/media/events/community/2026-spring-festival-food.jpg" loading="lazy"
-                    alt="SCPA 2026 春节活动餐食"
-                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                <img src="assets/media/events/community/2026-spring-festival-food.jpg" loading="lazy" decoding="async"
+                    width="1600" height="2844" alt="Food prepared for the SCPA 2026 Lunar New Year celebration"
+                    data-alt-en="Food prepared for the SCPA 2026 Lunar New Year celebration"
+                    data-alt-zh="SCPA 2026 春节活动餐食"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 motion-reduce:transform-none motion-reduce:transition-none">
                 <figcaption class="absolute inset-x-0 bottom-0 p-5 text-sm text-white bg-gradient-to-t from-black/70 to-transparent"
                     data-en="2026 Lunar New Year · Festival Food" data-zh="2026 春节活动 · 节日餐食">2026 Lunar New Year · Festival Food</figcaption>
             </figure>
             <figure class="snap-center shrink-0 w-[85vw] md:w-[600px] aspect-[4/3] rounded-xl overflow-hidden bg-gray-200 relative group">
-                <img src="assets/media/events/community/2025-mid-autumn-games.jpg" loading="lazy"
-                    alt="SCPA 2025 中秋活动现场游戏"
-                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                <img src="assets/media/events/community/2025-mid-autumn-games.jpg" loading="lazy" decoding="async"
+                    width="1600" height="1148" alt="Interactive games at the SCPA 2025 Mid-Autumn Festival"
+                    data-alt-en="Interactive games at the SCPA 2025 Mid-Autumn Festival"
+                    data-alt-zh="SCPA 2025 中秋活动现场游戏"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 motion-reduce:transform-none motion-reduce:transition-none">
                 <figcaption class="absolute inset-x-0 bottom-0 p-5 text-sm text-white bg-gradient-to-t from-black/70 to-transparent"
                     data-en="2025 Mid-Autumn Festival · Games" data-zh="2025 中秋活动 · 互动游戏">2025 Mid-Autumn Festival · Games</figcaption>
             </figure>
             <figure class="snap-center shrink-0 w-[85vw] md:w-[600px] aspect-[4/3] rounded-xl overflow-hidden bg-gray-200 relative group">
-                <img src="assets/media/events/community/2025-mid-autumn-winners.jpg" loading="lazy"
-                    alt="SCPA 2025 中秋活动获奖者合影"
-                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                <img src="assets/media/events/community/2025-mid-autumn-winners.jpg" loading="lazy" decoding="async"
+                    width="1600" height="1200" alt="Prize winners at the SCPA 2025 Mid-Autumn Festival"
+                    data-alt-en="Prize winners at the SCPA 2025 Mid-Autumn Festival"
+                    data-alt-zh="SCPA 2025 中秋活动获奖者合影"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 motion-reduce:transform-none motion-reduce:transition-none">
                 <figcaption class="absolute inset-x-0 bottom-0 p-5 text-sm text-white bg-gradient-to-t from-black/70 to-transparent"
                     data-en="2025 Mid-Autumn Festival · Winners" data-zh="2025 中秋活动 · 获奖合影">2025 Mid-Autumn Festival · Winners</figcaption>
             </figure>
             <figure class="snap-center shrink-0 w-[85vw] md:w-[600px] aspect-[4/3] rounded-xl overflow-hidden bg-gray-200 relative group">
-                <img src="assets/media/events/community/2025-mid-autumn-performance.jpg" loading="lazy"
-                    alt="SCPA 2025 中秋活动舞台表演"
-                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                <img src="assets/media/events/community/2025-mid-autumn-performance.jpg" loading="lazy" decoding="async"
+                    width="1600" height="1200" alt="Live performance at the SCPA 2025 Mid-Autumn Festival"
+                    data-alt-en="Live performance at the SCPA 2025 Mid-Autumn Festival"
+                    data-alt-zh="SCPA 2025 中秋活动舞台表演"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 motion-reduce:transform-none motion-reduce:transition-none">
                 <figcaption class="absolute inset-x-0 bottom-0 p-5 text-sm text-white bg-gradient-to-t from-black/70 to-transparent"
                     data-en="2025 Mid-Autumn Festival · Performance" data-zh="2025 中秋活动 · 现场表演">2025 Mid-Autumn Festival · Performance</figcaption>
             </figure>
             <figure class="snap-center shrink-0 w-[85vw] md:w-[600px] aspect-[4/3] rounded-xl overflow-hidden bg-gray-200 relative group">
-                <img src="assets/media/events/bd9f8f72b74f6358861170e0666cbc76.JPG" loading="lazy"
-                    alt="SCPA 社区 BBQ 户外活动现场"
-                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                <img src="assets/media/events/bd9f8f72b74f6358861170e0666cbc76.JPG" loading="lazy" decoding="async"
+                    width="1702" height="1276" alt="SCPA community members gathering at an outdoor barbecue"
+                    data-alt-en="SCPA community members gathering at an outdoor barbecue"
+                    data-alt-zh="SCPA 社区 BBQ 户外活动现场"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 motion-reduce:transform-none motion-reduce:transition-none">
                 <figcaption class="absolute inset-x-0 bottom-0 p-5 text-sm text-white bg-gradient-to-t from-black/70 to-transparent"
                     data-en="SCPA Community BBQ · On-site Gathering" data-zh="SCPA 社区 BBQ · 活动现场">SCPA Community BBQ · On-site Gathering</figcaption>
             </figure>
             <figure class="snap-center shrink-0 w-[85vw] md:w-[600px] aspect-[4/3] rounded-xl overflow-hidden bg-gray-200 relative group">
-                <img src="assets/media/events/b959f33544ea45ed78a9e73a274248c7.JPG" loading="lazy"
-                    alt="SCPA 社群交流欢迎台"
-                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                <img src="assets/media/events/b959f33544ea45ed78a9e73a274248c7.JPG" loading="lazy" decoding="async"
+                    width="800" height="533" alt="Welcome desk at an SCPA community outreach event"
+                    data-alt-en="Welcome desk at an SCPA community outreach event"
+                    data-alt-zh="SCPA 社群交流欢迎台"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 motion-reduce:transform-none motion-reduce:transition-none">
                 <figcaption class="absolute inset-x-0 bottom-0 p-5 text-sm text-white bg-gradient-to-t from-black/70 to-transparent"
                     data-en="Community Outreach · Welcome Desk" data-zh="社群交流 · 欢迎台">Community Outreach · Welcome Desk</figcaption>
+            </figure>
+            <figure class="snap-center shrink-0 w-[85vw] md:w-[600px] aspect-[4/3] rounded-xl overflow-hidden bg-gray-200 relative group">
+                <img src="assets/media/events/gallery/scpa-community-group.webp" loading="lazy" decoding="async"
+                    width="1600" height="1200" alt="SCPA community members holding the association banner outdoors"
+                    data-alt-en="SCPA community members holding the association banner outdoors"
+                    data-alt-zh="SCPA 社区成员在户外手持协会横幅合影"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 motion-reduce:transform-none motion-reduce:transition-none">
+                <figcaption class="absolute inset-x-0 bottom-0 p-5 text-sm text-white bg-gradient-to-t from-black/70 to-transparent"
+                    data-en="SCPA Community · Outdoor Gathering" data-zh="SCPA 社区 · 户外合影">SCPA Community · Outdoor Gathering</figcaption>
+            </figure>
+            <figure class="snap-center shrink-0 w-[85vw] md:w-[600px] aspect-[4/3] rounded-xl overflow-hidden bg-gray-200 relative group">
+                <img src="assets/media/events/gallery/stanford-dish-hike.webp" loading="lazy" decoding="async"
+                    width="1572" height="1179" alt="SCPA participants on a community hike at the Stanford Dish"
+                    data-alt-en="SCPA participants on a community hike at the Stanford Dish"
+                    data-alt-zh="SCPA 成员在斯坦福 Dish 参加社区徒步"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 motion-reduce:transform-none motion-reduce:transition-none">
+                <figcaption class="absolute inset-x-0 bottom-0 p-5 text-sm text-white bg-gradient-to-t from-black/70 to-transparent"
+                    data-en="Stanford Dish · Community Hike" data-zh="斯坦福 Dish · 社区徒步">Stanford Dish · Community Hike</figcaption>
+            </figure>
+            <figure class="snap-center shrink-0 w-[85vw] md:w-[600px] aspect-[4/3] rounded-xl overflow-hidden bg-gray-200 relative group">
+                <img src="assets/media/events/gallery/professional-development-talk.webp" loading="lazy" decoding="async"
+                    width="1600" height="1200" alt="A speaker presenting autonomous driving and deep learning topics to the SCPA community"
+                    data-alt-en="A speaker presenting autonomous driving and deep learning topics to the SCPA community"
+                    data-alt-zh="讲者面向 SCPA 社区分享自动驾驶与深度学习主题"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 motion-reduce:transform-none motion-reduce:transition-none">
+                <figcaption class="absolute inset-x-0 bottom-0 p-5 text-sm text-white bg-gradient-to-t from-black/70 to-transparent"
+                    data-en="Technology Talk · Autonomous Driving &amp; Deep Learning" data-zh="科技分享 · 自动驾驶与深度学习">Technology Talk · Autonomous Driving &amp; Deep Learning</figcaption>
+            </figure>
+            <figure class="snap-center shrink-0 w-[85vw] md:w-[600px] aspect-[4/3] rounded-xl overflow-hidden bg-gray-200 relative group">
+                <img src="assets/media/events/gallery/community-roundtable.webp" loading="lazy" decoding="async"
+                    width="1600" height="1200" alt="SCPA community members exchanging ideas around a conference table"
+                    data-alt-en="SCPA community members exchanging ideas around a conference table"
+                    data-alt-zh="SCPA 社区成员围坐会议桌交流分享"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 motion-reduce:transform-none motion-reduce:transition-none">
+                <figcaption class="absolute inset-x-0 bottom-0 p-5 text-sm text-white bg-gradient-to-t from-black/70 to-transparent"
+                    data-en="Community Roundtable · Ideas in Conversation" data-zh="社区圆桌 · 交流与分享">Community Roundtable · Ideas in Conversation</figcaption>
             </figure>
         </div>
     </section>
@@ -1350,7 +1403,7 @@
     <!-- Canvas for Particle Explosion (Moved to Body Root for Correct Positioning) -->
     <canvas id="explosion-canvas" class="fixed inset-0 pointer-events-none z-[60]" width="800" height="800"></canvas>
 
-    <script src="assets/js/main.js?v=20260817-2"></script>
+    <script src="assets/js/main.js?v=20260817-3"></script>
 </body>
 
 </html>
