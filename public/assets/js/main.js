@@ -325,20 +325,24 @@ document.addEventListener('DOMContentLoaded', () => {
     const langToggle = document.getElementById('langToggle');
     const langToggleMobile = document.getElementById('langToggleMobile');
     const langToggles = [langToggle, langToggleMobile].filter(Boolean);
-    const langElements = document.querySelectorAll('[data-en][data-zh]');
-    const langImages = document.querySelectorAll('img[data-alt-en][data-alt-zh]');
 
     function setLanguage(lang) {
-        langElements.forEach(el => {
+        document.querySelectorAll('[data-en][data-zh]').forEach(el => {
             const translation = el.getAttribute(`data-${lang}`);
             if (translation) {
                 el.textContent = translation;
             }
         });
-        langImages.forEach(image => {
+        document.querySelectorAll('img[data-alt-en][data-alt-zh]').forEach(image => {
             const translatedAlt = image.getAttribute(`data-alt-${lang}`);
             if (translatedAlt) {
                 image.alt = translatedAlt;
+            }
+        });
+        document.querySelectorAll('[data-label-en][data-label-zh]').forEach(element => {
+            const translatedLabel = element.getAttribute(`data-label-${lang}`);
+            if (translatedLabel) {
+                element.setAttribute('aria-label', translatedLabel);
             }
         });
         langToggles.forEach(toggle => {
@@ -353,6 +357,110 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('scpa_lang', lang);
     }
 
+    // 7. Complete community gallery, rendered in small batches.
+    const galleryGrid = document.getElementById('gallery-grid');
+    const galleryStatus = document.getElementById('gallery-status');
+    const galleryLoadMore = document.getElementById('gallery-load-more');
+    let galleryItems = [];
+    let galleryRenderedCount = 0;
+
+    function galleryBatchSize() {
+        return window.matchMedia('(max-width: 639px)').matches ? 6 : 12;
+    }
+
+    function currentLanguage() {
+        return localStorage.getItem('scpa_lang') || 'en';
+    }
+
+    function createGalleryCard(item) {
+        const figure = document.createElement('figure');
+        figure.className = 'gallery-grid-card';
+        figure.tabIndex = -1;
+        figure.setAttribute('data-label-en', `${item.event_en}: ${item.caption_en}`);
+        figure.setAttribute('data-label-zh', `${item.event_zh}：${item.caption_zh}`);
+        figure.setAttribute('aria-label', `${item.event_en}: ${item.caption_en}`);
+
+        const image = document.createElement('img');
+        image.className = 'gallery-grid-image';
+        image.src = item.src;
+        image.width = item.width;
+        image.height = item.height;
+        image.loading = 'lazy';
+        image.decoding = 'async';
+        image.alt = item.alt_en;
+        image.setAttribute('data-alt-en', item.alt_en);
+        image.setAttribute('data-alt-zh', item.alt_zh);
+
+        const caption = document.createElement('figcaption');
+        caption.className = 'gallery-grid-caption';
+
+        const event = document.createElement('span');
+        event.className = 'gallery-grid-event';
+        event.setAttribute('data-en', item.event_en);
+        event.setAttribute('data-zh', item.event_zh);
+        event.textContent = item.event_en;
+
+        const captionText = document.createElement('span');
+        captionText.className = 'gallery-grid-caption-text';
+        captionText.setAttribute('data-en', item.caption_en);
+        captionText.setAttribute('data-zh', item.caption_zh);
+        captionText.textContent = item.caption_en;
+
+        caption.append(event, captionText);
+
+        figure.append(image, caption);
+        return figure;
+    }
+
+    function updateGalleryStatus() {
+        if (!galleryStatus) return;
+        const english = `${galleryRenderedCount} of ${galleryItems.length} photos shown`;
+        const chinese = `已展示 ${galleryRenderedCount} / ${galleryItems.length} 张照片`;
+        galleryStatus.setAttribute('data-en', english);
+        galleryStatus.setAttribute('data-zh', chinese);
+        galleryStatus.textContent = currentLanguage() === 'en' ? english : chinese;
+
+        const hasMore = galleryRenderedCount < galleryItems.length;
+        if (galleryLoadMore) galleryLoadMore.hidden = !hasMore;
+    }
+
+    function renderNextGalleryBatch({ focusNew = false } = {}) {
+        if (!galleryGrid) return;
+        const nextItems = galleryItems.slice(galleryRenderedCount, galleryRenderedCount + galleryBatchSize());
+        const fragment = document.createDocumentFragment();
+        nextItems.forEach(item => fragment.append(createGalleryCard(item)));
+        const firstNewCard = fragment.firstElementChild;
+        galleryGrid.append(fragment);
+        galleryRenderedCount += nextItems.length;
+        galleryGrid.setAttribute('aria-busy', 'false');
+        updateGalleryStatus();
+        setLanguage(currentLanguage());
+        if (focusNew && firstNewCard) {
+            firstNewCard.focus();
+        }
+    }
+
+    async function loadCompleteGallery() {
+        if (!galleryGrid || !galleryStatus) return;
+        try {
+            const response = await fetch('assets/data/gallery.json?v=20260817-1');
+            if (!response.ok) throw new Error(`Gallery manifest returned ${response.status}`);
+            const manifest = await response.json();
+            galleryItems = Array.isArray(manifest.items) ? manifest.items : [];
+            renderNextGalleryBatch();
+        } catch (error) {
+            galleryGrid.setAttribute('aria-busy', 'false');
+            galleryStatus.setAttribute('data-en', 'The complete album could not be loaded.');
+            galleryStatus.setAttribute('data-zh', '完整相册暂时无法加载。');
+            setLanguage(currentLanguage());
+            console.warn('Unable to load complete gallery', error);
+        }
+    }
+
+    if (galleryLoadMore) {
+        galleryLoadMore.addEventListener('click', () => renderNextGalleryBatch({ focusNew: true }));
+    }
+
     langToggles.forEach(toggle => {
         toggle.addEventListener('click', () => {
             const currentLang = localStorage.getItem('scpa_lang') || 'en';
@@ -363,4 +471,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const savedLang = localStorage.getItem('scpa_lang') || 'en';
     setLanguage(savedLang);
+    loadCompleteGallery();
 });
