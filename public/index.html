@@ -1292,6 +1292,35 @@
                     data-en="Community Roundtable · Ideas in Conversation" data-zh="社区圆桌 · 交流与分享">Community Roundtable · Ideas in Conversation</figcaption>
             </figure>
         </div>
+
+        <div class="max-w-7xl mx-auto px-6 md:px-12 pt-6">
+            <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between mb-8">
+                <div>
+                    <p class="text-[10px] tracking-[0.2em] text-stanford-red font-bold uppercase mb-2"
+                        data-en="FULL COMMUNITY ALBUM" data-zh="完整社区相册">FULL COMMUNITY ALBUM</p>
+                    <h3 id="gallery-album-title" class="text-2xl md:text-3xl font-serif text-stanford-black"
+                        data-en="More moments from SCPA" data-zh="更多 SCPA 活动瞬间">More moments from SCPA</h3>
+                </div>
+                <p id="gallery-status" class="text-xs tracking-wider text-gray-500" aria-live="polite"
+                    data-en="Loading photos…" data-zh="正在加载照片…">Loading photos…</p>
+            </div>
+
+            <div id="gallery-grid" class="gallery-grid" role="region" aria-labelledby="gallery-album-title"
+                aria-busy="true"></div>
+
+            <div class="text-center mt-10">
+                <button id="gallery-load-more" type="button" class="gallery-load-more" hidden
+                    aria-controls="gallery-grid" data-en="Load more photos" data-zh="加载更多照片">Load more photos</button>
+                <p class="mt-4 text-[11px] leading-relaxed text-gray-400"
+                    data-en="Web-optimized copies are loaded in small batches for a faster homepage."
+                    data-zh="网页优化版本会分批加载，让主页保持流畅。">Web-optimized copies are loaded in small batches for a faster homepage.</p>
+            </div>
+
+            <noscript>
+                <p class="mt-8 text-sm text-gray-500" data-en="Enable JavaScript to view the complete community album."
+                    data-zh="请启用 JavaScript 查看完整社区相册。">Enable JavaScript to view the complete community album.</p>
+            </noscript>
+        </div>
     </section>
 
     <!-- Footer / Contact (Redesigned V2 - Prominent) -->
@@ -1403,7 +1432,7 @@
     <!-- Canvas for Particle Explosion (Moved to Body Root for Correct Positioning) -->
     <canvas id="explosion-canvas" class="fixed inset-0 pointer-events-none z-[60]" width="800" height="800"></canvas>
 
-    <script src="assets/js/main.js?v=20260817-3"></script>
+    <script src="assets/js/main.js?v=20260817-4"></script>
 </body>
 
 </html>

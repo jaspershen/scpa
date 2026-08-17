@@ -1,0 +1,14 @@
+{
+  "name": "scpa-gallery-tools",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "node build_gallery_images.mjs",
+    "validate": "node validate_gallery_images.mjs",
+    "contact-sheets": "node make_gallery_contact_sheets.mjs"
+  },
+  "dependencies": {
+    "sharp": "0.35.3"
+  }
+}
