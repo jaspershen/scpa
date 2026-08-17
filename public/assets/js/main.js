@@ -36,17 +36,34 @@ document.addEventListener('DOMContentLoaded', () => {
     const mobileMenu = document.getElementById('mobile-menu');
     const mobileLinks = document.querySelectorAll('.mobile-nav-link');
 
+    function updateMobileMenuButton(isExpanded) {
+        if (!menuBtn) return;
+        const isChinese = document.documentElement.lang.startsWith('zh');
+        menuBtn.setAttribute('aria-expanded', String(isExpanded));
+        menuBtn.setAttribute('aria-label', isExpanded
+            ? (isChinese ? '关闭导航菜单' : 'Close navigation menu')
+            : (isChinese ? '打开导航菜单' : 'Open navigation menu'));
+    }
+
     function toggleMenu() {
         const isOpen = mobileMenu.classList.contains('translate-x-full');
 
         if (isOpen) {
             // Open
             mobileMenu.classList.remove('translate-x-full');
+            mobileMenu.removeAttribute('inert');
+            mobileMenu.setAttribute('aria-hidden', 'false');
             document.body.classList.add('overflow-hidden');
+            updateMobileMenuButton(true);
+            if (closeBtn) closeBtn.focus();
         } else {
             // Close
             mobileMenu.classList.add('translate-x-full');
+            mobileMenu.setAttribute('inert', '');
+            mobileMenu.setAttribute('aria-hidden', 'true');
             document.body.classList.remove('overflow-hidden');
+            updateMobileMenuButton(false);
+            if (menuBtn) menuBtn.focus();
         }
     }
 
@@ -55,6 +72,40 @@ document.addEventListener('DOMContentLoaded', () => {
 
     mobileLinks.forEach(link => {
         link.addEventListener('click', toggleMenu);
+    });
+
+    document.addEventListener('keydown', (event) => {
+        const menuIsOpen = mobileMenu && !mobileMenu.classList.contains('translate-x-full');
+
+        if (event.key === 'Escape' && menuIsOpen) {
+            toggleMenu();
+            return;
+        }
+
+        if (event.key === 'Tab' && menuIsOpen) {
+            const focusable = Array.from(mobileMenu.querySelectorAll('a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])'));
+            const first = focusable[0];
+            const last = focusable[focusable.length - 1];
+
+            if (!first || !last) return;
+            if (event.shiftKey && document.activeElement === first) {
+                event.preventDefault();
+                last.focus();
+            } else if (!event.shiftKey && document.activeElement === last) {
+                event.preventDefault();
+                first.focus();
+            }
+        }
+    });
+
+    const desktopMenuBreakpoint = window.matchMedia('(min-width: 768px)');
+    desktopMenuBreakpoint.addEventListener('change', (event) => {
+        if (!event.matches || !mobileMenu || mobileMenu.classList.contains('translate-x-full')) return;
+        mobileMenu.classList.add('translate-x-full');
+        mobileMenu.setAttribute('inert', '');
+        mobileMenu.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('overflow-hidden');
+        updateMobileMenuButton(false);
     });
 
     // 3. Navbar Scroll Effect - Dynamic Stanford Red (Gradual Transition)
@@ -131,6 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const trigger = document.getElementById('followBtn');
     const canvas = document.getElementById('explosion-canvas');
     const qrPanel = document.getElementById('follow-us-overlay');
+    const closeFollowPanel = document.getElementById('close-follow-panel');
 
     if (trigger && canvas && qrPanel) {
         const ctx = canvas.getContext('2d');
@@ -228,6 +280,13 @@ document.addEventListener('DOMContentLoaded', () => {
             else animationId = null;
         }
 
+        function hideQrPanel() {
+            qrPanel.classList.add('opacity-0', 'pointer-events-none', 'translate-y-4');
+            qrPanel.setAttribute('inert', '');
+            qrPanel.setAttribute('aria-hidden', 'true');
+            trigger.setAttribute('aria-expanded', 'false');
+        }
+
         trigger.addEventListener('click', (e) => {
             e.stopPropagation();
             const rect = trigger.getBoundingClientRect();
@@ -237,22 +296,35 @@ document.addEventListener('DOMContentLoaded', () => {
             const isHidden = qrPanel.classList.contains('opacity-0');
             if (isHidden) {
                 qrPanel.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-4');
+                qrPanel.removeAttribute('inert');
+                qrPanel.setAttribute('aria-hidden', 'false');
+                trigger.setAttribute('aria-expanded', 'true');
                 createExplosion(centerX, centerY);
                 setTimeout(() => createExplosion(centerX, centerY), 150);
             } else {
-                qrPanel.classList.add('opacity-0', 'pointer-events-none', 'translate-y-4');
+                hideQrPanel();
             }
         });
 
+        if (closeFollowPanel) {
+            closeFollowPanel.addEventListener('click', (e) => {
+                e.stopPropagation();
+                hideQrPanel();
+                trigger.focus();
+            });
+        }
+
         document.addEventListener('click', (e) => {
             if (!qrPanel.contains(e.target) && e.target !== trigger && !trigger.contains(e.target)) {
-                qrPanel.classList.add('opacity-0', 'pointer-events-none', 'translate-y-4');
+                hideQrPanel();
             }
         });
     }
 
     // 6. Bilingual Language Toggle
     const langToggle = document.getElementById('langToggle');
+    const langToggleMobile = document.getElementById('langToggleMobile');
+    const langToggles = [langToggle, langToggleMobile].filter(Boolean);
     const langElements = document.querySelectorAll('[data-en][data-zh]');
 
     function setLanguage(lang) {
@@ -262,18 +334,25 @@ document.addEventListener('DOMContentLoaded', () => {
                 el.textContent = translation;
             }
         });
-        if (langToggle) langToggle.textContent = lang === 'en' ? '中文' : 'EN';
+        langToggles.forEach(toggle => {
+            toggle.textContent = lang === 'en' ? '中文' : 'EN';
+            toggle.setAttribute('aria-label', lang === 'en' ? '切换至中文' : 'Switch to English');
+        });
         document.documentElement.lang = lang === 'en' ? 'en' : 'zh-CN';
+        updateMobileMenuButton(menuBtn?.getAttribute('aria-expanded') === 'true');
+        if (closeFollowPanel) {
+            closeFollowPanel.setAttribute('aria-label', lang === 'en' ? 'Close follow panel' : '关闭关注面板');
+        }
         localStorage.setItem('scpa_lang', lang);
     }
 
-    if (langToggle) {
-        langToggle.addEventListener('click', () => {
+    langToggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
             const currentLang = localStorage.getItem('scpa_lang') || 'en';
             const newLang = currentLang === 'en' ? 'zh' : 'en';
             setLanguage(newLang);
         });
-    }
+    });
 
     const savedLang = localStorage.getItem('scpa_lang') || 'en';
     setLanguage(savedLang);

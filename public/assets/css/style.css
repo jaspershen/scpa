@@ -254,3 +254,21 @@
 .animate-bounce {
     animation: bounce 2s infinite ease-in-out;
 }
+
+/* Keep the QR panel fully usable at every mobile scroll position. */
+@media (max-width: 767px) {
+    #follow-us-overlay {
+        position: fixed !important;
+        inset: 6rem 1rem 1rem !important;
+        width: auto !important;
+        max-width: none !important;
+        margin: 0 !important;
+        overflow-y: auto;
+        overscroll-behavior: contain;
+        transform: translateY(1rem) !important;
+    }
+
+    #follow-us-overlay:not(.translate-y-4) {
+        transform: translateY(0) !important;
+    }
+}
